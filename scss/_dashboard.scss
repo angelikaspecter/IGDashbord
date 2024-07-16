@@ -1,0 +1,119 @@
+.dashboard {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas:
+        "nav header"
+        "nav content";
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            grid-template-columns: 280px 1fr;
+            grid-template-rows: 80px 1fr;
+            grid-template-areas:
+                "nav header"
+                "content content";
+        }
+        @media screen and (max-width: 767.98px) {
+            grid-template-columns: 150px 1fr;
+            grid-template-rows: 80px 1fr;
+            grid-template-areas:
+                "nav header"
+                "content content";
+        }
+    &__header {
+        grid-area: header;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        padding: 24px 36px;
+        border-bottom: 1px solid rgba(242, 242, 242, 1);
+        order: 2;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            justify-content: flex-end;
+        }
+        @media screen and (max-width: 767.98px) {
+            justify-content: flex-end;
+        }
+    }
+    &__nav {
+        grid-area: nav;
+    }
+    &__content {
+        grid-area: content;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        background-color: var(--light-primary);
+        padding: 24px;
+        order: 3;
+        overflow: hidden;
+        overflow-y: scroll;
+        @media screen and (max-width: 767.98px) {
+            padding: 16px;
+        }
+    }
+    &__wrap {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        overflow: hidden;
+    }
+    &__list {
+        width: 99.9%;
+        display: grid;
+        gap: 16px;
+        grid-template-columns: 1fr 350px;
+        grid-template-rows: 280px 270px 1fr;
+        grid-template-areas:
+            "products products"
+            "overall overall-mini"
+            "history history";
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 280px 1fr auto auto;
+            grid-template-areas:
+            "products"
+            "overall"
+            "overall-mini"
+            "history";
+            overflow-y: scroll;
+        }
+        @media screen and (min-width: 349px) and (max-width: 767.98px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 320px auto auto auto;
+            grid-template-areas:
+            "products"
+            "overall"
+            "overall-mini"
+            "history";
+            overflow-y: scroll;
+        }
+        @media screen and (max-width: 348.98px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 344px auto auto auto;
+            grid-template-areas:
+            "products"
+            "overall"
+            "overall-mini"
+            "history";
+            overflow-y: scroll;
+        }
+    }
+    &__item {
+        &--products {
+            grid-area: products;
+            overflow: hidden;
+        }
+        &--overall {
+            grid-area: overall;
+        }
+        &--overall-mini {
+            grid-area: overall-mini;
+        }
+        &--history {
+            grid-area: history;
+        }
+    }
+}

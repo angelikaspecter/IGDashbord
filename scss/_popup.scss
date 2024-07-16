@@ -1,0 +1,288 @@
+.popup {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #111111, $alpha: 0.75);
+    z-index: 55;
+    @media screen and (max-width: 767.98px) {
+        align-items: flex-end;
+    }
+    &--post {
+        &.hide {
+            display: none;
+        }
+        @media screen and (max-width: 767.98px) {
+            align-items: center;
+        }
+    }
+    & hr {
+        display: none;
+        width: 46px;
+        height: 5px;
+        border-radius: 2px;
+        border: none;
+        background-color: rgba(213, 221, 220, 1);
+        position: absolute;
+        top: 13px;
+        left: 50%;
+        transform: translateX(-50%);
+        @media screen and (max-width: 767.98px) {
+            display: flex;
+        }
+    }
+    &__wrap {
+        width: 100%;
+        max-width: 575px;
+        height: auto;
+        min-height: 432px;
+        background-color: white;
+        position: relative;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        &--header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        &--footer {
+            width: 100%;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &--create-acc {
+            max-width: 720px;
+            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+                max-width: 580px;
+            }
+            @media screen and (max-width: 767.98px) {
+                max-width: 100%;
+            }
+            @media (orientation: landscape) and (max-height: 574.98px) {
+                max-width: 100%;
+                height: auto;
+                min-height: auto;
+                margin-top: auto;
+                overflow-y: scroll;
+            }
+        }
+        &--qr {
+            max-width: 595px;
+            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+                max-width: 514px;
+            }
+            @media screen and (max-width: 767.98px) {
+                max-width: 100%;
+            }
+            @media (orientation: portrait) and (max-width: 374.98px) {
+                height: 100%;
+                overflow-y: scroll;
+            }
+            @media (orientation: landscape) and (max-height: 574.98px) {
+                max-width: 100%;
+                height: auto;
+                min-height: auto;
+                margin-top: auto;
+                overflow-y: scroll;
+            }
+        }
+        &--auth {
+            padding: 32px;
+            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+                padding: 32px;
+            }
+            @media screen and (max-width: 767.98px) {
+                max-width: 100%;
+                padding: 24px;
+            }
+            @media (orientation: landscape) and (max-height: 574.98px) {
+                max-width: 100%;
+                height: auto;
+                min-height: auto;
+                margin-top: auto;
+                overflow-y: scroll;
+            }
+        }
+        &--activate-product {
+            max-width: 450px;
+            padding: 32px;
+            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+                max-width: 450px;
+            }
+            @media screen and (max-width: 767.98px) {
+                max-width: 100%;
+                padding: 32px 16px;
+            }
+            @media (orientation: landscape) and (max-height: 574.98px) {
+                max-width: 100%;
+                height: auto;
+                min-height: auto;
+                margin-top: auto;
+                overflow-y: scroll;
+            }
+        }
+        &--add-liquidity {
+            max-width: 450px;
+            min-height: auto;
+            padding: 32px;
+            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+                max-width: 450px;
+            }
+            @media screen and (max-width: 767.98px) {
+                max-width: 100%;
+                padding: 32px 16px;
+            }
+            @media (orientation: landscape) and (max-height: 574.98px) {
+                max-width: 100%;
+                height: auto;
+                min-height: auto;
+                margin-top: auto;
+                overflow-y: scroll;
+            }
+        }
+        &--deposit {
+            max-width: 450px;
+            min-height: auto;
+            padding: 32px;
+            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+                max-width: 450px;
+            }
+            @media screen and (max-width: 767.98px) {
+                max-width: 100%;
+                padding: 32px 16px;
+            }
+            @media (orientation: landscape) and (max-height: 574.98px) {
+                max-width: 100%;
+                height: auto;
+                min-height: auto;
+                margin-top: auto;
+                overflow-y: scroll;
+            }
+        }
+        &--program {
+            max-width: 800px;
+            min-height: auto;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+                max-width: 675px;
+            }
+            @media screen and (max-width: 767.98px) {
+                max-width: 100%;
+                padding: 32px 16px;
+            }
+            @media (orientation: landscape) and (max-height: 574.98px) {
+                max-width: 100%;
+                height: auto;
+                min-height: auto;
+                margin-top: auto;
+                overflow-y: scroll;
+            }
+        }
+        &--partners {
+            max-width: 1200px;
+            min-height: auto;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            & .card {
+                padding: 0;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+                max-width: 720px;
+            }
+            @media screen and (max-width: 767.98px) {
+                max-width: 100%;
+                padding: 32px 16px;
+            }
+            @media (orientation: landscape) and (max-height: 574.98px) {
+                max-width: 100%;
+                height: auto;
+                min-height: auto;
+                margin-top: auto;
+                overflow-y: scroll;
+            }
+        }
+        &.hide {
+            display: none;
+        }
+    }
+    &__carousel {
+        width: 100%;
+        max-width: 400px;
+        overflow: hidden;
+        @media (orientation: landscape) and (max-height: 574.98px) {
+            max-width: 80%;
+            height: auto;
+            min-height: auto;
+            margin-top: auto;
+        }
+        @media (orientation: portrait) and (max-width: 374.98px) {
+            max-width: 300px;
+        }
+        &--wrap {
+            width: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    }
+    &__btn {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        @media screen and (max-width: 767.98px) {
+            display: none;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            z-index: 1;
+        }
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        right: 20px;
+        transform: translateY(-50%);
+        z-index: 999;
+        @media screen and (max-width: 767.98px) {
+            bottom: 0;
+            transform: translateY(30%);
+            justify-content: center;
+            gap: 16px;
+        }
+        @media (orientation: landscape) and (max-height: 574.98px) {
+            top: 60%;
+            transform: translateY(-60%);
+            justify-content: space-between;
+        }
+    }
+    &.hide {
+        display: none;
+    }
+}

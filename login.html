@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <section class="section login">
+        <ul class="section__list">
+            <li class="section__item section__item--login">
+                <header class="login__header">
+                    <a href="" class="link link--logo">
+                        <picture class="img">
+                            <source media="(max-width: 767.98px)" srcset="img/logo-mobile.svg" width="160" height="28"
+                                alt="IG logo">
+                            <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/logo-tablet.svg"
+                                width="160" height="28" alt="IG logo">
+                            <source media="(min-width:1440px)" srcset="img/logo-desktop.svg" width="106" height="18"
+                                alt="IG logo">
+                            <img src="img/logo-desktop.svg" width="106" height="18" alt="IG logo" />
+                        </picture>
+                    </a>
+                    <button class="btn btn--close" id="closeLogIn"><img src="img/close.svg" width="24" height="24"
+                            alt="IG logo" /></button>
+                </header>
+                <div class="login__content">
+                    <div class="login__content--wrap">
+                        <header class="login__content--header">
+                            <h1 class="title title--section title--bold title--dark">Sign In to ImratGroup</h1>
+                            <p class="desc desc--normal desc--middle">Welcome back! Please sign in to continue</p>
+                        </header>
+                        <form class="form">
+                            <div class="form__wrap form__wrap--column">
+                                <label for="email" class="desc desc--extrasmall desc--bold desc--dark">Email
+                                    address</label>
+                                <input type="email" name="email" id="email"
+                                    class="form__input desc desc--normal desc--dark"
+                                    placeholder="Enter your email address">
+                            </div>
+                            <div class="form__wrap form__wrap--column">
+                                <div class="form__wrap form__wrap--row">
+                                    <label for="password"
+                                        class="desc desc--extrasmall desc--bold desc--dark">Password</label>
+                                    <a href="" class="desc desc--extrasmall desc--bold desc--color">Forgot Password?</a>
+                                </div>
+                                <div class="form__wrap form__wrap--row">
+                                    <input type="password" name="password" id="passwordLogin" class="form__input desc desc--normal desc--dark" value="1234567">
+                                    <button class="form__btn form__btn--show">
+                                        <img src="img/eye-show.svg" width="24" height="24" alt="show" class="form__icon form__icon--show">
+                                    </button>
+                                    <button class="form__btn form__btn--hide hide">
+                                        <img src="img/eye-hide.svg" width="24" height="24" alt="hide" class="form__icon form__icon--hide">
+                                    </button>
+                                    <button class="form__btn form__btn--info hide">
+                                        <img src="img/info.svg" width="18" height="18" alt="info"
+                                            class="form__icon form__icon--info">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="recaptcha hide">
+                                <input type="checkbox" name="recaptcha" id="recaptcha">
+                                <label for="recaptcha" class="desc desc--small desc--middle">I’m not a robot</label>
+                                <img src="img/recaptcha.svg" width="45" height="44" alt="recaptcha"
+                                    class="recaptcha__img">
+                            </div>
+                            <button class="btn btn--primary">Log In</button>
+                        </form>
+                        <footer class="login__content--footer">
+                            <p class="desc desc--normal desc--middle">You don't have an account? <a
+                                    href="registration.html" class="desc desc--normal desc--bold desc--color">Sign
+                                    up</a></p>
+                            <div class="login__delimiter">
+                                <hr> <span class="desc desc--extrasmall desc--light-middle">or</span>
+                                <hr>
+                            </div>
+                            <button class="btn btn--google">
+                                <img loading="lazy" src="img/google.svg" width="24" height="24" alt="Google logo"
+                                    class="btn--icon"> <span class="desc desc--normal desc--bold desc--dark">Continue
+                                    with Google</span>
+                            </button>
+                        </footer>
+                    </div>
+                </div>
+            </li>
+            <li class="section__item hide">
+                <div class="login__wrap login__wrap--absolute">
+                    <div class="login__wrap-inner">
+                        <img src="img/quote.svg" width="26" height="20" alt="quote icon">
+                        <p class="desc desc--large desc--bold desc--light">The stock market is designed to transfer
+                            money from the
+                            Active to the Patient.</p>
+                    </div>
+                    <div class="login__wrap-inner login__wrap-inner--row">
+                        <div class="login__wrap-inner">
+                            <p class="desc desc--large desc--bold desc--light">Warren Buffett</p>
+                            <p class="desc desc--normal desc--middle">Chairperson of Berkshire Hathaway</p>
+                        </div>
+                    </div>
+                </div>
+                <picture class="img">
+                    <img src="img/img_1-desktop.webp" width="700" height="673" alt="Warren Buffett" />
+                </picture>
+            </li>
+        </ul>
+    </section>
+    <section class="popup hide">
+        <div class="popup__wrap popup__wrap--auth">
+            <hr>
+            <button class="popup__btn btn btn--close">
+                <img src="img/close.svg" width="24" height="24" alt="close">
+            </button>
+            <header class="popup__wrap--header">
+                <h2 class="title title--wrap title--bold title--dark">Check your email inbox</h2>
+                <p class="desc desc--normal desc--dark">We need you to verify your email address. We've sent an email to
+                    <b>jdoe.mobbin4@gmail.com</b> containing a 6-digit code. Please enter it below.
+                </p>
+            </header>
+            <form class="form">
+                <div class="form__wrap form__wrap--auth">
+                    <input class="form__input--auth desc desc--large desc--bold desc--color" type="text" id="digit1"
+                        maxlength="1" oninput="moveToNext(this, 'digit2')">
+                    <input class="form__input--auth desc desc--large desc--bold desc--color" type="text" id="digit2"
+                        maxlength="1" oninput="moveToNext(this, 'digit3')">
+                    <input class="form__input--auth desc desc--large desc--bold desc--color" type="text" id="digit3"
+                        maxlength="1" oninput="moveToNext(this, 'digit4')">
+                    <input class="form__input--auth desc desc--large desc--bold desc--color" type="text" id="digit4"
+                        maxlength="1" oninput="moveToNext(this, 'digit5')">
+                    <input class="form__input--auth desc desc--large desc--bold desc--color" type="text" id="digit5"
+                        maxlength="1" oninput="moveToNext(this, 'digit6')">
+                    <input class="form__input--auth desc desc--large desc--bold desc--color" type="text" id="digit6"
+                        maxlength="1">
+                </div>
+                <div class="desc desc--normal desc--error hide" id="error">Please enter a valid 6-digit code.</div>
+                <button class="btn btn--primary desc desc--normal desc--semibold desc--light">Continue</button>
+            </form>
+            <footer class="popup__wrap--footer">
+                <p class="desc desc--normal desc--middle">Didn't recieve the email? <a href=""
+                        class="desc desc--normal desc--bold desc--color">Resend</a></p>
+            </footer>
+        </div>
+    </section>
+    <section class="popup hide">
+        <div class="popup__wrap popup__wrap--create-acc">
+            <hr>
+            <button class="popup__btn btn btn--close">
+                <img src="img/close.svg" width="24" height="24" alt="close">
+            </button>
+            <header class="popup__wrap--header">
+                <h2 class="title title--wrap title--bold title--color">Create account</h2>
+            </header>
+            <form class="form">
+                <div class="form__wrap form__wrap--column">
+                    <label class="desc desc--extrasmall desc--bold desc--dark" for="login">Login</label>
+                    <input class="form__input desc desc--large desc--bold desc--color" type="text" name="login"
+                        id="login" placeholder="Enter your login">
+                </div>
+                <h3 class="title title--block title--bold title--dark">Choose a key question</h3>
+                <div class="form__wrap form__wrap--column">
+                    <label for="question" class="form__label">
+                        <span class="desc desc--extrasmall desc--dark">Key question
+                            <div class="tooltip">
+                                <img class="tooltip__target" src="img/info.svg" width="15" height="15" alt="tooltip">
+                                <div class="tooltip__content desc desc--extrasmall desc--light">The key
+                                    question is created to ensure the security of your profile. It helps
+                                    prevent fraudulent activities.</div>
+                            </div>
+                        </span>
+                    </label>
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select">
+                            <div class="custom-select-trigger desc desc--normal desc--dark">City of
+                                birth</div>
+                            <div class="custom-options">
+                                <span class="custom-option desc desc--normal desc--dark selected" data-value="1">City of
+                                    birth</span>
+                                <span class="custom-option desc desc--normal desc--dark" data-value="2">Your child's
+                                    name</span>
+                                <span class="custom-option desc desc--normal desc--dark" data-value="3">Mother's maiden
+                                    name</span>
+                                <span class="custom-option desc desc--normal desc--dark" data-value="4">First pet's
+                                    name</span>
+                                <span class="custom-option desc desc--normal desc--dark" data-value="5">School you
+                                    attended</span>
+                                <span class="custom-option desc desc--normal desc--dark" data-value="6">Favorite
+                                    restaurant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__wrap form__wrap--column">
+                    <label class="desc desc--extrasmall desc--bold desc--dark" for="login">Answer</label>
+                    <input class="form__input" type="tel" name="answer" id="answer"
+                        placeholder="Enter the answer to the key question">
+                </div>
+                <div class="form__wrap form__wrap--report">
+                    <img src="img/report.svg" width="24" height="24" alt="report" class="form__icon form__icon--report">
+                    <p class="desc desc--extrasmall desc--dark"> The key word cannot be recovered; it is synchronized
+                        with our automatic decentralized system.</p>
+                </div>
+                <button class="btn btn--primary">Confirm</button>
+            </form>
+        </div>
+    </section>
+    <script src="js/calendar.js"></script>
+    <script src="js/copy.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/password.js"></script>
+    <script src="js/range-input.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/upload-remove-img.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/2fa.js"></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/lang-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/nav-links.js"></script>
+    <script src="js/toast.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/form-btn-disabled.js"></script>
+    <script src="js/imgtoinfo.js"></script>
+    <script src="js/post-carousel.js"></script>
+</body>
+
+</html>

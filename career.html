@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <section class="section dashboard">
+        <header class="dashboard__header">
+            <div class="lang lang--mobile">
+                <div class="lang__menu">
+                    <div class="lang__menu--fixed lang__menu--desktop">
+                        <img src="img/english.svg" width="30" height="20" alt="Current lang" class="lang__flag">
+                        <span class="lang__desc lang__desc--desktop desc desc--extrasmall desc--dark">English</span>
+                    </div>
+                    <img src="img/arrow_drop_down.svg" width="18" height="18" alt="check"
+                        class="lang__icon lang__icon--dropdown">
+                </div>
+                <ul class="lang__dropdown hide">
+                    <li class="lang__dropdown-item">
+                        <a href="/" class="lang__link" data-lang="spanish">
+                            <img src="img/spanish.svg" width="30" height="20" alt="Spanish" class="lang__flag">
+                            <span class="desc desc--extrasmall desc--dark">Spanish</span>
+                            <img src="img/check.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--check hide">
+                        </a>
+                    </li>
+                    <li class="lang__dropdown-item">
+                        <a href="/" class="lang__link" data-lang="italian">
+                            <img src="img/italian.svg" width="30" height="20" alt="Italian" class="lang__flag">
+                            <span class="desc desc--extrasmall desc--dark">Italian</span>
+                            <img src="img/check.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--check hide">
+                        </a>
+                    </li>
+                    <li class="lang__dropdown-item">
+                        <a href="index.html" class="lang__link active" data-lang="english">
+                            <img src="img/english.svg" width="30" height="20" alt="English" class="lang__flag">
+                            <span class="desc desc--extrasmall desc--dark">English</span>
+                            <img src="img/check.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--check">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="admin">
+                <li class="admin__item">
+                    <img loading="lazy" src="img/notifications.svg" width="24" height="24" alt="notification none"
+                        class="admin__icon">
+                    <img loading="lazy" src="img/notification-active.svg" width="24" height="24" alt="notifications"
+                        class="admin__icon hide">
+                </li>
+                <li class="admin__item admin__item--mobile">
+                    <div class="lang">
+                        <div class="lang__menu">
+                            <div class="lang__menu--fixed lang__menu--desktop">
+                                <img src="img/english.svg" width="30" height="20" alt="Current lang" class="lang__flag">
+                                <span
+                                    class="lang__desc lang__desc--desktop desc desc--extrasmall desc--dark">English</span>
+                            </div>
+                            <img src="img/arrow_drop_down.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--dropdown">
+                        </div>
+                        <ul class="lang__dropdown hide">
+                            <li class="lang__dropdown-item">
+                                <a href="/" class="lang__link" data-lang="spanish">
+                                    <img src="img/spanish.svg" width="30" height="20" alt="Spanish" class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">Spanish</span>
+                                    <img src="img/check.svg" width="18" height="18" alt="check"
+                                        class="lang__icon lang__icon--check hide">
+                                </a>
+                            </li>
+                            <li class="lang__dropdown-item">
+                                <a href="/" class="lang__link" data-lang="italian">
+                                    <img src="img/italian.svg" width="30" height="20" alt="Italian" class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">Italian</span>
+                                    <img src="img/check.svg" width="18" height="18" alt="check"
+                                        class="lang__icon lang__icon--check hide">
+                                </a>
+                            </li>
+                            <li class="lang__dropdown-item">
+                                <a href="index.html" class="lang__link active" data-lang="english">
+                                    <img src="img/english.svg" width="30" height="20" alt="English" class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">English</span>
+                                    <img src="img/check.svg" width="18" height="18" alt="check"
+                                        class="lang__icon lang__icon--check">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="admin__item admin__item--menu">
+                    <button class="btn btn--menu" id="openMenu"><img src="img/menu.svg" width="24" height="24"
+                            alt="menu mobile" class="admin__icon"></button>
+                    <button class="btn btn--menu hide" id="closeMenu"><img src="img/close-color.svg" width="24"
+                            height="24" alt="menu mobile" class="admin__icon"></button>
+                </li>
+                <li class="admin__item admin__item--user">
+                    <img loading="lazy" src="img/avatar.svg" width="36" height="36" alt="user avatar"
+                        class="admin__icon">
+                    <span class="desc desc--normal desc--bold desc--dark">Martin Franci</span>
+                </li>
+            </ul>
+        </header>
+        <nav class="dashboard__nav nav" id="navMenu">
+            <header class="nav__header">
+                <a href="" class="link link--logo">
+                    <picture class="img">
+                        <source media="(max-width: 767.98px)" srcset="img/logo-color.svg" width="160" height="28"
+                            alt="IG logo">
+                        <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/logo-color.svg"
+                            width="160" height="28" alt="IG logo">
+                        <source media="(min-width:1440px)" srcset="img/logo-color.svg" width="160" height="28"
+                            alt="IG logo">
+                        <img src="img/logo-color.svg" width="160" height="28" alt="IG logo" />
+                    </picture>
+                </a>
+            </header>
+            <div class="nav__menu hide">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--lang nav__item--mobile">
+                        <div class="lang">
+                            <div class="lang__menu">
+                                <div class="lang__menu--fixed">
+                                    <img src="img/english.svg" width="30" height="20" alt="Current lang"
+                                        class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">English</span>
+                                </div>
+                                <img src="img/arrow_drop_down.svg" width="18" height="18" alt="check"
+                                    class="lang__icon lang__icon--dropdown">
+                            </div>
+                            <ul class="lang__dropdown hide">
+                                <li class="lang__dropdown-item">
+                                    <a href="/" class="lang__link" data-lang="spanish">
+                                        <img src="img/spanish.svg" width="30" height="20" alt="Spanish"
+                                            class="lang__flag">
+                                        <span class="desc desc--extrasmall desc--dark">Spanish</span>
+                                        <img src="img/check.svg" width="18" height="18" alt="check"
+                                            class="lang__icon lang__icon--check hide">
+                                    </a>
+                                </li>
+                                <li class="lang__dropdown-item">
+                                    <a href="/" class="lang__link" data-lang="italian">
+                                        <img src="img/italian.svg" width="30" height="20" alt="Italian"
+                                            class="lang__flag">
+                                        <span class="desc desc--extrasmall desc--dark">Italian</span>
+                                        <img src="img/check.svg" width="18" height="18" alt="check"
+                                            class="lang__icon lang__icon--check hide">
+                                    </a>
+                                </li>
+                                <li class="lang__dropdown-item">
+                                    <a href="index.html" class="lang__link active" data-lang="english">
+                                        <img src="img/english.svg" width="30" height="20" alt="English"
+                                            class="lang__flag">
+                                        <span class="desc desc--extrasmall desc--dark">English</span>
+                                        <img src="img/check.svg" width="18" height="18" alt="check"
+                                            class="lang__icon lang__icon--check">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <img src="img/dashboard.svg" width="24" height="24" alt="dashboard"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/dashboard-active.svg" width="24" height="24" alt="dashboard"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="wallet.html" class="nav__link">
+                            <img src="img/wallet.svg" width="24" height="24" alt="wallet"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/wallet-active.svg" width="24" height="24" alt="wallet"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Wallet</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="ig-index.html" class="nav__link">
+                            <img src="img/ig-index.svg" width="24" height="24" alt="IG Index"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/ig-index-active.svg" width="24" height="24" alt="IG Index"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">IG Index</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="ig-future.html" class="nav__link">
+                            <img src="img/ig-future.svg" width="24" height="24" alt="IG Future"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/ig-future-active.svg" width="24" height="24" alt="IG Future"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">IG Future</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="career.html" class="nav__link active">
+                            <img src="img/career.svg" width="24" height="24" alt="career"
+                                class="nav__icon nav__icon--classic hide">
+                            <img src="img/career-active.svg" width="24" height="24" alt="career"
+                                class="nav__icon nav__icon--active">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Career</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="settings.html" class="nav__link">
+                            <img src="img/settings.svg" width="24" height="24" alt="settings"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/settings-active.svg" width="24" height="24" alt="settings"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="help.html" class="nav__link">
+                            <img src="img/help.svg" width="24" height="24" alt="help"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/help-active.svg" width="24" height="24" alt="help"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="dashboard__content">
+            <h1 class="title title--section title--bold title--dark hide">Career</h1>
+            <ul class="career__list">
+                <li class="career__item career__item--balance">
+                    <header class="career__header career__header--row">
+                        <h2 class="desc desc--extralarge desc--bold desc--color">MRT Balance</h2>
+                        <div class="tooltip">
+                            <img class="tooltip__target" src="img/info-career.svg" width="24" height="24" alt="tooltip">
+                            <div class="tooltip__content tooltip__content--career desc desc--extrasmall desc--light">You
+                                can use MRT to buy new career lines or switch them to USDT in
+                                wallet. New lines will be opened after you reach required turnover, after that you can
+                                buy a new line to increase your income. If you want to switch your MRT to USDT go to the
+                                Wallet page and use exchange.
+                                Actual price for 1 MRT = 1 USDT</div>
+                        </div>
+                    </header>
+                    <div class="career__balance career__balance--column">
+                        <div class="career__wrap">
+                            <div
+                                class="custom-select-wrapper custom-select-wrapper--clean custom-select-wrapper--row wallet__wrap--row custom-select-wrapper--bottom">
+                                <p class="career__title title title--semibold title--dark">543</p>
+                                <div class="custom-select">
+                                    <div class="career__trigger custom-select-trigger">
+                                        <span class="desc desc--normal desc--bold desc--dark">MRT</span>
+                                    </div>
+                                    <div class="custom-options">
+                                        <span class="custom-option desc desc--normal desc--bold desc--dark selected"
+                                            data-value="1">MRT</span>
+                                        <span class="custom-option desc desc--normal desc--bold desc--dark"
+                                            data-value="2">ETH</span>
+                                        <span class="custom-option desc desc--normal desc--bold desc--dark"
+                                            data-value="3">ETH</span>
+                                        <span class="custom-option desc desc--normal desc--bold desc--dark"
+                                            data-value="4">ETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="career__wrap career__wrap--row">
+                            <p class="title title--block title--semibold title--dark">≈ <span>USDT 802.41</span></p>
+                            <div class="career__tooltip career__tooltip--profit">
+                                <img loading="lazy" src="img/arrow-down-right.svg" width="18" height="18"
+                                    alt="arrow-down-right" class="img img--icon-mini">
+                                <p class="desc desc--mini desc--bold desc--plus">1.4%</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="career__item career__item--income-type">
+                    <header class="career__income-type--header">
+                        <p class="desc desc--normal desc--middle">Income type</p>
+                        <p class="desc desc--large desc--semibold desc--dark">Dividends</p>
+                    </header>
+                    <footer class="career__income-type--footer">
+                        <p class="desc desc--large desc--semibold desc--dark">Your LVL (7)</p>
+                        <div class="career__income-type--line">
+                            <span class="color"></span>
+                            <span class="color"></span>
+                            <span class="color"></span>
+                            <span class="color"></span>
+                            <span class="color"></span>
+                            <span class="color"></span>
+                            <span class="color"></span>
+                            <span class="decolor"></span>
+                            <span class="decolor"></span>
+                            <span class="decolor"></span>
+                        </div>
+                    </footer>
+                </li>
+                <li class="career__item career__item--turnover-goal">
+
+                </li>
+                <li class="career__item career__item--referal">
+
+                </li>
+                <li class="career__item career__item--info">
+
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="popup hide" id="Partners">
+        <div class="popup__wrap popup__wrap--partners">
+            <hr>
+            <button class="popup__btn btn btn--close">
+                <img src="img/close.svg" width="24" height="24" alt="close">
+            </button>
+            <header class="popup__wrap--header">
+                <h2 class="title title--wrap title--bold title--color">Partners</h2>
+            </header>
+            <form class="form">
+                <div class="form__wrap--partners">
+                    <div class="search">
+                        <img src="img/search.svg" width="32" height="32" alt="search"
+                            class="search__icon img img--icon">
+                        <input class="search__input" type="search" name="search" id="search" value="User 1">
+                        <button type="reset" class="search__btn search__btn--reset" id="reset-btn">
+                            <img src="img/close.svg" width="24" height="24" alt="reset" class="img img--icon"></button>
+                    </div>
+                    <div class="calendar calendar--partners" id="calendar-container">
+                        <input class="calendar__input calendar__input--partners desc desc--normal desc--bold desc--dark"
+                            type="text" name="calendar" id="calendar" placeholder="dd.mm-dd.mm" readonly>
+                        <button class="calendar__btn" id="calendar-btn">
+                            <img src="img/calendar.svg" width="24" height="24" alt="calendar" class="img img--icon">
+                        </button>
+                        <div class="calendar__popup" id="calendar-popup" style="display: none;">
+                            <div class="calendar__header">
+                                <div class="calendar__month">
+                                    <button class="calendar__btn calendar__btn--prev" id="prev-month">
+                                        <img src="img/arrow_upward.svg" width="24" height="24" alt="next"
+                                            class="img img--icon">
+                                    </button>
+                                    <p class="desc desc--normal desc--semibold desc--dark" id="current-month">July
+                                        2023</p>
+                                    <button class="calendar__btn calendar__btn--next" id="next-month">
+                                        <img src="img/arrow_upward.svg" width="24" height="24" alt="next"
+                                            class="img img--icon">
+                                    </button>
+                                </div>
+                                <button class="btn btn--text desc desc--normal desc--semibold desc--color" type="reset"
+                                    id="reset">Reset</button>
+                            </div>
+                            <div class="calendar__days">
+                                <span class="desc desc--extrasmall desc--regular desc--light-middle">Sun</span>
+                                <span class="desc desc--extrasmall desc--regular desc--light-middle">Mon</span>
+                                <span class="desc desc--extrasmall desc--regular desc--light-middle">Tue</span>
+                                <span class="desc desc--extrasmall desc--regular desc--light-middle">Wed</span>
+                                <span class="desc desc--extrasmall desc--regular desc--light-middle">Thu</span>
+                                <span class="desc desc--extrasmall desc--regular desc--light-middle">Fri</span>
+                                <span class="desc desc--extrasmall desc--regular desc--light-middle">Sat</span>
+                            </div>
+                            <div id="datepicker"></div>
+                        </div>
+                    </div>
+                    <div class="filter" id="filter">
+                        <button class="filter__btn" id="filter-btn">
+                            <img src="img/filter.svg" width="24" height="24" alt="filter" class="img img--icon"><span
+                                class="desc desc--normal desc--semibold desc--dark">Filter</span>
+                        </button>
+                        <div class="filter__wrap hide">
+                            <p class="desc desc--extrasmall desc--middle">Filter by line</p>
+                            <label for="filter" class="filter__line">
+                                <span class="desc desc--extrasmall desc--middle">1</span>
+                                <span class="desc desc--extrasmall desc--middle">2</span>
+                                <span class="desc desc--extrasmall desc--middle">3</span>
+                                <span class="desc desc--extrasmall desc--middle">4</span>
+                                <span class="desc desc--extrasmall desc--middle">5</span>
+                                <span class="desc desc--extrasmall desc--middle">6</span>
+                                <span class="desc desc--extrasmall desc--middle">7</span>
+                                <span class="desc desc--extrasmall desc--middle">8</span>
+                                <span class="desc desc--extrasmall desc--middle">9</span>
+                                <span class="desc desc--extrasmall desc--middle">10</span>
+                                <span class="desc desc--extrasmall desc--middle">11</span>
+                                <span class="desc desc--extrasmall desc--middle">12</span>
+                                <span class="desc desc--extrasmall desc--middle">13</span>
+                                <span class="desc desc--extrasmall desc--middle">14</span>
+                                <span class="desc desc--extrasmall desc--middle">15</span>
+                                <span class="desc desc--extrasmall desc--middle">16</span>
+                                <span class="desc desc--extrasmall desc--middle">17</span>
+                                <span class="desc desc--extrasmall desc--middle">18</span>
+                                <span class="desc desc--extrasmall desc--middle">19</span>
+                                <span class="desc desc--extrasmall desc--middle">20</span>
+                            </label>
+                            <input type="range" name="filter" id="filterRamge" min="0" max="20" step="1">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="card card--history">
+                <ul class="transaction transaction--laptop">
+                    <li class="transaction__item">
+                        <header class="transaction__header">
+                            <p class="desc desc--extrasmall desc--light-middle">Login</p>
+                        </header>
+                        <div class="transaction__content">
+                            <p class="desc desc--bold desc--dark desc--normal">User 1</p>
+                        </div>
+                        <div class="transaction__content">
+                            <p class="desc desc--bold desc--dark desc--normal">User 2</p>
+                        </div>
+                        <div class="transaction__content">
+                            <p class="desc desc--bold desc--dark desc--normal">User 3</p>
+                        </div>
+                    </li>
+                    <li class="transaction__item">
+                        <header class="transaction__header">
+                            <p class="desc desc--extrasmall desc--light-middle">Email</p>
+                        </header>
+                        <div class="transaction__content">
+                            <p class="desc desc--bold desc--normal">jdoe@example.com</p>
+                        </div>
+                        <div class="transaction__content">
+                            <p class="desc desc--bold desc--normal">asmith@example.com</p>
+                        </div>
+                        <div class="transaction__content">
+                            <p class="desc desc--bold desc--normal">bthomas@example.com</p>
+                        </div>
+                    </li>
+                    <li class="transaction__item">
+                        <header class="transaction__header transaction__header--center">
+                            <p class="desc desc--extrasmall desc--light-middle">Registration Date</p>
+                        </header>
+                        <div class="transaction__content transaction__content--center">
+                            <p class="desc desc--bold desc--dark desc--normal">2024-03-15</p>
+                        </div>
+                        <div class="transaction__content transaction__content--center">
+                            <p class="desc desc--bold desc--dark desc--normal">2024-11-22</p>
+                        </div>
+                        <div class="transaction__content transaction__content--center">
+                            <p class="desc desc--bold desc--dark desc--normal">2024-11-22</p>
+                        </div>
+                    </li>
+                    <li class="transaction__item">
+                        <header class="transaction__header transaction__header--center">
+                            <p class="desc desc--extrasmall desc--light-middle">Line</p>
+                        </header>
+                        <div class="transaction__content transaction__content--center">
+                            <p class="desc desc--bold desc--dark desc--normal">1</p>
+                        </div>
+                        <div class="transaction__content transaction__content--center">
+                            <p class="desc desc--bold desc--dark desc--normal">4</p>
+                        </div>
+                        <div class="transaction__content transaction__content--center">
+                            <p class="desc desc--bold desc--dark desc--normal">3</p>
+                        </div>
+                    </li>
+                    <li class="transaction__item">
+                        <header class="transaction__header transaction__header--center">
+                            <p class="desc desc--extrasmall desc--light-middle">Active/Inactive</p>
+                        </header>
+                        <div class="transaction__content transaction__content--center">
+                            <p class="desc desc--bold desc--normal status status--active">Active</p>
+                        </div>
+                        <div class="transaction__content transaction__content--center">
+                            <p class="desc desc--bold desc--normal status status--inactive">Inactive</p>
+                        </div>
+                        <div class="transaction__content transaction__content--center">
+                            <p class="desc desc--bold desc--normal status status--active">Active</p>
+                        </div>
+                    </li>
+                    <li class="transaction__item">
+                        <header class="transaction__header transaction__header--center">
+                            <p class="desc desc--extrasmall desc--light-middle">Investment Amount</p>
+                        </header>
+                        <div class="transaction__content transaction__content--center">
+                            <p class="desc desc--bold desc--dark desc--normal">$2,597</p>
+                        </div>
+                        <div class="transaction__content transaction__content--center">
+                            <p class="desc desc--bold desc--dark desc--normal">$3,280</p>
+                        </div>
+                        <div class="transaction__content transaction__content--center">
+                            <p class="desc desc--bold desc--dark desc--normal">$2,422</p>
+                        </div>
+                    </li>
+                    <li class="transaction__item">
+                        <header class="transaction__header transaction__header--center">
+                            <p class="desc desc--extrasmall desc--light-middle">Your Earned Income</p>
+                        </header>
+                        <div class="transaction__content transaction__content--center">
+                            <p class="desc desc--bold desc--dark desc--normal">$14,056</p>
+                        </div>
+                        <div class="transaction__content transaction__content--center">
+                            <p class="desc desc--bold desc--dark desc--normal">18,672 MRT</p>
+                        </div>
+                        <div class="transaction__content transaction__content--center">
+                            <p class="desc desc--bold desc--dark desc--normal">15,725 MRT</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="transaction transaction--tablet">
+                    <li class="transaction__item--tablet">
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Login</p>
+                            <p class="desc desc--bold desc--dark desc--normal">User 1</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Email</p>
+                            <p class="desc desc--bold desc--normal desc--dark">jdoe@example.com</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Registration Date</p>
+                            <p class="desc desc--bold desc--dark desc--normal">2024-03-15</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Line</p>
+                            <p class="desc desc--bold desc--dark desc--normal">1</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Investment Amount</p>
+                            <p class="desc desc--bold desc--normal desc--dark">$2,597</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Your Earned Income</p>
+                            <p class="desc desc--bold desc--dark desc--normal">14,056 MRT</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Active/Inactive </p>
+                            <p class="desc desc--bold desc--normal status status--active">Active
+                            </p>
+                        </div>
+                    </li>
+                    <li class="transaction__item--tablet">
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Login</p>
+                            <p class="desc desc--bold desc--dark desc--normal">User 2</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Email</p>
+                            <p class="desc desc--bold desc--normal desc--dark">asmith@example.com</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Registration Date</p>
+                            <p class="desc desc--bold desc--dark desc--normal">2024-11-22</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Line</p>
+                            <p class="desc desc--bold desc--dark desc--normal">4</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Investment Amount</p>
+                            <p class="desc desc--bold desc--normal desc--dark">$3,280</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Your Earned Income</p>
+                            <p class="desc desc--bold desc--dark desc--normal">18,672 MRT</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Active/Inactive </p>
+                            <p class="desc desc--bold desc--normal status status--inactive">Inactive
+                            </p>
+                        </div>
+                    </li>
+                    <li class="transaction__item--tablet">
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Login</p>
+                            <p class="desc desc--bold desc--dark desc--normal">User 3</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Email</p>
+                            <p class="desc desc--bold desc--normal desc--dark">bthomas@example.com</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Registration Date</p>
+                            <p class="desc desc--bold desc--dark desc--normal">2024-11-22</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Line</p>
+                            <p class="desc desc--bold desc--dark desc--normal">3</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Investment Amount</p>
+                            <p class="desc desc--bold desc--normal desc--dark">$2,422</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Your Earned Income</p>
+                            <p class="desc desc--bold desc--dark desc--normal">15,725 MRT</p>
+                        </div>
+                        <div class="transaction__content--tablet">
+                            <p class="desc desc--extrasmall desc--light-middle">Active/Inactive </p>
+                            <p class="desc desc--bold desc--normal status status--active">Active
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="popup hide" id="chooseProgram">
+        <div class="popup__wrap popup__wrap--program">
+            <hr>
+            <button class="popup__btn btn btn--close">
+                <img src="img/close.svg" width="24" height="24" alt="close">
+            </button>
+            <header class="popup__wrap--header">
+                <h2 class="title title--wrap title--bold title--color">Choose a program</h2>
+            </header>
+            <form class="form">
+                <div class="program">
+                    <div class="program__wrap active">
+                        <p class="program__tooltip"><span class="desc desc--semibold desc--light">Selected</span></p>
+                        <h2 class="title title--block title--semibold title--color">Here and now</h2>
+                        <p class="desc desc--small desc--color">You will receive an instant payment for your direct
+                            partner. When your partner activates the company's product, you will be credited with income
+                            in internal MRT tokens. The income percentage varies depending on your level in the company:
+                            levels 1 and 2 - 3.5%, from level 3 to 6 - 4%, from level 7 to 8 - 4.5% and from level 9 to
+                            10 - 5%. The level of income depends on the amount of opening a deposit of direct partners.
+                            From indirect partners you will receive dividend payments.</p>
+                    </div>
+                    <div class="program__wrap">
+                        <p class="program__tooltip"><span class="desc desc--semibold desc--light">Selected</span></p>
+                        <h2 class="title title--block title--semibold title--color">Dividends</h2>
+                        <p class="desc desc--small desc--color">You will receive income from cooperation on the same day
+                            as your direct partner from active products of the company. Dividends are paid in MRT from
+                            the beginning to the end of the partner's product, there is no instant payout. The
+                            percentage of income varies depending on your level in the company: levels 1 and 2 - 7%,
+                            from 3 to 6 levels - 8%, from 7 to 8 - 9% and from 9 to 10 levels - 10%. The level of income
+                            depends on the amount of opening a deposit of direct partners. From indirect partners you
+                            will receive dividend payments.</p>
+                    </div>
+                </div>
+                <button class="btn btn--primary btn--fill">
+                    <span class="desc desc--semibold desc--normall desc--light">Select program</span>
+                </button>
+                <p class="desc desc--extrasmall desc--color desc--center">You can change the type of cooperation at
+                    levels 5 and 8.</p>
+            </form>
+        </div>
+    </section>
+    <section class="popup popup--post hide" id="PostPopup">
+        <div class="popup__nav">
+            <button class="btn btn--icon btn--prev">
+                <img src="img/arrow-carousel.svg" width="24" height="24" alt="prev arrow"
+                    class="img img--icon img--icon-middle">
+            </button>
+            <button class="btn btn--icon btn--next">
+                <img src="img/arrow-carousel.svg" width="24" height="24" alt="next arrow"
+                    class="img img--icon img--icon-middle">
+            </button>
+        </div>
+        <div class="popup__carousel">
+            <div class="popup__carousel--wrap">
+                <div class="post">
+                    <hr>
+                    <header class="post__header post__header--center">
+                        <h2 class="desc desc--normal desc--bold desc--dark desc--center">IG Capital</h2>
+                    </header>
+                    <div class="post__img">
+                        <button class="btn btn--close btn--post">
+                            <img src="img/close_small.svg" width="16" height="16" alt="close">
+                        </button>
+                        <picture class="img">
+                            <source media="(max-width: 767.98px)" srcset="img/post--mobile.webp" width="322"
+                                height="322" alt="instagram post">
+                            <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/post--tablet.webp"
+                                width="450" height="450" alt="instagram post">
+                            <source media="(min-width:1440px)" srcset="img/post--desktop.webp" width="500" height="500"
+                                alt="instagram post">
+                            <img src="img/post--desktop.webp" width="500" height="500" alt="instagram post" />
+                        </picture>
+                        <footer class="post__footer post--mobile hide">
+                            <form class="form">
+                                <button class="btn btn--primary">Download</button>
+                                <div class="form__wrap--post">
+                                    <div class="form__dKey form__dKey--small">
+                                        <input type="text" name="dKey" id="dKey" class="form__input form__input--dKey"
+                                            value="mrt.com/referal1/ua.com">
+                                        <button class="btn btn--text desc desc--normal desc--bold desc--color"
+                                            id="copyKey">Copy</button>
+                                    </div>
+                                    <ul class="social">
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/instagram.svg" width="32" height="32" alt="instagram"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/Telegram.svg" width="32" height="32" alt="telegram"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/Whatsapp.svg" width="32" height="32" alt="whatsapp"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/Facebook.svg" width="32" height="32" alt="facebook"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </footer>
+                    </div>
+                    <footer class="post__footer post--desktop hide">
+                        <form class="form">
+                            <button class="btn btn--primary">Download</button>
+                            <div class="form__wrap--post">
+                                <div class="form__dKey form__dKey--small">
+                                    <input type="text" name="dKey" id="dKey" class="form__input form__input--dKey"
+                                        value="mrt.com/referal1/ua.com">
+                                    <button class="btn btn--text desc desc--normal desc--bold desc--color"
+                                        id="copyKey">Copy</button>
+                                </div>
+                                <ul class="social">
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/instagram.svg" width="32" height="32" alt="instagram"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/Telegram.svg" width="32" height="32" alt="telegram"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/Whatsapp.svg" width="32" height="32" alt="whatsapp"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/Facebook.svg" width="32" height="32" alt="facebook"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </footer>
+                </div>
+                <div class="post">
+                    <hr>
+                    <header class="post__header">
+                        <h2 class="desc desc--normal desc--bold desc--dark">IG Capital</h2>
+                        <p class="desc desc--normal desc--light-middle">#32342</p>
+                    </header>
+                    <div class="post__img">
+                        <button class="btn btn--close btn--post">
+                            <img src="img/close_small.svg" width="16" height="16" alt="close">
+                        </button>
+                        <picture class="img">
+                            <source media="(max-width: 767.98px)" srcset="img/post--mobile.webp" width="322"
+                                height="322" alt="instagram post">
+                            <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/post--tablet.webp"
+                                width="450" height="450" alt="instagram post">
+                            <source media="(min-width:1440px)" srcset="img/post--desktop.webp" width="500" height="500"
+                                alt="instagram post">
+                            <img src="img/post--desktop.webp" width="500" height="500" alt="instagram post" />
+                        </picture>
+                        <footer class="post__footer post--mobile hide">
+                            <form class="form">
+                                <button class="btn btn--primary">Download</button>
+                                <div class="form__wrap--post">
+                                    <div class="form__dKey form__dKey--small">
+                                        <input type="text" name="dKey" id="dKey" class="form__input form__input--dKey"
+                                            value="mrt.com/referal1/ua.com">
+                                        <button class="btn btn--text desc desc--normal desc--bold desc--color"
+                                            id="copyKey">Copy</button>
+                                    </div>
+                                    <ul class="social">
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/instagram.svg" width="32" height="32" alt="instagram"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/Telegram.svg" width="32" height="32" alt="telegram"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/Whatsapp.svg" width="32" height="32" alt="whatsapp"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/Facebook.svg" width="32" height="32" alt="facebook"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </footer>
+                    </div>
+                    <footer class="post__footer post--desktop hide">
+                        <form class="form">
+                            <button class="btn btn--primary">Download</button>
+                            <div class="form__wrap--post">
+                                <div class="form__dKey form__dKey--small">
+                                    <input type="text" name="dKey" id="dKey" class="form__input form__input--dKey"
+                                        value="mrt.com/referal1/ua.com">
+                                    <button class="btn btn--text desc desc--normal desc--bold desc--color"
+                                        id="copyKey">Copy</button>
+                                </div>
+                                <ul class="social">
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/instagram.svg" width="32" height="32" alt="instagram"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/Telegram.svg" width="32" height="32" alt="telegram"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/Whatsapp.svg" width="32" height="32" alt="whatsapp"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/Facebook.svg" width="32" height="32" alt="facebook"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/calendar.js"></script>
+    <script src="js/copy.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/password.js"></script>
+    <script src="js/range-input.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/upload-remove-img.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/2fa.js"></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/lang-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/nav-links.js"></script>
+    <script src="js/toast.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/form-btn-disabled.js"></script>
+    <script src="js/imgtoinfo.js"></script>
+    <script src="js/post-carousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+.filter {
+    margin-left: auto;
+    position: relative;
+    @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+        margin-left: 0;
+    }
+    @media screen and (max-width: 767.98px) {
+        margin-left: auto;
+        order: 2;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 16px;
+        background-color: var(--light-primary);
+        border: none;
+        cursor: pointer;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            & span.desc {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 767.98px) {
+            & span.desc {
+                display: none;
+            }
+        }
+    }
+    &__wrap {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        padding: 16px;
+        background-color: white;
+        box-shadow: 0px 0px 43.5px rgba(0, 0, 0, 0.08);
+        z-index: 99;
+        &.hide {
+            display: none;
+        }
+    }
+    &__line {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

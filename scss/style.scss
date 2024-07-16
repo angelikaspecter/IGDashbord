@@ -1,0 +1,64 @@
+:root {
+    --font-primary: "Inter";
+    --light-primary: rgba(251, 249, 249, 1);
+    --light-secondary: rgba(201, 201, 201, 1);
+    --middle-primary: rgba(108, 129, 128, 1);
+    --dark-primary: rgba(17, 17, 17, 1);
+    --accident-primary: rgba(45, 85, 81, 1);
+    --accident-primary-opacity: rgba(45, 85, 81, 0.1);
+    --success-color: rgba(11, 129, 83, 1);
+    --success-color-opacity: rgba(45, 182, 125, 0.07);
+    --error-color: rgba(254, 82, 60, 1);
+    --error-color-opacity: rgba(254, 82, 60, 0.07);
+}
+
+@import "_fonts";
+@import "_outline";
+@import "_checkbox";
+@import "_section";
+@import "_btn";
+@import "_title";
+@import "_desc";
+@import "_link";
+@import "_img";
+@import "_form";
+@import "_recaptcha";
+@import "_login";
+@import "_popup";
+@import "_dashboard";
+@import "_nav";
+@import "_lang";
+@import "_admin";
+@import "_card";
+@import "_tooltip";
+@import "_toggle";
+@import "_status";
+@import "_transaction";
+@import "_custom-select";
+@import "_calendar";
+@import "_wallet";
+@import "_notification";
+@import "_page-not-found";
+@import "_settings";
+@import "_social";
+@import "_post";
+@import "_ig-index";
+@import "_ig-future";
+@import "_search";
+@import "_filter";
+@import "_program";
+@import "_career";
+@import "_scrollbar";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--font-primary);
+}
+
+body {
+    position: relative;
+}

@@ -1,0 +1,62 @@
+.desc {
+    &--extralarge {
+        font-size: calc(24px + (28 - 24) * ((100vw - 320px) / (1440 - 320)));
+    }
+    &--large {
+        font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1440 - 320)));
+    }
+    &--normal {
+        font-size: calc(16px + (16 - 16) * ((100vw - 320px) / (1440 - 320)));
+    }
+    &--small {
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1440 - 320)));
+    }
+    &--extrasmall {
+        font-size: calc(14px + (14 - 14) * ((100vw - 320px) / (1440 - 320)));
+    }
+    &--mini {
+        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1440 - 320)));
+    }
+    &--semibold {
+        font-weight: 600;
+    }
+    &--bold {
+        font-weight: 500;
+    }
+    &--regular {
+        font-weight: 400;
+    }
+    &--right {
+        text-align: right;
+    }
+    &--left {
+        text-align: left;
+    }
+    &--center {
+        text-align: center;
+    }
+    &--light {
+        color: var(--light-primary);
+    }
+    &--light-middle {
+        color: var(--light-secondary);
+    }
+    &--dark {
+        color: var(--dark-primary);
+    }
+    &--middle {
+        color: var(--middle-primary);
+    }
+    &--color {
+        color: var(--accident-primary);
+    }
+    &--plus {
+        color: var(--success-color);
+    }
+    &--error {
+        color: var(--error-color);
+    }
+    &.hide {
+        display: none;
+    }
+}

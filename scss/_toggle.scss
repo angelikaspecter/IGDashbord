@@ -1,0 +1,34 @@
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &__btn {
+        width: 40px;
+        height: 24px;
+        background-color: #ccc;
+        border-radius: 12px;
+        position: relative;
+        transition: background-color 0.3s ease;
+        &.active {
+            background-color: var(--accident-primary);
+            & .toggle__btn--circle {
+                left: auto;
+                right: 2px;
+            }
+        }
+        &--circle {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 2px;
+            transition: transform 0.3s ease;
+        }
+        &.hide {
+            display: none;
+        }
+    }
+}

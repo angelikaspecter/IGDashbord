@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <section class="section dashboard">
+        <header class="dashboard__header">
+            <div class="lang lang--mobile">
+                <div class="lang__menu">
+                    <div class="lang__menu--fixed lang__menu--desktop">
+                        <img loading="lazy" src="img/english.svg" width="30" height="20" alt="Current lang"
+                            class="lang__flag">
+                        <span class="lang__desc lang__desc--desktop desc desc--extrasmall desc--dark">English</span>
+                    </div>
+                    <img loading="lazy" src="img/arrow_drop_down.svg" width="18" height="18" alt="check"
+                        class="lang__icon lang__icon--dropdown">
+                </div>
+                <ul class="lang__dropdown hide">
+                    <li class="lang__dropdown-item">
+                        <a href="/" class="lang__link" data-lang="spanish">
+                            <img src="img/spanish.svg" width="30" height="20" alt="Spanish" class="lang__flag">
+                            <span class="desc desc--extrasmall desc--dark">Spanish</span>
+                            <img src="img/check.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--check hide">
+                        </a>
+                    </li>
+                    <li class="lang__dropdown-item">
+                        <a href="/" class="lang__link" data-lang="italian">
+                            <img src="img/italian.svg" width="30" height="20" alt="Italian" class="lang__flag">
+                            <span class="desc desc--extrasmall desc--dark">Italian</span>
+                            <img src="img/check.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--check hide">
+                        </a>
+                    </li>
+                    <li class="lang__dropdown-item">
+                        <a href="index.html" class="lang__link active" data-lang="english">
+                            <img src="img/english.svg" width="30" height="20" alt="English" class="lang__flag">
+                            <span class="desc desc--extrasmall desc--dark">English</span>
+                            <img src="img/check.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--check">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="admin">
+                <li class="admin__item">
+                    <img loading="lazy" src="img/notifications.svg" width="24" height="24" alt="notification none"
+                        class="admin__icon">
+                    <img loading="lazy" src="img/notification-active.svg" width="24" height="24" alt="notifications"
+                        class="admin__icon hide">
+                </li>
+                <li class="admin__item admin__item--mobile">
+                    <div class="lang">
+                        <div class="lang__menu">
+                            <div class="lang__menu--fixed lang__menu--desktop">
+                                <img loading="lazy" src="img/english.svg" width="30" height="20" alt="Current lang"
+                                    class="lang__flag">
+                                <span
+                                    class="lang__desc lang__desc--desktop desc desc--extrasmall desc--dark">English</span>
+                            </div>
+                            <img loading="lazy" src="img/arrow_drop_down.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--dropdown">
+                        </div>
+                        <ul class="lang__dropdown hide">
+                            <li class="lang__dropdown-item">
+                                <a href="/" class="lang__link" data-lang="spanish">
+                                    <img loading="lazy" src="img/spanish.svg" width="30" height="20" alt="Spanish"
+                                        class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">Spanish</span>
+                                    <img loading="lazy" src="img/check.svg" width="18" height="18" alt="check"
+                                        class="lang__icon lang__icon--check hide">
+                                </a>
+                            </li>
+                            <li class="lang__dropdown-item">
+                                <a href="/" class="lang__link" data-lang="italian">
+                                    <img loading="lazy" src="img/italian.svg" width="30" height="20" alt="Italian"
+                                        class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">Italian</span>
+                                    <img loading="lazy" src="img/check.svg" width="18" height="18" alt="check"
+                                        class="lang__icon lang__icon--check hide">
+                                </a>
+                            </li>
+                            <li class="lang__dropdown-item">
+                                <a href="index.html" class="lang__link active" data-lang="english">
+                                    <img loading="lazy" src="img/english.svg" width="30" height="20" alt="English"
+                                        class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">English</span>
+                                    <img loading="lazy" src="img/check.svg" width="18" height="18" alt="check"
+                                        class="lang__icon lang__icon--check">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="admin__item admin__item--menu">
+                    <button class="btn btn--menu" id="openMenu">
+                        <img loading="lazy" src="img/menu.svg" width="24" height="24" alt="menu mobile"
+                            class="admin__icon">
+                    </button>
+                    <button class="btn btn--menu hide" id="closeMenu">
+                        <img loading="lazy" src="img/close-color.svg" width="24" height="24" alt="menu mobile"
+                            class="admin__icon">
+                    </button>
+                </li>
+                <li class="admin__item admin__item--user">
+                    <img loading="lazy" src="img/avatar.svg" width="36" height="36" alt="user avatar"
+                        class="admin__icon">
+                    <span class="desc desc--normal desc--bold desc--dark">Martin Franci</span>
+                </li>
+            </ul>
+        </header>
+        <nav class="dashboard__nav nav" id="navMenu">
+            <header class="nav__header">
+                <a href="" class="link link--logo">
+                    <picture class="img">
+                        <source media="(max-width: 767.98px)" srcset="img/logo-color.svg" width="160" height="28"
+                            alt="IG logo">
+                        <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/logo-color.svg"
+                            width="160" height="28" alt="IG logo">
+                        <source media="(min-width:1440px)" srcset="img/logo-color.svg" width="160" height="28"
+                            alt="IG logo">
+                        <img src="img/logo-color.svg" width="160" height="28" alt="IG logo" />
+                    </picture>
+                </a>
+            </header>
+            <div class="nav__menu hide">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--lang nav__item--mobile">
+                        <div class="lang">
+                            <div class="lang__menu">
+                                <div class="lang__menu--fixed">
+                                    <img src="img/english.svg" width="30" height="20" alt="Current lang"
+                                        class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">English</span>
+                                </div>
+                                <img src="img/arrow_drop_down.svg" width="18" height="18" alt="check"
+                                    class="lang__icon lang__icon--dropdown">
+                            </div>
+                            <ul class="lang__dropdown hide">
+                                <li class="lang__dropdown-item">
+                                    <a href="/" class="lang__link" data-lang="spanish">
+                                        <img src="img/spanish.svg" width="30" height="20" alt="Spanish"
+                                            class="lang__flag">
+                                        <span class="desc desc--extrasmall desc--dark">Spanish</span>
+                                        <img src="img/check.svg" width="18" height="18" alt="check"
+                                            class="lang__icon lang__icon--check hide">
+                                    </a>
+                                </li>
+                                <li class="lang__dropdown-item">
+                                    <a href="/" class="lang__link" data-lang="italian">
+                                        <img src="img/italian.svg" width="30" height="20" alt="Italian"
+                                            class="lang__flag">
+                                        <span class="desc desc--extrasmall desc--dark">Italian</span>
+                                        <img src="img/check.svg" width="18" height="18" alt="check"
+                                            class="lang__icon lang__icon--check hide">
+                                    </a>
+                                </li>
+                                <li class="lang__dropdown-item">
+                                    <a href="index.html" class="lang__link active" data-lang="english">
+                                        <img src="img/english.svg" width="30" height="20" alt="English"
+                                            class="lang__flag">
+                                        <span class="desc desc--extrasmall desc--dark">English</span>
+                                        <img src="img/check.svg" width="18" height="18" alt="check"
+                                            class="lang__icon lang__icon--check">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active">
+                            <img loading="lazy" src="img/dashboard.svg" width="24" height="24" alt="dashboard"
+                                class="nav__icon nav__icon--classic hide">
+                            <img loading="lazy" src="img/dashboard-active.svg" width="24" height="24" alt="dashboard"
+                                class="nav__icon nav__icon--active">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="wallet.html" class="nav__link">
+                            <img loading="lazy" src="img/wallet.svg" width="24" height="24" alt="wallet"
+                                class="nav__icon nav__icon--classic">
+                            <img loading="lazy" src="img/wallet-active.svg" width="24" height="24" alt="wallet"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Wallet</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="ig-index.html" class="nav__link">
+                            <img loading="lazy" src="img/ig-index.svg" width="24" height="24" alt="IG Index"
+                                class="nav__icon nav__icon--classic">
+                            <img loading="lazy" src="img/ig-index-active.svg" width="24" height="24" alt="IG Index"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">IG Index</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="ig-future.html" class="nav__link">
+                            <img loading="lazy" src="img/ig-future.svg" width="24" height="24" alt="IG Future"
+                                class="nav__icon nav__icon--classic">
+                            <img loading="lazy" src="img/ig-future-active.svg" width="24" height="24" alt="IG Future"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">IG Future</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="career.html" class="nav__link">
+                            <img loading="lazy" src="img/career.svg" width="24" height="24" alt="career"
+                                class="nav__icon nav__icon--classic">
+                            <img loading="lazy" src="img/career-active.svg" width="24" height="24" alt="career"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Career</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="settings.html" class="nav__link">
+                            <img loading="lazy" src="img/settings.svg" width="24" height="24" alt="settings"
+                                class="nav__icon nav__icon--classic">
+                            <img loading="lazy" src="img/settings-active.svg" width="24" height="24" alt="settings"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="help.html" class="nav__link">
+                            <img loading="lazy" src="img/help.svg" width="24" height="24" alt="help"
+                                class="nav__icon nav__icon--classic">
+                            <img loading="lazy" src="img/help-active.svg" width="24" height="24" alt="help"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="dashboard__content">
+            <h1 class="title title--section title--bold title--dark hide">Dashboard</h1>
+            <ul class="dashboard__list">
+                <li class="dashboard__item dashboard__item--products">
+                    <div class="card card--products">
+                        <header class="card card__header card__header--products">
+                            <h2 class="desc desc--extralarge desc--bold desc--color">Active Products</h2>
+                            <div class="btn__wrap btn__wrap--row">
+                                <button class="btn btn--icon" id="btnPrev">
+                                    <img loading="lazy" src="img/arrow_upward.svg" width="24" height="24" alt="prev"
+                                        class="img img--prev">
+                                </button>
+                                <button class="btn btn--icon" id="btnNext">
+                                    <img loading="lazy" src="img/arrow_upward.svg" width="24" height="24" alt="prev"
+                                        class="img img--next active">
+                                </button>
+                            </div>
+                        </header>
+                        <div class="card card__wrap card__wrap--products">
+                            <button class="btn btn--add" id="btnAddActiveProduct">
+                                <img loading="lazy" src="img/add.svg" width="24" height="24" alt="add btn"
+                                    class="img img--icon">
+                            </button>
+                            <div class="card card__carousel">
+                                <div class="card card__carousel--wrap">
+                                    <div class="card card__carousel--item">
+                                        <header class="card card__carousel--header">
+                                            <div class="card card__carousel--wrap-row">
+                                                <div class="card card__carousel--logo">
+                                                    <img loading="lazy" src="img/logo-small.svg" width="24" height="20"
+                                                        alt="IG logo" class="img img--icon">
+                                                </div>
+                                                <div class="card card__carousel--wrap-column">
+                                                    <p class="desc desc--small desc--semibold desc--dark">IG Stable</p>
+                                                    <p class="desc desc--mini desc--middle">#36592</p>
+                                                </div>
+                                            </div>
+                                            <div class="card card__carousel--wrap-column card card__carousel--right">
+                                                <p class="desc desc--mini desc--middle">Next Profit</p>
+                                                <div class="card card__carousel--wrap-row">
+                                                    <img loading="lazy" src="img/usdt.svg" width="16" height="16"
+                                                        alt="usdt" class="img img--icon-mini">
+                                                    <p class="desc desc--mini desc--semibold desc--dark">345.41</p>
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <footer class="card card__carousel--footer">
+                                            <div class="card card__carousel--wrap-column">
+                                                <p class="desc desc--mini desc--middle">Total Profit</p>
+                                                <div class="card card__carousel--wrap-row">
+                                                    <img loading="lazy" src="img/usdt.svg" width="24" height="24"
+                                                        alt="usdt" class="img img--icon">
+                                                    <p class="desc desc--large desc--semibold desc--dark">3842.2</p>
+                                                </div>
+                                            </div>
+                                            <div class="card card__carousel--wrap-column card card__carousel--right">
+                                                <p class="desc desc--mini desc--middle">Remaining</p>
+                                                <p class="desc desc--mini desc--semibold desc--dark">2 days 12 h</p>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                    <div class="card card__carousel--item">
+                                        <header class="card card__carousel--header">
+                                            <div class="card card__carousel--wrap-row">
+                                                <div class="card card__carousel--logo">
+                                                    <img loading="lazy" src="img/logo-small.svg" width="24" height="20"
+                                                        alt="IG logo" class="img img--icon">
+                                                </div>
+                                                <div class="card card__carousel--wrap-column">
+                                                    <p class="desc desc--small desc--semibold desc--dark">IG Stable</p>
+                                                    <p class="desc desc--mini desc--middle">#36592</p>
+                                                </div>
+                                            </div>
+                                            <div class="card card__carousel--wrap-column card card__carousel--right">
+                                                <p class="desc desc--mini desc--middle">Next Profit</p>
+                                                <div class="card card__carousel--wrap-row">
+                                                    <img loading="lazy" src="img/usdt.svg" width="16" height="16"
+                                                        alt="usdt" class="img img--icon-mini">
+                                                    <p class="desc desc--mini desc--semibold desc--dark">345.41</p>
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <footer class="card card__carousel--footer">
+                                            <div class="card card__carousel--wrap-column">
+                                                <p class="desc desc--mini desc--middle">Total Profit</p>
+                                                <div class="card card__carousel--wrap-row">
+                                                    <img loading="lazy" src="img/usdt.svg" width="24" height="24"
+                                                        alt="usdt" class="img img--icon">
+                                                    <p class="desc desc--large desc--semibold desc--dark">3842.2</p>
+                                                </div>
+                                            </div>
+                                            <div class="card card__carousel--wrap-column card card__carousel--right">
+                                                <p class="desc desc--mini desc--middle">Remaining</p>
+                                                <p class="desc desc--mini desc--semibold desc--dark">2 days 12 h</p>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                    <div class="card card__carousel--item">
+                                        <header class="card card__carousel--header">
+                                            <div class="card card__carousel--wrap-row">
+                                                <div class="card card__carousel--logo">
+                                                    <img loading="lazy" src="img/logo-small.svg" width="24" height="20"
+                                                        alt="IG logo" class="img img--icon">
+                                                </div>
+                                                <div class="card card__carousel--wrap-column">
+                                                    <p class="desc desc--small desc--semibold desc--dark">IG Stable</p>
+                                                    <p class="desc desc--mini desc--middle">#36592</p>
+                                                </div>
+                                            </div>
+                                            <div class="card card__carousel--wrap-column card card__carousel--right">
+                                                <p class="desc desc--mini desc--middle">Next Profit</p>
+                                                <div class="card card__carousel--wrap-row">
+                                                    <img loading="lazy" src="img/usdt.svg" width="16" height="16"
+                                                        alt="usdt" class="img img--icon-mini">
+                                                    <p class="desc desc--mini desc--semibold desc--dark">345.41</p>
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <footer class="card card__carousel--footer">
+                                            <div class="card card__carousel--wrap-column">
+                                                <p class="desc desc--mini desc--middle">Total Profit</p>
+                                                <div class="card card__carousel--wrap-row">
+                                                    <img loading="lazy" src="img/usdt.svg" width="24" height="24"
+                                                        alt="usdt" class="img img--icon">
+                                                    <p class="desc desc--large desc--semibold desc--dark">3842.2</p>
+                                                </div>
+                                            </div>
+                                            <div class="card card__carousel--wrap-column card card__carousel--right">
+                                                <p class="desc desc--mini desc--middle">Remaining</p>
+                                                <p class="desc desc--mini desc--semibold desc--dark">2 days 12 h</p>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                    <div class="card card__carousel--item">
+                                        <header class="card card__carousel--header">
+                                            <div class="card card__carousel--wrap-row">
+                                                <div class="card card__carousel--logo">
+                                                    <img loading="lazy" src="img/logo-small.svg" width="24" height="20"
+                                                        alt="IG logo" class="img img--icon">
+                                                </div>
+                                                <div class="card card__carousel--wrap-column">
+                                                    <p class="desc desc--small desc--semibold desc--dark">IG Stable</p>
+                                                    <p class="desc desc--mini desc--middle">#36592</p>
+                                                </div>
+                                            </div>
+                                            <div class="card card__carousel--wrap-column card card__carousel--right">
+                                                <p class="desc desc--mini desc--middle">Next Profit</p>
+                                                <div class="card card__carousel--wrap-row">
+                                                    <img loading="lazy" src="img/usdt.svg" width="16" height="16"
+                                                        alt="usdt" class="img img--icon-mini">
+                                                    <p class="desc desc--mini desc--semibold desc--dark">345.41</p>
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <footer class="card card__carousel--footer">
+                                            <div class="card card__carousel--wrap-column">
+                                                <p class="desc desc--mini desc--middle">Total Profit</p>
+                                                <div class="card card__carousel--wrap-row">
+                                                    <img loading="lazy" src="img/usdt.svg" width="24" height="24"
+                                                        alt="usdt" class="img img--icon">
+                                                    <p class="desc desc--large desc--semibold desc--dark">3842.2</p>
+                                                </div>
+                                            </div>
+                                            <div class="card card__carousel--wrap-column card card__carousel--right">
+                                                <p class="desc desc--mini desc--middle">Remaining</p>
+                                                <p class="desc desc--mini desc--semibold desc--dark">2 days 12 h</p>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                    <div class="card card__carousel--item">
+                                        <header class="card card__carousel--header">
+                                            <div class="card card__carousel--wrap-row">
+                                                <div class="card card__carousel--logo">
+                                                    <img loading="lazy" src="img/logo-small.svg" width="24" height="20"
+                                                        alt="IG logo" class="img img--icon">
+                                                </div>
+                                                <div class="card card__carousel--wrap-column">
+                                                    <p class="desc desc--small desc--semibold desc--dark">IG Stable</p>
+                                                    <p class="desc desc--mini desc--middle">#36592</p>
+                                                </div>
+                                            </div>
+                                            <div class="card card__carousel--wrap-column card card__carousel--right">
+                                                <p class="desc desc--mini desc--middle">Next Profit</p>
+                                                <div class="card card__carousel--wrap-row">
+                                                    <img loading="lazy" src="img/usdt.svg" width="16" height="16"
+                                                        alt="usdt" class="img img--icon-mini">
+                                                    <p class="desc desc--mini desc--semibold desc--dark">345.41</p>
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <footer class="card card__carousel--footer">
+                                            <div class="card card__carousel--wrap-column">
+                                                <p class="desc desc--mini desc--middle">Total Profit</p>
+                                                <div class="card card__carousel--wrap-row">
+                                                    <img loading="lazy" src="img/usdt.svg" width="24" height="24"
+                                                        alt="usdt" class="img img--icon">
+                                                    <p class="desc desc--large desc--semibold desc--dark">3842.2</p>
+                                                </div>
+                                            </div>
+                                            <div class="card card__carousel--wrap-column card card__carousel--right">
+                                                <p class="desc desc--mini desc--middle">Remaining</p>
+                                                <p class="desc desc--mini desc--semibold desc--dark">2 days 12 h</p>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dashboard__item dashboard__item--overall">
+                    <div class="card card--overall">
+                        <div class="card card__wrap card__wrap--overall">
+                            <header class="card card__header card__header--overall">
+                                <h2 class="desc desc--extralarge desc--bold desc--color">Overall balance</h2>
+                                <div class="calendar" id="calendar-container">
+                                    <input class="calendar__input desc desc--normal desc--bold desc--dark" type="text"
+                                        name="calendar" id="calendar" placeholder="dd.mm-dd.mm" readonly>
+                                    <button class="calendar__btn" id="calendar-btn">
+                                        <img src="img/calendar.svg" width="24" height="24" alt="calendar"
+                                            class="img img--icon">
+                                    </button>
+                                    <div class="calendar__popup" id="calendar-popup" style="display: none;">
+                                        <div class="calendar__header">
+                                            <div class="calendar__month">
+                                                <button class="calendar__btn calendar__btn--prev" id="prev-month">
+                                                    <img src="img/arrow_upward.svg" width="24" height="24" alt="next"
+                                                        class="img img--icon">
+                                                </button>
+                                                <p class="desc desc--normal desc--semibold desc--dark"
+                                                    id="current-month">July
+                                                    2023</p>
+                                                <button class="calendar__btn calendar__btn--next" id="next-month">
+                                                    <img src="img/arrow_upward.svg" width="24" height="24" alt="next"
+                                                        class="img img--icon">
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--text desc desc--normal desc--semibold desc--color"
+                                                type="reset" id="reset">Reset</button>
+                                        </div>
+                                        <div class="calendar__days">
+                                            <span
+                                                class="desc desc--extrasmall desc--regular desc--light-middle">Sun</span>
+                                            <span
+                                                class="desc desc--extrasmall desc--regular desc--light-middle">Mon</span>
+                                            <span
+                                                class="desc desc--extrasmall desc--regular desc--light-middle">Tue</span>
+                                            <span
+                                                class="desc desc--extrasmall desc--regular desc--light-middle">Wed</span>
+                                            <span
+                                                class="desc desc--extrasmall desc--regular desc--light-middle">Thu</span>
+                                            <span
+                                                class="desc desc--extrasmall desc--regular desc--light-middle">Fri</span>
+                                            <span
+                                                class="desc desc--extrasmall desc--regular desc--light-middle">Sat</span>
+                                        </div>
+                                        <div id="datepicker"></div>
+                                    </div>
+                                </div>
+                            </header>
+                            <picture class="img">
+                                <source media="(max-width: 374.98px)" srcset="img/graphic_frst--mobile.webp" width="300" height="140"
+                                    alt="Overall Balance">
+                                <source media="(min-width: 375px) and (max-width:991.98px)" srcset="img/graphic_frst--tablet.webp"
+                                    width="656" height="140" alt="Overall Balance">
+                                <source media="(min-width:992px)" srcset="img/graphic_frst--desktop.webp" width="745" height="140"
+                                    alt="Overall Balance">
+                                <img src="img/graphic_frst--desktop.webp" width="745" height="140" alt="Overall Balance" />
+                            </picture>
+                        </div>
+                    </div>
+                </li>
+                <li class="dashboard__item dashboard__item--overall-mini">
+                    <div class="card card--overall-mini">
+                        <div class="card card__mini">
+                            <div class="card card__icon card__icon--balance">
+                                <img loading="lazy" src="img/account_balance_wallet.svg" width="24" height="20"
+                                    alt="IG logo" class="img img--icon">
+                            </div>
+                            <div class="card card__wrap card__wrap--column">
+                                <p class="desc desc--mini desc--middle">Balance</p>
+                                <div class="card card__wrap card__wrap--row">
+                                    <img loading="lazy" src="img/usdt.svg" width="24" height="24" alt="usdt"
+                                        class="img img--icon">
+                                    <p class="desc desc--normal desc--semibold desc--dark">302,193</p>
+                                </div>
+                            </div>
+                            <div class="card card__wrap card__wrap--row card__wrap--profit">
+                                <img loading="lazy" src="img/arrow-down-right.svg" width="18" height="18"
+                                    alt="arrow-down-right" class="img img--icon-mini">
+                                <p class="desc desc--mini desc--bold desc--plus">2%</p>
+                            </div>
+                        </div>
+                        <div class="card card__mini">
+                            <div class="card card__icon card__icon--profit">
+                                <img loading="lazy" src="img/altitude.svg" width="24" height="20" alt="IG logo"
+                                    class="img img--icon">
+                            </div>
+                            <div class="card card__wrap card__wrap--column">
+                                <p class="desc desc--mini desc--middle">Investment profit</p>
+                                <div class="card card__wrap card__wrap--row">
+                                    <img loading="lazy" src="img/usdt.svg" width="24" height="24" alt="usdt"
+                                        class="img img--icon">
+                                    <p class="desc desc--normal desc--semibold desc--dark">103,283</p>
+                                </div>
+                            </div>
+                            <div class="card card__wrap card__wrap--row card__wrap--profit">
+                                <img loading="lazy" src="img/arrow-down-right.svg" width="18" height="18"
+                                    alt="arrow-down-right" class="img img--icon-mini">
+                                <p class="desc desc--mini desc--bold desc--plus">2%</p>
+                            </div>
+                        </div>
+                        <div class="card card__mini">
+                            <div class="card card__icon card__icon--career">
+                                <img loading="lazy" src="img/logo-small-light.svg" width="24" height="20"
+                                    alt="IG logo" class="img img--icon">
+                            </div>
+                            <div class="card card__wrap card__wrap--column">
+                                <p class="desc desc--mini desc--middle">Career balance</p>
+                                <div class="card card__wrap card__wrap--row">
+                                    <img loading="lazy" src="img/usdt.svg" width="24" height="24" alt="usdt"
+                                        class="img img--icon">
+                                    <p class="desc desc--normal desc--semibold desc--dark">MRT 912</p>
+                                </div>
+                            </div>
+                            <div class="card card__wrap card__wrap--row card__wrap--profit">
+                                <img loading="lazy" src="img/arrow-down-right.svg" width="18" height="18"
+                                    alt="arrow-down-right" class="img img--icon-mini">
+                                <p class="desc desc--mini desc--bold desc--plus">1.7%</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dashboard__item dashboard__item--history">
+                    <div class="card card--history">
+                        <h2 class="desc desc--extralarge desc--bold desc--color">Transaction History</h2>
+                        <ul class="transaction transaction--desktop">
+                            <li class="transaction__item transaction__item--left">
+                                <header class="transaction__header">
+                                    <p class="desc desc--extrasmall desc--left desc--light-middle">Type</p>
+                                </header>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal">Deposit</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal">Withdraw</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal">Refferal income</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal">IG Capital</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal">Withdraw</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal">Withdraw</p>
+                                </div>
+                            </li>
+                            <li class="transaction__item transaction__item--left">
+                                <header class="transaction__header">
+                                    <p class="desc desc--extrasmall desc--left desc--light-middle">Status</p>
+                                </header>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--normal status status--pending">Pending</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--normal status status--error">Error</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--normal status status--completed">Completed</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--normal status status--completed">Completed</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--normal status status--error">Error</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--normal status status--error">Error</p>
+                                </div>
+                            </li>
+                            <li class="transaction__item transaction__item--right">
+                                <header class="transaction__header">
+                                    <p class="desc desc--extrasmall desc--left desc--light-middle">Amount</p>
+                                </header>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal desc--right">106 USDT</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal desc--right">106 USDT</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal desc--right">+10 USDT</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal desc--right">11.93 BTC</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal desc--right">+89 USDT</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal desc--right">+10 USDT</p>
+                                </div>
+                            </li>
+                            <li class="transaction__item transaction__item--right">
+                                <header class="transaction__header">
+                                    <p class="desc desc--extrasmall desc--left desc--light-middle">Date</p>
+                                </header>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal desc--right">26-04-2024</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal desc--right">15-05-2024</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal desc--right">14-04-2024</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal desc--right">13-03-2024</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal desc--right">12-04-2024</p>
+                                </div>
+                                <div class="transaction__content">
+                                    <p class="desc desc--bold desc--dark desc--normal desc--right">15-05-2024</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="transaction transaction--mobile">
+                            <li class="transaction__item--mobile">
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Type</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">Deposit</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Status</p>
+                                    <p class="desc desc--bold desc--normal status status--pending">Pending</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Amount</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">106 USDT</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Date</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">26-04-2024
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="transaction__item--mobile">
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Type</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">Withdraw</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Status</p>
+                                    <p class="desc desc--bold desc--normal status status--error">Error</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Amount</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">106 USDT</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Date</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">15-05-2024
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="transaction__item--mobile">
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Type</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">Refferal
+                                        income</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Status</p>
+                                    <p class="desc desc--bold desc--normal status status--completed">Completed</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Amount</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">+10 USDT</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Date</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">14-04-2024
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="transaction__item--mobile">
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Type</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">IG Capital
+                                    </p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Status</p>
+                                    <p class="desc desc--bold desc--normal status status--completed">Completed</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Amount</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">11.93 BTC
+                                    </p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Date</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">13-03-2024
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="transaction__item--mobile">
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Type</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">Withdraw</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Status</p>
+                                    <p class="desc desc--bold desc--normal status status--error">Error</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Amount</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">+89 USDT</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Date</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">12-04-2024
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="transaction__item--mobile">
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Type</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">Withdraw</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Status</p>
+                                    <p class="desc desc--bold desc--normal status status--error">Error</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Amount</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">+10 USDT</p>
+                                </div>
+                                <div class="transaction__content--mobile">
+                                    <p class="desc desc--extrasmall desc--light-middle">Date</p>
+                                    <p class="desc desc--bold desc--dark desc--normal status status--clean">15-05-2024
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="popup hide" id="ActivateProductPopup">
+        <div class="popup__wrap popup__wrap--activate-product">
+            <hr>
+            <button class="popup__btn btn btn--close">
+                <img src="img/close.svg" width="24" height="24" alt="close">
+            </button>
+            <header class="popup__wrap--header">
+                <h2 class="title title--wrap title--bold title--color">Activate Product</h2>
+            </header>
+            <form class="form">
+                <div class="custom-select-wrapper custom-select-wrapper--row">
+                    <div class="custom-select custom-select--small">
+                        <div class="custom-select-trigger custom-select-trigger--clean">
+                            <span class="desc desc--normal desc--dark">IG Future</span>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option desc desc--normal desc--dark selected" data-value="1">IG
+                                Future</span>
+                            <span class="custom-option desc desc--normal desc--dark" data-value="2">IG Future</span>
+                            <span class="custom-option desc desc--normal desc--dark" data-value="3">IG Future</span>
+                            <span class="custom-option desc desc--normal desc--dark" data-value="4">IG Future</span>
+                        </div>
+                    </div>
+                    <span class="delimiter"></span>
+                    <div class="custom-select custom-select--fill">
+                        <div class="custom-select-trigger custom-select-trigger--clean">
+                            <span class="desc desc--normal desc--dark">Future</span>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option desc desc--normal desc--dark selected"
+                                data-value="1">Future</span>
+                            <span class="custom-option desc desc--normal desc--dark" data-value="2">Future</span>
+                            <span class="custom-option desc desc--normal desc--dark" data-value="3">Future</span>
+                            <span class="custom-option desc desc--normal desc--dark" data-value="4">Future</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-select-wrapper custom-select-wrapper--row">
+                    <input type="number" class="form__input form__input--clean">
+                    <p class="form__desc desc desc--normal desc--semibold desc--color">Max</p>
+                    <div class="delimiter"></div>
+                    <div class="custom-select">
+                        <div class="custom-select-trigger custom-select-trigger--clean custom-select-trigger--crypto">
+                            <img loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
+                                class="img img--icon">
+                            <span class="desc desc--normal desc--bold desc--dark">ETH</span>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option desc desc--normal desc--bold desc--dark selected"
+                                data-value="1"><img loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
+                                    class="img img--icon"> ETH</span>
+                            <span class="custom-option desc desc--normal desc--bold desc--dark" data-value="2"><img
+                                    loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
+                                    class="img img--icon"> ETH</span>
+                            <span class="custom-option desc desc--normal desc--bold desc--dark" data-value="3"><img
+                                    loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
+                                    class="img img--icon"> ETH</span>
+                            <span class="custom-option desc desc--normal desc--bold desc--dark" data-value="4"><img
+                                    loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
+                                    class="img img--icon"> ETH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__wrap form__wrap--column">
+                    <p class="desc desc--normal desc--middle">Reinvest</p>
+                    <label for="reinvest" class="form__range-label desc desc--normal desc--middle">
+                        <span>0</span>
+                        <span>20</span>
+                        <span>40</span>
+                        <span>60</span>
+                        <span>80</span>
+                        <span>100</span>
+                        <span>120</span>
+                        <span>140</span>
+                    </label>
+                    <div class="form__range-container">
+                        <div class="form__range-fill" id="range-fill"></div>
+                        <input class="form__range" type="range" name="reinvest" id="reinvest" min="0" max="140"
+                            step="20">
+                        <div class="form__range-ticks">
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="0"></div>
+                            </div>
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="20"></div>
+                            </div>
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="40"></div>
+                            </div>
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="60"></div>
+                            </div>
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="80"></div>
+                            </div>
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="100"></div>
+                            </div>
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="120"></div>
+                            </div>
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="140"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__wrap form__wrap--auth">
+                    <p class="desc desc--normal desc--middle">Daily profit</p>
+                    <div class="form__wrap form__wrap--report form__wrap--right">
+                        <img loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth" class="img img--icon">
+                        <p class="desc desc--normal desc--bold desc--dark">4,252.00</p>
+                    </div>
+                </div>
+                <div class="form__wrap form__wrap--auth">
+                    <p class="desc desc--normal desc--middle">Total profit</p>
+                    <div class="form__wrap form__wrap--report form__wrap--right">
+                        <img loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth" class="img img--icon">
+                        <p class="desc desc--normal desc--bold desc--dark">92,525.00</p>
+                    </div>
+                </div>
+                <button class="btn btn--primary" disabled>Activate</button>
+            </form>
+        </div>
+    </section>
+    <script src="js/calendar.js"></script>
+    <script src="js/copy.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/password.js"></script>
+    <script src="js/range-input.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/upload-remove-img.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/2fa.js"></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/lang-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/nav-links.js"></script>
+    <script src="js/toast.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/form-btn-disabled.js"></script>
+    <script src="js/imgtoinfo.js"></script>
+    <script src="js/post-carousel.js"></script>
+</body>
+
+</html>

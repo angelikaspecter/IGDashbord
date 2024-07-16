@@ -1,0 +1,183 @@
+.card {
+    &--products {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        background-color: white;
+        padding: 24px;
+    }
+    &--overall {
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            flex-direction: column;
+        }
+        @media screen and (max-width: 767.98px) {
+            flex-direction: column;
+        }
+    }
+    &--overall-mini {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            flex-direction: row;
+        }
+        @media screen and (max-width: 767.98px) {
+            flex-direction: column;
+        }
+    }
+    &--history {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        background-color: white;
+        padding: 24px;
+    }
+    &__header {
+        &--products {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        &--overall {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+    }
+    &__wrap {
+        &--products {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            @media screen and (max-width: 767.98px) {
+                flex-direction: column;
+            }
+            & .btn {
+                height: 167px;
+                @media screen and (max-width: 767.98px) {
+                    height: 50px;
+                }
+            }
+        }
+        &--overall {
+            width: 100%;
+            height: 100%;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            background-color: white;
+            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+                width: 100%;
+            }
+            @media screen and (max-width: 767.98px) {
+                width: 100%;
+            }
+        }
+        &--row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        &--column {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        &--profit {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+        }
+    }
+    &__carousel {
+        width: 100%;
+        overflow: hidden;
+        &--wrap {
+            width: 100%;
+            min-width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        &--item {
+            min-width: 300px;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 24px;
+            border: 1px solid var(--light-secondary);
+            @media screen and (max-width: 767.98px) {
+                min-width: 100%;
+                padding: 16px;
+            }
+        }
+        &--header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 24px;
+        }
+        &--footer {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 24px;
+        }
+        &--wrap-row {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+        }
+        &--wrap-column {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+        }
+        &--right {
+            justify-content: flex-end;
+            text-align: right;
+        }
+        &--logo {
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--accident-primary-opacity);
+        }
+    }
+    &__mini {
+        height: 100%;
+        padding: 16px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        position: relative;
+        width: 100%;
+    }
+    &__icon {
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--balance {
+            background-color: var(--error-color-opacity);
+        }
+        &--profit {
+            background-color: var(--success-color-opacity);
+        }
+        &--career {
+            background-color: var(--accident-primary);
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.lang {
+    position: relative;
+    &--mobile {
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            display: none;
+        }
+        @media screen and (max-width: 767.98px) {
+            display: none;
+        }
+    }
+    &.hide {
+        display: none;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        &--fixed {
+            width: 100%;
+            max-width: 120px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px;
+        }
+        &--desktop {
+            padding: 0;
+        }
+    }
+    &__dropdown {
+        width: 200px;
+        max-width: 200px;
+        max-height: 200px;
+        padding: 4px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        border: 1px solid rgba(242, 242, 242, 1);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+        z-index: 555;
+        &.hide {
+            display: none;
+        }
+    }
+    &__item {
+        width: 100%;
+    }
+    &__link {
+        width: 100%;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        background-color: white;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--accident-primary-opacity);
+        }
+        &.active {
+            background-color: var(--accident-primary-opacity);
+        }
+        & .desc {
+            margin-right: auto;
+        }
+    }
+    &__desc {
+        &--desktop {
+            display: none;
+            @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+                display: none;
+            }
+            @media screen and (max-width: 767.98px) {
+                display: flex;
+            }
+        }
+    }
+    &__icon {
+        &--check {
+            &.hide {
+                display: none;
+            }
+        }
+        &--dropdown {
+            &.active {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

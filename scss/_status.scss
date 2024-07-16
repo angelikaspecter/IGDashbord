@@ -1,0 +1,38 @@
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    &--pending {
+        max-width: 110px;
+        background-color: rgba(222, 190, 26, 0.06);
+        color: rgba(222, 190, 26, 1);
+
+    }
+    &--completed {
+        max-width: 110px;
+        background-color: rgba(11, 129, 83, 0.06);
+        color: rgba(11, 129, 83, 1);
+    }
+    &--error {
+        max-width: 110px;
+        background-color: rgba(254, 82, 60, 0.06);
+        color: rgba(254, 82, 60, 1);
+    }
+    &--active {
+        max-width: 110px;
+        background-color: rgba(11, 129, 83, 0.06);
+        color: rgba(11, 129, 83, 1);
+    }
+    &--inactive {
+        max-width: 110px;
+        background-color: rgba(254, 82, 60, 0.06);
+        color: rgba(254, 82, 60, 1);
+    }
+    &--clean {
+        max-width: 110px;
+        padding: 8px 0;
+        background-color: transparent;
+    }
+}

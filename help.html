@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <section class="section dashboard">
+        <header class="dashboard__header">
+            <div class="lang lang--mobile">
+                <div class="lang__menu">
+                    <div class="lang__menu--fixed lang__menu--desktop">
+                        <img src="img/english.svg" width="30" height="20" alt="Current lang" class="lang__flag">
+                        <span class="lang__desc lang__desc--desktop desc desc--extrasmall desc--dark">English</span>
+                    </div>
+                    <img src="img/arrow_drop_down.svg" width="18" height="18" alt="check"
+                        class="lang__icon lang__icon--dropdown">
+                </div>
+                <ul class="lang__dropdown hide">
+                    <li class="lang__dropdown-item">
+                        <a href="/" class="lang__link" data-lang="spanish">
+                            <img src="img/spanish.svg" width="30" height="20" alt="Spanish" class="lang__flag">
+                            <span class="desc desc--extrasmall desc--dark">Spanish</span>
+                            <img src="img/check.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--check hide">
+                        </a>
+                    </li>
+                    <li class="lang__dropdown-item">
+                        <a href="/" class="lang__link" data-lang="italian">
+                            <img src="img/italian.svg" width="30" height="20" alt="Italian" class="lang__flag">
+                            <span class="desc desc--extrasmall desc--dark">Italian</span>
+                            <img src="img/check.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--check hide">
+                        </a>
+                    </li>
+                    <li class="lang__dropdown-item">
+                        <a href="index.html" class="lang__link active" data-lang="english">
+                            <img src="img/english.svg" width="30" height="20" alt="English" class="lang__flag">
+                            <span class="desc desc--extrasmall desc--dark">English</span>
+                            <img src="img/check.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--check">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="admin">
+                <li class="admin__item">
+                    <img loading="lazy" src="img/notifications.svg" width="24" height="24" alt="notification none"
+                        class="admin__icon">
+                    <img loading="lazy" src="img/notification-active.svg" width="24" height="24" alt="notifications"
+                        class="admin__icon hide">
+                </li>
+                <li class="admin__item admin__item--mobile">
+                    <div class="lang">
+                        <div class="lang__menu">
+                            <div class="lang__menu--fixed lang__menu--desktop">
+                                <img src="img/english.svg" width="30" height="20" alt="Current lang" class="lang__flag">
+                                <span
+                                    class="lang__desc lang__desc--desktop desc desc--extrasmall desc--dark">English</span>
+                            </div>
+                            <img src="img/arrow_drop_down.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--dropdown">
+                        </div>
+                        <ul class="lang__dropdown hide">
+                            <li class="lang__dropdown-item">
+                                <a href="/" class="lang__link" data-lang="spanish">
+                                    <img src="img/spanish.svg" width="30" height="20" alt="Spanish" class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">Spanish</span>
+                                    <img src="img/check.svg" width="18" height="18" alt="check"
+                                        class="lang__icon lang__icon--check hide">
+                                </a>
+                            </li>
+                            <li class="lang__dropdown-item">
+                                <a href="/" class="lang__link" data-lang="italian">
+                                    <img src="img/italian.svg" width="30" height="20" alt="Italian" class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">Italian</span>
+                                    <img src="img/check.svg" width="18" height="18" alt="check"
+                                        class="lang__icon lang__icon--check hide">
+                                </a>
+                            </li>
+                            <li class="lang__dropdown-item">
+                                <a href="index.html" class="lang__link active" data-lang="english">
+                                    <img src="img/english.svg" width="30" height="20" alt="English" class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">English</span>
+                                    <img src="img/check.svg" width="18" height="18" alt="check"
+                                        class="lang__icon lang__icon--check">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="admin__item admin__item--menu">
+                    <button class="btn btn--menu" id="openMenu"><img src="img/menu.svg" width="24" height="24" alt="menu mobile" class="admin__icon"></button>
+                    <button class="btn btn--menu hide" id="closeMenu"><img src="img/close-color.svg" width="24" height="24" alt="menu mobile" class="admin__icon"></button>
+                </li>
+                <li class="admin__item admin__item--user">
+                    <img loading="lazy" src="img/avatar.svg" width="36" height="36" alt="user avatar"
+                        class="admin__icon">
+                    <span class="desc desc--normal desc--bold desc--dark">Martin Franci</span>
+                </li>
+            </ul>
+        </header>
+        <nav class="dashboard__nav nav" id="navMenu">
+            <header class="nav__header">
+                <a href="" class="link link--logo">
+                    <picture class="img">
+                        <source media="(max-width: 767.98px)" srcset="img/logo-color.svg" width="160" height="28"
+                            alt="IG logo">
+                        <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/logo-color.svg"
+                            width="160" height="28" alt="IG logo">
+                        <source media="(min-width:1440px)" srcset="img/logo-color.svg" width="160" height="28"
+                            alt="IG logo">
+                        <img src="img/logo-color.svg" width="160" height="28" alt="IG logo" />
+                    </picture>
+                </a>
+            </header>
+            <div class="nav__menu hide">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--lang nav__item--mobile">
+                        <div class="lang">
+                            <div class="lang__menu">
+                                <div class="lang__menu--fixed">
+                                    <img src="img/english.svg" width="30" height="20" alt="Current lang"
+                                        class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">English</span>
+                                </div>
+                                <img src="img/arrow_drop_down.svg" width="18" height="18" alt="check"
+                                    class="lang__icon lang__icon--dropdown">
+                            </div>
+                            <ul class="lang__dropdown hide">
+                                <li class="lang__dropdown-item">
+                                    <a href="/" class="lang__link" data-lang="spanish">
+                                        <img src="img/spanish.svg" width="30" height="20" alt="Spanish"
+                                            class="lang__flag">
+                                        <span class="desc desc--extrasmall desc--dark">Spanish</span>
+                                        <img src="img/check.svg" width="18" height="18" alt="check"
+                                            class="lang__icon lang__icon--check hide">
+                                    </a>
+                                </li>
+                                <li class="lang__dropdown-item">
+                                    <a href="/" class="lang__link" data-lang="italian">
+                                        <img src="img/italian.svg" width="30" height="20" alt="Italian"
+                                            class="lang__flag">
+                                        <span class="desc desc--extrasmall desc--dark">Italian</span>
+                                        <img src="img/check.svg" width="18" height="18" alt="check"
+                                            class="lang__icon lang__icon--check hide">
+                                    </a>
+                                </li>
+                                <li class="lang__dropdown-item">
+                                    <a href="index.html" class="lang__link active" data-lang="english">
+                                        <img src="img/english.svg" width="30" height="20" alt="English"
+                                            class="lang__flag">
+                                        <span class="desc desc--extrasmall desc--dark">English</span>
+                                        <img src="img/check.svg" width="18" height="18" alt="check"
+                                            class="lang__icon lang__icon--check">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <img src="img/dashboard.svg" width="24" height="24" alt="dashboard"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/dashboard-active.svg" width="24" height="24" alt="dashboard"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="wallet.html" class="nav__link">
+                            <img src="img/wallet.svg" width="24" height="24" alt="wallet"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/wallet-active.svg" width="24" height="24" alt="wallet"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Wallet</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="ig-index.html" class="nav__link">
+                            <img src="img/ig-index.svg" width="24" height="24" alt="IG Index"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/ig-index-active.svg" width="24" height="24" alt="IG Index"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">IG Index</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="ig-future.html" class="nav__link">
+                            <img src="img/ig-future.svg" width="24" height="24" alt="IG Future"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/ig-future-active.svg" width="24" height="24" alt="IG Future"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">IG Future</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="career.html" class="nav__link">
+                            <img src="img/career.svg" width="24" height="24" alt="career"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/career-active.svg" width="24" height="24" alt="career"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Career</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="settings.html" class="nav__link">
+                            <img src="img/settings.svg" width="24" height="24" alt="settings"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/settings-active.svg" width="24" height="24" alt="settings"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="help.html" class="nav__link active">
+                            <img src="img/help.svg" width="24" height="24" alt="help"
+                                class="nav__icon nav__icon--classic hide">
+                            <img src="img/help-active.svg" width="24" height="24" alt="help"
+                                class="nav__icon nav__icon--active">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="dashboard__content">
+
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/copy.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/password.js"></script>
+    <script src="js/select.js"></script>
+</body>
+
+</html>

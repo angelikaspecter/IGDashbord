@@ -1,0 +1,12 @@
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    &--logo {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 138px;
+        height: auto;
+        max-height: 50px;
+    }
+}

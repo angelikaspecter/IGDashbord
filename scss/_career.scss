@@ -1,0 +1,154 @@
+.career {
+    &__list {
+        width: 100%;
+        display: grid;
+        gap: 16px;
+        grid-template-columns: auto 400px 280px;
+        grid-template-rows: 70px 120px auto;
+        grid-template-areas:
+            "balance income-type turnover-goal"
+            "balance income-type turover-goal"
+            "referal info info";
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            grid-template-columns: 1fr 280px;
+            grid-template-rows: 200px 200px auto auto;
+            grid-template-areas:
+                "balance balance"
+                "income-type turnover-goal"
+                "referal"
+                "info";
+            overflow-y: scroll;
+        }
+        @media screen and (max-width: 767.98px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 165px auto auto auto auto;
+            grid-template-areas:
+                "balance"
+                "income-type"
+                "turnover-goal"
+                "referal"
+                "info";
+            overflow-y: scroll;
+        }
+    }
+    &__item {
+        &--balance {
+            grid-area: balance;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            background-color: white;
+        }
+        &--income-type {
+            grid-area: income-type;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        &--turnover-goal {
+            grid-area: turnover-goal;
+        }
+        &--referal {
+            grid-area: referal;
+        }
+        &--info {
+            grid-area: info;
+        }
+    }
+    &__header {
+        &--row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        &--history {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+    }
+    &__title {
+        font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (1440 - 320)));
+    }
+    &__balance {
+        width: 100%;
+        display: flex;
+        position: relative;
+        &--column {
+            flex-direction: column;
+            gap: 16px;
+        }
+        &--mobile {
+            display: none;
+            @media screen and (max-width: 767.98px) {
+                display: flex;
+                margin-top: 20px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+            width: auto;
+            justify-content: space-between;
+        }
+    }
+    &__wrap {
+        width: 100%;
+        display: flex;
+        position: relative;
+        &--column {
+            flex-direction: column;
+            gap: 9px;
+        }
+        &--row {
+            flex-direction: row;
+            align-items: flex-end;
+            gap: 16px;
+        }
+    }
+    &__trigger {
+        padding: 10px;
+        border: none;
+    }
+    &__tooltip {
+        &--profit {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+    }
+    &__income-type {
+        &--header {
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            background-color: white;
+        }
+        &--footer {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            background-color: white;
+        }
+        &--line {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            & span {
+                width: 100%;
+                height: 24px;
+                flex: 1 1 calc(100% / 10 - 3px);
+                &.color {
+                    background-color: var(--accident-primary);
+                }
+                &.decolor {
+                    background-color: var(--accident-primary-opacity);
+                }
+            }
+        }
+    }
+}

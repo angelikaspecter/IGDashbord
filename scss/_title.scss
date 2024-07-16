@@ -1,0 +1,32 @@
+.title {
+    &--section {
+        font-size: calc(28px + (32 - 28) * ((100vw - 320px) / (1440 - 320)));
+    }
+    &--wrap {
+        font-size: calc(20px + (28 - 20) * ((100vw - 320px) / (1440 - 320)));
+    }
+    &--block {
+        font-size: calc(18px + (21 - 18) * ((100vw - 320px) / (1440 - 320)));
+    }
+    &--bold {
+        font-weight: 500;
+    }
+    &--light {
+        color: var(--light-primary);
+    }
+    &--semibold {
+        font-weight: 600;
+    }
+    &--dark {
+        color: var(--dark-primary);
+    }
+    &--middle {
+        color: var(--middle-primary);
+    }
+    &--color {
+        color: var(--accident-primary);
+    }
+    &.hide {
+        display: none;
+    }
+}

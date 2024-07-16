@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IG Index</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <section class="section dashboard">
+        <header class="dashboard__header">
+            <div class="lang lang--mobile">
+                <div class="lang__menu">
+                    <div class="lang__menu--fixed lang__menu--desktop">
+                        <img src="img/english.svg" width="30" height="20" alt="Current lang" class="lang__flag">
+                        <span class="lang__desc lang__desc--desktop desc desc--extrasmall desc--dark">English</span>
+                    </div>
+                    <img src="img/arrow_drop_down.svg" width="18" height="18" alt="check"
+                        class="lang__icon lang__icon--dropdown">
+                </div>
+                <ul class="lang__dropdown hide">
+                    <li class="lang__dropdown-item">
+                        <a href="/" class="lang__link" data-lang="spanish">
+                            <img src="img/spanish.svg" width="30" height="20" alt="Spanish" class="lang__flag">
+                            <span class="desc desc--extrasmall desc--dark">Spanish</span>
+                            <img src="img/check.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--check hide">
+                        </a>
+                    </li>
+                    <li class="lang__dropdown-item">
+                        <a href="/" class="lang__link" data-lang="italian">
+                            <img src="img/italian.svg" width="30" height="20" alt="Italian" class="lang__flag">
+                            <span class="desc desc--extrasmall desc--dark">Italian</span>
+                            <img src="img/check.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--check hide">
+                        </a>
+                    </li>
+                    <li class="lang__dropdown-item">
+                        <a href="index.html" class="lang__link active" data-lang="english">
+                            <img src="img/english.svg" width="30" height="20" alt="English" class="lang__flag">
+                            <span class="desc desc--extrasmall desc--dark">English</span>
+                            <img src="img/check.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--check">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="admin">
+                <li class="admin__item">
+                    <img loading="lazy" src="img/notifications.svg" width="24" height="24" alt="notification none"
+                        class="admin__icon">
+                    <img loading="lazy" src="img/notification-active.svg" width="24" height="24" alt="notifications"
+                        class="admin__icon hide">
+                </li>
+                <li class="admin__item admin__item--mobile">
+                    <div class="lang">
+                        <div class="lang__menu">
+                            <div class="lang__menu--fixed lang__menu--desktop">
+                                <img src="img/english.svg" width="30" height="20" alt="Current lang" class="lang__flag">
+                                <span
+                                    class="lang__desc lang__desc--desktop desc desc--extrasmall desc--dark">English</span>
+                            </div>
+                            <img src="img/arrow_drop_down.svg" width="18" height="18" alt="check"
+                                class="lang__icon lang__icon--dropdown">
+                        </div>
+                        <ul class="lang__dropdown hide">
+                            <li class="lang__dropdown-item">
+                                <a href="/" class="lang__link" data-lang="spanish">
+                                    <img src="img/spanish.svg" width="30" height="20" alt="Spanish" class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">Spanish</span>
+                                    <img src="img/check.svg" width="18" height="18" alt="check"
+                                        class="lang__icon lang__icon--check hide">
+                                </a>
+                            </li>
+                            <li class="lang__dropdown-item">
+                                <a href="/" class="lang__link" data-lang="italian">
+                                    <img src="img/italian.svg" width="30" height="20" alt="Italian" class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">Italian</span>
+                                    <img src="img/check.svg" width="18" height="18" alt="check"
+                                        class="lang__icon lang__icon--check hide">
+                                </a>
+                            </li>
+                            <li class="lang__dropdown-item">
+                                <a href="index.html" class="lang__link active" data-lang="english">
+                                    <img src="img/english.svg" width="30" height="20" alt="English" class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">English</span>
+                                    <img src="img/check.svg" width="18" height="18" alt="check"
+                                        class="lang__icon lang__icon--check">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="admin__item admin__item--menu">
+                    <button class="btn btn--menu" id="openMenu"><img src="img/menu.svg" width="24" height="24"
+                            alt="menu mobile" class="admin__icon"></button>
+                    <button class="btn btn--menu hide" id="closeMenu"><img src="img/close-color.svg" width="24"
+                            height="24" alt="menu mobile" class="admin__icon"></button>
+                </li>
+                <li class="admin__item admin__item--user">
+                    <img loading="lazy" src="img/avatar.svg" width="36" height="36" alt="user avatar"
+                        class="admin__icon">
+                    <span class="desc desc--normal desc--bold desc--dark">Martin Franci</span>
+                </li>
+            </ul>
+        </header>
+        <nav class="dashboard__nav nav" id="navMenu">
+            <header class="nav__header">
+                <a href="" class="link link--logo">
+                    <picture class="img">
+                        <source media="(max-width: 767.98px)" srcset="img/logo-color.svg" width="160" height="28"
+                            alt="IG logo">
+                        <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/logo-color.svg"
+                            width="160" height="28" alt="IG logo">
+                        <source media="(min-width:1440px)" srcset="img/logo-color.svg" width="160" height="28"
+                            alt="IG logo">
+                        <img src="img/logo-color.svg" width="160" height="28" alt="IG logo" />
+                    </picture>
+                </a>
+            </header>
+            <div class="nav__menu hide">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--lang nav__item--mobile">
+                        <div class="lang">
+                            <div class="lang__menu">
+                                <div class="lang__menu--fixed">
+                                    <img src="img/english.svg" width="30" height="20" alt="Current lang"
+                                        class="lang__flag">
+                                    <span class="desc desc--extrasmall desc--dark">English</span>
+                                </div>
+                                <img src="img/arrow_drop_down.svg" width="18" height="18" alt="check"
+                                    class="lang__icon lang__icon--dropdown">
+                            </div>
+                            <ul class="lang__dropdown hide">
+                                <li class="lang__dropdown-item">
+                                    <a href="/" class="lang__link" data-lang="spanish">
+                                        <img src="img/spanish.svg" width="30" height="20" alt="Spanish"
+                                            class="lang__flag">
+                                        <span class="desc desc--extrasmall desc--dark">Spanish</span>
+                                        <img src="img/check.svg" width="18" height="18" alt="check"
+                                            class="lang__icon lang__icon--check hide">
+                                    </a>
+                                </li>
+                                <li class="lang__dropdown-item">
+                                    <a href="/" class="lang__link" data-lang="italian">
+                                        <img src="img/italian.svg" width="30" height="20" alt="Italian"
+                                            class="lang__flag">
+                                        <span class="desc desc--extrasmall desc--dark">Italian</span>
+                                        <img src="img/check.svg" width="18" height="18" alt="check"
+                                            class="lang__icon lang__icon--check hide">
+                                    </a>
+                                </li>
+                                <li class="lang__dropdown-item">
+                                    <a href="index.html" class="lang__link active" data-lang="english">
+                                        <img src="img/english.svg" width="30" height="20" alt="English"
+                                            class="lang__flag">
+                                        <span class="desc desc--extrasmall desc--dark">English</span>
+                                        <img src="img/check.svg" width="18" height="18" alt="check"
+                                            class="lang__icon lang__icon--check">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <img src="img/dashboard.svg" width="24" height="24" alt="dashboard"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/dashboard-active.svg" width="24" height="24" alt="dashboard"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="wallet.html" class="nav__link">
+                            <img src="img/wallet.svg" width="24" height="24" alt="wallet"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/wallet-active.svg" width="24" height="24" alt="wallet"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Wallet</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="ig-index.html" class="nav__link active">
+                            <img src="img/ig-index.svg" width="24" height="24" alt="IG Index"
+                                class="nav__icon nav__icon--classic hide">
+                            <img src="img/ig-index-active.svg" width="24" height="24" alt="IG Index"
+                                class="nav__icon nav__icon--active">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">IG Index</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="ig-future.html" class="nav__link">
+                            <img src="img/ig-future.svg" width="24" height="24" alt="IG Future"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/ig-future-active.svg" width="24" height="24" alt="IG Future"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">IG Future</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="career.html" class="nav__link">
+                            <img src="img/career.svg" width="24" height="24" alt="career"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/career-active.svg" width="24" height="24" alt="career"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Career</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="settings.html" class="nav__link">
+                            <img src="img/settings.svg" width="24" height="24" alt="settings"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/settings-active.svg" width="24" height="24" alt="settings"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="help.html" class="nav__link">
+                            <img src="img/help.svg" width="24" height="24" alt="help"
+                                class="nav__icon nav__icon--classic">
+                            <img src="img/help-active.svg" width="24" height="24" alt="help"
+                                class="nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="dashboard__content">
+            <h1 class="title title--section title--bold title--dark hide">IG Index</h1>
+            <ul class="ig-index ig-index__list">
+                <li class="ig-index__item ig-index__item--balance">
+                    <h2 class="desc desc--extralarge desc--bold desc--color">Balance</h2>
+                    <div class="ig-index__balance ig-index__balance--column">
+                        <div class="ig-index__wrap">
+                            <div
+                                class="custom-select-wrapper custom-select-wrapper--clean custom-select-wrapper--row wallet__wrap--row custom-select-wrapper--bottom">
+                                <p class="ig-index__title title title--semibold title--dark">0.490923</p>
+                                <div class="custom-select">
+                                    <div class="ig-index__trigger custom-select-trigger">
+                                        <span class="desc desc--normal desc--bold desc--dark">BTC</span>
+                                    </div>
+                                    <div class="custom-options">
+                                        <span class="custom-option desc desc--normal desc--bold desc--dark selected"
+                                            data-value="1">BTC</span>
+                                        <span class="custom-option desc desc--normal desc--bold desc--dark"
+                                            data-value="2">ETH</span>
+                                        <span class="custom-option desc desc--normal desc--bold desc--dark"
+                                            data-value="3">ETH</span>
+                                        <span class="custom-option desc desc--normal desc--bold desc--dark"
+                                            data-value="4">ETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ig-index__wrap ig-index__wrap--row">
+                            <p class="title title--block title--semibold title--dark">≈ <span>USDT 35802.87</span></p>
+                            <div class="ig-index__tooltip ig-index__tooltip--profit">
+                                <img loading="lazy" src="img/arrow-down-right.svg" width="18" height="18"
+                                    alt="arrow-down-right" class="img img--icon-mini">
+                                <p class="desc desc--mini desc--bold desc--plus">2%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ig-index__balance ig-index__balance--column ig-index__balance--mobile">
+                        <div class="ig-index__wrap ig-index__wrap--row">
+                            <div class="ig-index__tooltip ig-index__tooltip--profit">
+                                <img loading="lazy" src="img/arrow-down-right.svg" width="18" height="18"
+                                    alt="arrow-down-right" class="img img--icon-mini">
+                                <p class="desc desc--mini desc--bold desc--plus">2%</p>
+                            </div>
+                            <p class="desc desc--small desc--middle">Total Income</p>
+                        </div>
+                        <p class="ig-index__title title title--semibold title--dark">+USDT 22,842</p>
+                    </div>
+                    <button class="btn btn--secondary desc desc--normal desc--semibold desc--color"
+                        id="DepositInOpenPopup">Deposit in</button>
+                </li>
+                <li class="ig-index__item ig-index__item--cards">
+                    <div class="ig-index__card">
+                        <header class="ig-index__card-status ig-index__card-status--activated">
+                            <span class="desc desc--mini desc--bold">Activated</span>
+                        </header>
+                        <div class="ig-index__card-title ig-index__card-title--passive">
+                            <h2 class="desc desc--small desc--bold">IG Passive</h2>
+                        </div>
+                        <div class="ig-index__card-info ig-index__card-info--noactive">
+                            <div class="ig-index__card-info ig-index__card-info--column ig-index__card-info--noactive">
+                                <span class="desc desc--mini desc--middle">Daily Percentage</span>
+                                <p class="desc desc--semibold desc--small desc--color">0.50%</p>
+                            </div>
+                            <div class="ig-index__card-info ig-index__card-info--column ig-index__card-info--noactive">
+                                <span class="desc desc--mini desc--middle">Reinvestment</span>
+                                <p class="desc desc--semibold desc--small desc--color">None</p>
+                            </div>
+                            <div class="ig-index__card-info ig-index__card-info--row ig-index__card-info--noactive">
+                                <div
+                                    class="ig-index__card-info ig-index__card-info--column ig-index__card-info--noactive">
+                                    <span class="desc desc--mini desc--middle">Withdrawal</span>
+                                    <p class="desc desc--semibold desc--small desc--color">Daily</p>
+                                </div>
+                                <div
+                                    class="ig-index__card-info ig-index__card-info--column ig-index__card-info--noactive">
+                                    <span class="desc desc--mini desc--middle">Duration</span>
+                                    <p class="desc desc--semibold desc--small desc--color">14 days</p>
+                                </div>
+                            </div>
+                            <div class="ig-index__card-info ig-index__card-info--row ig-index__card-info--noactive">
+                                <div
+                                    class="ig-index__card-info ig-index__card-info--column ig-index__card-info--noactive">
+                                    <span class="desc desc--mini desc--middle">Minimum Amount</span>
+                                    <p class="desc desc--semibold desc--small desc--color">$50</p>
+                                </div>
+                                <div
+                                    class="ig-index__card-info ig-index__card-info--column ig-index__card-info--noactive">
+                                    <span class="desc desc--mini desc--middle">Currency</span>
+                                    <img src="img/usdt.svg" width="20" height="20" alt="usdt" class="img img--icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ig-index__card">
+                        <header class="ig-index__card-status ig-index__card-status--activation">
+                            <span class="desc desc--mini desc--bold">One-time Activation</span>
+                        </header>
+                        <div class="ig-index__card-title ig-index__card-title--active">
+                            <h2 class="desc desc--small desc--bold">IG Active</h2>
+                        </div>
+                        <div class="ig-index__card-info">
+                            <div class="ig-index__card-info ig-index__card-info--column">
+                                <span class="desc desc--mini desc--middle">Daily Percentage</span>
+                                <p class="desc desc--semibold desc--small desc--dark">0.75%</p>
+                            </div>
+                            <div class="ig-index__card-info ig-index__card-info--column">
+                                <span class="desc desc--mini desc--middle">Reinvestment</span>
+                                <p class="desc desc--semibold desc--small desc--dark">25%</p>
+                            </div>
+                            <div class="ig-index__card-info ig-index__card-info--row">
+                                <div class="ig-index__card-info ig-index__card-info--column">
+                                    <span class="desc desc--mini desc--middle">Withdrawal</span>
+                                    <p class="desc desc--semibold desc--small desc--dark">Daily</p>
+                                </div>
+                                <div class="ig-index__card-info ig-index__card-info--column">
+                                    <span class="desc desc--mini desc--middle">Duration</span>
+                                    <p class="desc desc--semibold desc--small desc--dark">60 days</p>
+                                </div>
+                            </div>
+                            <div class="ig-index__card-info ig-index__card-info--row">
+                                <div class="ig-index__card-info ig-index__card-info--column">
+                                    <span class="desc desc--mini desc--middle">Minimum Amount</span>
+                                    <p class="desc desc--semibold desc--small desc--dark">$500</p>
+                                </div>
+                                <div class="ig-index__card-info ig-index__card-info--column">
+                                    <span class="desc desc--mini desc--middle">Currency</span>
+                                    <div class="ig-index__card-currency">
+                                        <img src="img/usdt.svg" width="20" height="20" alt="usdt" class="img img--icon">
+                                        <img src="img/btc.svg" width="20" height="20" alt="usdt" class="img img--icon">
+                                        <img src="img/eth.svg" width="20" height="20" alt="usdt" class="img img--icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ig-index__card">
+                        <header class="ig-index__card-status ig-index__card-status--activation">
+                            <span class="desc desc--mini desc--bold">One-time Activation</span>
+                        </header>
+                        <div class="ig-index__card-title ig-index__card-title--active">
+                            <h2 class="desc desc--small desc--bold">IG Capital</h2>
+                        </div>
+                        <div class="ig-index__card-info">
+                            <div class="ig-index__card-info--column">
+                                <span class="desc desc--mini desc--middle">Daily Percentage</span>
+                                <p class="desc desc--semibold desc--small desc--dark">1.00%</p>
+                            </div>
+                            <div class="ig-index__card-info--column">
+                                <span class="desc desc--mini desc--middle">Reinvestment</span>
+                                <p class="desc desc--semibold desc--small desc--dark">50%</p>
+                            </div>
+                            <div class="ig-index__card-info ig-index__card-info--row">
+                                <div class="ig-index__card-info--column">
+                                    <span class="desc desc--mini desc--middle">Withdrawal</span>
+                                    <p class="desc desc--semibold desc--small desc--dark">Daily</p>
+                                </div>
+                                <div class="ig-index__card-info--column">
+                                    <span class="desc desc--mini desc--middle">Duration</span>
+                                    <p class="desc desc--semibold desc--small desc--dark">150 days</p>
+                                </div>
+                            </div>
+                            <div class="ig-index__card-info ig-index__card-info--row">
+                                <div class="ig-index__card-info--column">
+                                    <span class="desc desc--mini desc--middle">Minimum Amount</span>
+                                    <p class="desc desc--semibold desc--small desc--dark">$1000</p>
+                                </div>
+                                <div class="ig-index__card-info--column">
+                                    <span class="desc desc--mini desc--middle">Currency</span>
+                                    <div class="ig-index__card-currency">
+                                        <img src="img/usdt.svg" width="20" height="20" alt="usdt" class="img img--icon">
+                                        <img src="img/btc.svg" width="20" height="20" alt="usdt" class="img img--icon">
+                                        <img src="img/eth.svg" width="20" height="20" alt="usdt" class="img img--icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="ig-index__item ig-index__item--active-products">
+                    <header class="ig-index__a-products ig-index__a-products--header">
+                        <h2 class="desc desc--extralarge desc--bold desc--color">Active Products</h2>
+                        <button class="ig-index__a-products--btn btn btn--primary" id="shareBtn">
+                            <img loading="lazy" src="img/share.svg" width="24" height="24" alt="share icon"
+                                class="img img--icon"> <span
+                                class="desc desc--small desc--semibold desc--light">Share</span>
+                        </button>
+                    </header>
+                    <div class="ig-index__a-products--wrap">
+                        <table class="ig-index__a-products-table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="ig-index__a-products-header ig-index__a-products-header--left">
+                                            <p
+                                                class="desc desc--extrasmall desc--regular desc--left desc--light-middle">
+                                                Product name</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="ig-index__a-products-header ig-index__a-products-header--center">
+                                            <p
+                                                class="desc desc--extrasmall  desc--regular desc--left desc--light-middle">
+                                                Days left</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="ig-index__a-products-header ig-index__a-products-header--center">
+                                            <p
+                                                class="desc desc--extrasmall  desc--regular desc--left desc--light-middle">
+                                                Last income</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="ig-index__a-products-header ig-index__a-products-header--center">
+                                            <p
+                                                class="desc desc--extrasmall  desc--regular desc--left desc--light-middle">
+                                                Week income</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="ig-index__a-products-header ig-index__a-products-header--center">
+                                            <p
+                                                class="desc desc--extrasmall  desc--regular desc--left desc--light-middle">
+                                                Month income</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="ig-index__a-products-header ig-index__a-products-header--center">
+                                            <p
+                                                class="desc desc--extrasmall  desc--regular desc--left desc--light-middle">
+                                                Total income</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="ig-index__a-products-header ig-index__a-products-header--right">
+                                            <p
+                                                class="desc desc--extrasmall  desc--regular desc--left desc--light-middle">
+                                                Add liquidity
+                                            </p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="ig-index__a-products-header ig-index__a-products-header--right">
+                                            <p
+                                                class="desc desc--extrasmall  desc--regular desc--left desc--light-middle">
+                                                Re-invest</p>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                            <img loading="lazy" src="img/IG_icon.svg" width="32" height="32"
+                                                alt="IG logo" class="img img--icon img--icon-big">
+                                            <div class="ig-index__a-products-item--column">
+                                                <p class="desc desc--bold desc--dark desc--normal">IG Capital</p>
+                                                <span class="desc desc--middle desc--extrasmall">#32342</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">132 days</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">0.0132 BTC</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">0.032 BTC</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">0.092 BTC</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">0.23 BTC</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--right">
+                                            <button
+                                                class="btn btn--secondary desc desc--semibold desc--normal desc--color AddLiquidityBtn">+
+                                                Add liquidity</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--right">
+                                            <div class="toggle">
+                                                <p class="desc desc--normal desc--bold desc--dark off">OFF</p>
+                                                <p class="desc desc--normal desc--bold desc--color on hide">ON</p>
+                                                <div class="toggle__btn">
+                                                    <div class="toggle__btn--circle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                            <img loading="lazy" src="img/IG_icon.svg" width="32" height="32"
+                                                alt="IG logo" class="img img--icon img--icon-big">
+                                            <div class="ig-index__a-products-item--column">
+                                                <p class="desc desc--bold desc--dark desc--normal">IG Capital</p>
+                                                <span class="desc desc--middle desc--extrasmall">#53532</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">102 days</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">11.93 BTC</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">964.42 BTC</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">2537.12 BTC</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">738.00 USDT</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--right">
+                                            <button
+                                                class="btn btn--secondary desc desc--semibold desc--normal desc--color AddLiquidityBtn">+
+                                                Add liquidity</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--right">
+                                            <div class="toggle">
+                                                <p class="desc desc--normal desc--bold desc--dark off">OFF</p>
+                                                <p class="desc desc--normal desc--bold desc--color on hide">ON</p>
+                                                <div class="toggle__btn">
+                                                    <div class="toggle__btn--circle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                            <img loading="lazy" src="img/IG_icon.svg" width="32" height="32"
+                                                alt="IG logo" class="img img--icon img--icon-big">
+                                            <div class="ig-index__a-products-item--column">
+                                                <p class="desc desc--bold desc--dark desc--normal">IG Capital</p>
+                                                <span class="desc desc--middle desc--extrasmall">#52213</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">91 days</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">84.11 USDT</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">479.54 USDT</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">400.17 USDT</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">800.00 BTC</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--right">
+                                            <button
+                                                class="btn btn--secondary desc desc--semibold desc--normal desc--color AddLiquidityBtn">+
+                                                Add liquidity</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--right">
+                                            <div class="toggle">
+                                                <p class="desc desc--normal desc--bold desc--dark off">OFF</p>
+                                                <p class="desc desc--normal desc--bold desc--color on hide">ON</p>
+                                                <div class="toggle__btn">
+                                                    <div class="toggle__btn--circle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                            <img loading="lazy" src="img/IG_icon.svg" width="32" height="32"
+                                                alt="IG logo" class="img img--icon img--icon-big">
+                                            <div class="ig-index__a-products-item--column">
+                                                <p class="desc desc--bold desc--dark desc--normal">IG Capital</p>
+                                                <span class="desc desc--middle desc--extrasmall">#42234</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">82 days</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">479.54 USDT</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">11.93 BTC</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">16 BTC</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">300.00 USDT</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--right">
+                                            <button
+                                                class="btn btn--secondary desc desc--semibold desc--normal desc--color AddLiquidityBtn">+
+                                                Add liquidity</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--right">
+                                            <div class="toggle">
+                                                <p class="desc desc--normal desc--bold desc--dark off">OFF</p>
+                                                <p class="desc desc--normal desc--bold desc--color on hide">ON</p>
+                                                <div class="toggle__btn">
+                                                    <div class="toggle__btn--circle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                            <img loading="lazy" src="img/IG_icon.svg" width="32" height="32"
+                                                alt="IG logo" class="img img--icon img--icon-big">
+                                            <div class="ig-index__a-products-item--column">
+                                                <p class="desc desc--bold desc--dark desc--normal">IG Capital</p>
+                                                <span class="desc desc--middle desc--extrasmall">#85322</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">64 days</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">195 BTC</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">30.02 USDT</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">100.00 USDT</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                            <p class="desc desc--bold desc--dark desc--normal">39.00 BTC</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--right">
+                                            <button
+                                                class="btn btn--secondary desc desc--semibold desc--normal desc--color AddLiquidityBtn">+
+                                                Add liquidity</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ig-index__a-products-item ig-index__a-products-item--right">
+                                            <div class="toggle">
+                                                <p class="desc desc--normal desc--bold desc--dark off">OFF</p>
+                                                <p class="desc desc--normal desc--bold desc--color on hide">ON</p>
+                                                <div class="toggle__btn">
+                                                    <div class="toggle__btn--circle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <ul class="transaction transaction--mobile">
+                        <li class="transaction__item--mobile">
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Product name</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <img loading="lazy" src="img/IG_icon.svg" width="32" height="32" alt="IG logo"
+                                        class="img img--icon img--icon-big">
+                                    <div class="ig-index__a-products-item--column">
+                                        <p class="desc desc--bold desc--dark desc--normal">IG Capital</p>
+                                        <span class="desc desc--middle desc--extrasmall">#32342</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Days left</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">132 days</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Last income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">0.0132 BTC</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Week income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">0.032 BTC</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Month income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">0.092 BTC</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Total income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">0.23 BTC</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile transaction__content--a-products">
+                                <p class="desc desc--extrasmall desc--light-middle">Add liquidity</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <button
+                                        class="ig-index__a-products-btn btn btn--secondary desc desc--semibold desc--normal desc--color AddLiquidityBtn">+
+                                        Add liquidity</button>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Re-invest</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                    <div class="toggle">
+                                        <p class="desc desc--normal desc--bold desc--dark off">OFF</p>
+                                        <p class="desc desc--normal desc--bold desc--color on hide">ON</p>
+                                        <div class="toggle__btn">
+                                            <div class="toggle__btn--circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="transaction__item--mobile">
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Product name</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <img loading="lazy" src="img/IG_icon.svg" width="32" height="32" alt="IG logo"
+                                        class="img img--icon img--icon-big">
+                                    <div class="ig-index__a-products-item--column">
+                                        <p class="desc desc--bold desc--dark desc--normal">IG Capital</p>
+                                        <span class="desc desc--middle desc--extrasmall">#53532</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Days left</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">102 days</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Last income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">11.93 BTC</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Week income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">964.42 BTC</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Month income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">2537.12 BTC</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Total income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">738.00 USDT</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile transaction__content--a-products">
+                                <p class="desc desc--extrasmall desc--light-middle">Add liquidity</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <button
+                                        class="ig-index__a-products-btn btn btn--secondary desc desc--semibold desc--normal desc--color AddLiquidityBtn">+
+                                        Add liquidity</button>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Re-invest</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                    <div class="toggle">
+                                        <p class="desc desc--normal desc--bold desc--dark off">OFF</p>
+                                        <p class="desc desc--normal desc--bold desc--color on hide">ON</p>
+                                        <div class="toggle__btn">
+                                            <div class="toggle__btn--circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="transaction__item--mobile">
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Product name</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <img loading="lazy" src="img/IG_icon.svg" width="32" height="32" alt="IG logo"
+                                        class="img img--icon img--icon-big">
+                                    <div class="ig-index__a-products-item--column">
+                                        <p class="desc desc--bold desc--dark desc--normal">IG Capital</p>
+                                        <span class="desc desc--middle desc--extrasmall">#52213</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Days left</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">91 days</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Last income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">84,11 USDT</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Week income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">479.54 USDT</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Month income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">400.17 USDT</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Total income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">800.00 BTC</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile transaction__content--a-products">
+                                <p class="desc desc--extrasmall desc--light-middle">Add liquidity</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <button
+                                        class="ig-index__a-products-btn btn btn--secondary desc desc--semibold desc--normal desc--color AddLiquidityBtn">+
+                                        Add liquidity</button>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Re-invest</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                    <div class="toggle">
+                                        <p class="desc desc--normal desc--bold desc--dark off">OFF</p>
+                                        <p class="desc desc--normal desc--bold desc--color on hide">ON</p>
+                                        <div class="toggle__btn">
+                                            <div class="toggle__btn--circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="transaction__item--mobile">
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Product name</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <img loading="lazy" src="img/IG_icon.svg" width="32" height="32" alt="IG logo"
+                                        class="img img--icon img--icon-big">
+                                    <div class="ig-index__a-products-item--column">
+                                        <p class="desc desc--bold desc--dark desc--normal">IG Capital</p>
+                                        <span class="desc desc--middle desc--extrasmall">#42234</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Days left</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">82 days</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Last income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">479.54 USDT</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Week income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">11.93 BTC</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Month income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">16 BTC</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Total income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">100.00 USDT</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile transaction__content--a-products">
+                                <p class="desc desc--extrasmall desc--light-middle">Add liquidity</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <button
+                                        class="ig-index__a-products-btn btn btn--secondary desc desc--semibold desc--normal desc--color AddLiquidityBtn">+
+                                        Add liquidity</button>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Re-invest</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                    <div class="toggle">
+                                        <p class="desc desc--normal desc--bold desc--dark off">OFF</p>
+                                        <p class="desc desc--normal desc--bold desc--color on hide">ON</p>
+                                        <div class="toggle__btn">
+                                            <div class="toggle__btn--circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="transaction__item--mobile">
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Product name</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <img loading="lazy" src="img/IG_icon.svg" width="32" height="32" alt="IG logo"
+                                        class="img img--icon img--icon-big">
+                                    <div class="ig-index__a-products-item--column">
+                                        <p class="desc desc--bold desc--dark desc--normal">IG Capital</p>
+                                        <span class="desc desc--middle desc--extrasmall">#85322</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Days left</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">64 days</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Last income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">195 BTC</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Week income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">30.02 USDT</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Month income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">100.00 USDT</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Total income</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <p class="desc desc--bold desc--dark desc--normal">39.00 BTC</p>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile transaction__content--a-products">
+                                <p class="desc desc--extrasmall desc--light-middle">Add liquidity</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--left">
+                                    <button
+                                        class="ig-index__a-products-btn btn btn--secondary desc desc--semibold desc--normal desc--color AddLiquidityBtn">+
+                                        Add liquidity</button>
+                                </div>
+                            </div>
+                            <div class="transaction__content--mobile">
+                                <p class="desc desc--extrasmall desc--light-middle">Re-invest</p>
+                                <div class="ig-index__a-products-item ig-index__a-products-item--center">
+                                    <div class="toggle">
+                                        <p class="desc desc--normal desc--bold desc--dark off">OFF</p>
+                                        <p class="desc desc--normal desc--bold desc--color on hide">ON</p>
+                                        <div class="toggle__btn">
+                                            <div class="toggle__btn--circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="popup hide" id="AddLiquidityPopup">
+        <div class="popup__wrap popup__wrap--add-liquidity">
+            <hr>
+            <button class="popup__btn btn btn--close">
+                <img src="img/close.svg" width="24" height="24" alt="close">
+            </button>
+            <header class="popup__wrap--header">
+                <h2 class="title title--wrap title--bold title--color">Add liquidity</h2>
+            </header>
+            <form class="form">
+                <div class="custom-select-wrapper custom-select-wrapper--row">
+                    <input type="number" class="form__input form__input--clean">
+                    <p class="form__desc desc desc--normal desc--semibold desc--color">Max</p>
+                    <div class="delimiter"></div>
+                    <div class="custom-select">
+                        <div class="custom-select-trigger custom-select-trigger--clean custom-select-trigger--crypto">
+                            <img loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
+                                class="img img--icon">
+                            <span class="desc desc--normal desc--bold desc--dark">ETH</span>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option desc desc--normal desc--bold desc--dark selected"
+                                data-value="1"><img loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
+                                    class="img img--icon"> ETH</span>
+                            <span class="custom-option desc desc--normal desc--bold desc--dark" data-value="2"><img
+                                    loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
+                                    class="img img--icon"> ETH</span>
+                            <span class="custom-option desc desc--normal desc--bold desc--dark" data-value="3"><img
+                                    loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
+                                    class="img img--icon"> ETH</span>
+                            <span class="custom-option desc desc--normal desc--bold desc--dark" data-value="4"><img
+                                    loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
+                                    class="img img--icon"> ETH</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn--primary" disabled>Add liquidity</button>
+            </form>
+        </div>
+    </section>
+    <section class="popup hide" id="ActivateProductPopup">
+        <div class="popup__wrap popup__wrap--activate-product">
+            <hr>
+            <button class="popup__btn btn btn--close">
+                <img src="img/close.svg" width="24" height="24" alt="close">
+            </button>
+            <header class="popup__wrap--header">
+                <h2 class="title title--wrap title--bold title--color">Activate IG Index</h2>
+            </header>
+            <form class="form">
+                <div class="custom-select-wrapper custom-select-wrapper--row">
+                    <div class="custom-select custom-select--fill">
+                        <div class="custom-select-trigger custom-select-trigger--fill custom-select-trigger--clean">
+                            <span class="desc desc--normal desc--dark"><span class="desc desc--light-middle">Select
+                                    plan</span></span>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option desc desc--normal desc--dark selected"
+                                data-value="1">Passive</span>
+                            <span class="custom-option desc desc--normal desc--dark" data-value="2">IG Future</span>
+                            <span class="custom-option desc desc--normal desc--dark" data-value="3">IG Future</span>
+                            <span class="custom-option desc desc--normal desc--dark" data-value="4">IG Future</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-select-wrapper custom-select-wrapper--row">
+                    <input type="number" class="form__input form__input--clean" placeholder="0.00">
+                    <p class="form__desc desc desc--normal desc--semibold desc--color">Max</p>
+                    <div class="delimiter"></div>
+                    <div class="custom-select">
+                        <div class="custom-select-trigger custom-select-trigger--clean custom-select-trigger--crypto">
+                            <img loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
+                                class="img img--icon">
+                            <span class="desc desc--normal desc--bold desc--dark">ETH</span>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option desc desc--normal desc--bold desc--dark selected"
+                                data-value="1"><img loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
+                                    class="img img--icon"> ETH</span>
+                            <span class="custom-option desc desc--normal desc--bold desc--dark" data-value="2"><img
+                                    loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
+                                    class="img img--icon"> ETH</span>
+                            <span class="custom-option desc desc--normal desc--bold desc--dark" data-value="3"><img
+                                    loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
+                                    class="img img--icon"> ETH</span>
+                            <span class="custom-option desc desc--normal desc--bold desc--dark" data-value="4"><img
+                                    loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
+                                    class="img img--icon"> ETH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__wrap form__wrap--column">
+                    <p class="desc desc--normal desc--middle">Reinvest</p>
+                    <label for="reinvest" class="form__range-label desc desc--normal desc--middle">
+                        <span>0</span>
+                        <span>20</span>
+                        <span>40</span>
+                        <span>60</span>
+                        <span>80</span>
+                        <span>100</span>
+                        <span>120</span>
+                        <span>140</span>
+                    </label>
+                    <div class="form__range-container">
+                        <div class="form__range-fill" id="range-fill"></div>
+                        <input class="form__range" type="range" name="reinvest" id="reinvest" min="0" max="140"
+                            step="20">
+                        <div class="form__range-ticks">
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="0"></div>
+                            </div>
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="20"></div>
+                            </div>
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="40"></div>
+                            </div>
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="60"></div>
+                            </div>
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="80"></div>
+                            </div>
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="100"></div>
+                            </div>
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="120"></div>
+                            </div>
+                            <div class="form__range-wrap">
+                                <div class="form__range-tick" data-value="140"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__wrap form__wrap--auth">
+                    <p class="desc desc--normal desc--middle">Daily profit</p>
+                    <div class="form__wrap form__wrap--report form__wrap--right">
+                        <img loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth" class="img img--icon">
+                        <p class="desc desc--normal desc--bold desc--dark">0.1415922542</p>
+                    </div>
+                </div>
+                <div class="form__wrap form__wrap--auth">
+                    <p class="desc desc--normal desc--middle">Total profit</p>
+                    <div class="form__wrap form__wrap--report form__wrap--right">
+                        <img loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth" class="img img--icon">
+                        <p class="desc desc--normal desc--bold desc--dark">3.1415922542</p>
+                    </div>
+                </div>
+                <button class="btn btn--primary" disabled>Activate</button>
+            </form>
+        </div>
+    </section>
+    <section class="popup popup--post hide" id="PostPopup">
+        <div class="popup__nav">
+            <button class="btn btn--icon btn--prev">
+                <img src="img/arrow-carousel.svg" width="24" height="24" alt="prev arrow"
+                    class="img img--icon img--icon-middle">
+            </button>
+            <button class="btn btn--icon btn--next">
+                <img src="img/arrow-carousel.svg" width="24" height="24" alt="next arrow"
+                    class="img img--icon img--icon-middle">
+            </button>
+        </div>
+        <div class="popup__carousel">
+            <div class="popup__carousel--wrap">
+                <div class="post">
+                    <hr>
+                    <header class="post__header">
+                        <h2 class="desc desc--normal desc--bold desc--dark">IG Capital</h2>
+                        <p class="desc desc--normal desc--light-middle">#32342</p>
+                    </header>
+                    <div class="post__img">
+                        <button class="btn btn--close btn--post">
+                            <img src="img/close_small.svg" width="16" height="16" alt="close">
+                        </button>
+                        <picture class="img">
+                            <source media="(max-width: 767.98px)" srcset="img/post--mobile.webp" width="322"
+                                height="322" alt="instagram post">
+                            <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/post--tablet.webp"
+                                width="450" height="450" alt="instagram post">
+                            <source media="(min-width:1440px)" srcset="img/post--desktop.webp" width="500" height="500"
+                                alt="instagram post">
+                            <img src="img/post--desktop.webp" width="500" height="500" alt="instagram post" />
+                        </picture>
+                        <footer class="post__footer post--mobile hide">
+                            <form class="form">
+                                <button class="btn btn--primary">Download</button>
+                                <div class="form__wrap--post">
+                                    <div class="form__dKey form__dKey--small">
+                                        <input type="text" name="dKey" id="dKey" class="form__input form__input--dKey"
+                                            value="mrt.com/referal1/ua.com">
+                                        <button class="btn btn--text desc desc--normal desc--bold desc--color"
+                                            id="copyKey">Copy</button>
+                                    </div>
+                                    <ul class="social">
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/instagram.svg" width="32" height="32" alt="instagram"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/Telegram.svg" width="32" height="32" alt="telegram"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/Whatsapp.svg" width="32" height="32" alt="whatsapp"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/Facebook.svg" width="32" height="32" alt="facebook"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </footer>
+                    </div>
+                    <footer class="post__footer post--desktop hide">
+                        <form class="form">
+                            <button class="btn btn--primary">Download</button>
+                            <div class="form__wrap--post">
+                                <div class="form__dKey form__dKey--small">
+                                    <input type="text" name="dKey" id="dKey" class="form__input form__input--dKey"
+                                        value="mrt.com/referal1/ua.com">
+                                    <button class="btn btn--text desc desc--normal desc--bold desc--color"
+                                        id="copyKey">Copy</button>
+                                </div>
+                                <ul class="social">
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/instagram.svg" width="32" height="32" alt="instagram"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/Telegram.svg" width="32" height="32" alt="telegram"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/Whatsapp.svg" width="32" height="32" alt="whatsapp"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/Facebook.svg" width="32" height="32" alt="facebook"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </footer>
+                </div>
+                <div class="post">
+                    <hr>
+                    <header class="post__header">
+                        <h2 class="desc desc--normal desc--bold desc--dark">IG Capital</h2>
+                        <p class="desc desc--normal desc--light-middle">#32342</p>
+                    </header>
+                    <div class="post__img">
+                        <button class="btn btn--close btn--post">
+                            <img src="img/close_small.svg" width="16" height="16" alt="close">
+                        </button>
+                        <picture class="img">
+                            <source media="(max-width: 767.98px)" srcset="img/post--mobile.webp" width="322"
+                                height="322" alt="instagram post">
+                            <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/post--tablet.webp"
+                                width="450" height="450" alt="instagram post">
+                            <source media="(min-width:1440px)" srcset="img/post--desktop.webp" width="500" height="500"
+                                alt="instagram post">
+                            <img src="img/post--desktop.webp" width="500" height="500" alt="instagram post" />
+                        </picture>
+                        <footer class="post__footer post--mobile hide">
+                            <form class="form">
+                                <button class="btn btn--primary">Download</button>
+                                <div class="form__wrap--post">
+                                    <div class="form__dKey form__dKey--small">
+                                        <input type="text" name="dKey" id="dKey" class="form__input form__input--dKey"
+                                            value="mrt.com/referal1/ua.com">
+                                        <button class="btn btn--text desc desc--normal desc--bold desc--color"
+                                            id="copyKey">Copy</button>
+                                    </div>
+                                    <ul class="social">
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/instagram.svg" width="32" height="32" alt="instagram"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/Telegram.svg" width="32" height="32" alt="telegram"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/Whatsapp.svg" width="32" height="32" alt="whatsapp"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <img src="img/Facebook.svg" width="32" height="32" alt="facebook"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </footer>
+                    </div>
+                    <footer class="post__footer post--desktop hide">
+                        <form class="form">
+                            <button class="btn btn--primary">Download</button>
+                            <div class="form__wrap--post">
+                                <div class="form__dKey form__dKey--small">
+                                    <input type="text" name="dKey" id="dKey" class="form__input form__input--dKey"
+                                        value="mrt.com/referal1/ua.com">
+                                    <button class="btn btn--text desc desc--normal desc--bold desc--color"
+                                        id="copyKey">Copy</button>
+                                </div>
+                                <ul class="social">
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/instagram.svg" width="32" height="32" alt="instagram"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/Telegram.svg" width="32" height="32" alt="telegram"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/Whatsapp.svg" width="32" height="32" alt="whatsapp"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/Facebook.svg" width="32" height="32" alt="facebook"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/calendar.js"></script>
+    <script src="js/copy.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/password.js"></script>
+    <script src="js/range-input.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/upload-remove-img.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/2fa.js"></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/lang-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/nav-links.js"></script>
+    <script src="js/toast.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/form-btn-disabled.js"></script>
+    <script src="js/imgtoinfo.js"></script>
+    <script src="js/post-carousel.js"></script>
+</body>
+
+</html>
