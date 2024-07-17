@@ -100,6 +100,9 @@
                     <button class="btn btn--menu hide" id="closeMenu"><img src="img/close-color.svg" width="24"
                             height="24" alt="menu mobile" class="admin__icon"></button>
                 </li>
+                <li class="admin__item admin__item--btn">
+                    <a href="login.html" class="btn btn--primary">Log In</a>
+                </li>
                 <li class="admin__item admin__item--user">
                     <img loading="lazy" src="img/avatar.svg" width="36" height="36" alt="user avatar"
                         class="admin__icon">
@@ -230,6 +233,15 @@
                             <span class="desc desc--extrasmall desc--semibold desc--middle">Help</span>
                         </a>
                     </li>
+                    <li class="nav__item">
+                        <button class="nav__link">
+                            <img src="img/exit.svg" width="24" height="24" alt="help"
+                                class="img img--icon img--icon-mini nav__icon nav__icon--classic">
+                            <img src="img/exit-active.svg" width="24" height="24" alt="help"
+                                class="img img--icon img--icon-mini nav__icon nav__icon--active hide">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Exit</span>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -303,13 +315,131 @@
                     </footer>
                 </li>
                 <li class="career__item career__item--turnover-goal">
+                    <div class="career__turngoal">
+                        <header class="career__turngoal--header">
+                            <button class="btn btn--text desc desc--large desc--bold desc--color active"
+                                id="turnover">Turnover</button>
+                            <button class="btn btn--text desc desc--large desc--bold desc--color"
+                                id="goal">Goal</button>
+                        </header>
+                        <footer class="career__turngoal--footer">
+                            <div class="career__turngoal-wrap career__turngoal-wrap--turnover" id="turnoverInfo">
+                                <div class="career__turngoal--round-process">
 
+                                </div>
+                                <div class="career__turngoal-info career__turngoal-info--turnover">
+                                    <p class="desc desc--extralarge desc--bold desc--color"><img loading="lazy"
+                                            src="img/usdt.svg" width="24" height="24" alt="usdt" class="img img--icon">
+                                        53,743</p>
+                                    <p class="desc desc--normal desc--middle">/ 150,000</p>
+                                </div>
+                            </div>
+                            <div class="career__turngoal-wrap career__turngoal-wrap--goal hide" id="goalInfo">
+                                <div class="career__turngoal--line-process">
+
+                                </div>
+                                <div class="career__turngoal-info career__turngoal-info--goal">
+                                    <p class="desc desc--extralarge desc--bold desc--color"><img loading="lazy"
+                                            src="img/usdt.svg" width="24" height="24" alt="usdt" class="img img--icon">
+                                        5,000</p>
+                                    <p class="desc desc--normal desc--middle">150,000</p>
+                                </div>
+                                <div class="career__turngoal-info career__turngoal-info--goal">
+                                    <p class="desc desc--extrasmall desc--semibold desc--dark"><img loading="lazy"
+                                            src="img/gift.svg" width="24" height="24" alt="gift" class="img img--icon">
+                                        5,000 USDT</p>
+                                    <p class="desc desc--extrasmall desc--semibold desc--dark"><img loading="lazy"
+                                            src="img/delivery.svg" width="24" height="24" alt="gift"
+                                            class="img img--icon"> 7d 12h 15m</p>
+                                </div>
+                                <form class="career__turngoal-form form">
+                                    <label for="imageInput"
+                                        class="btn btn--text desc desc--semibold desc--center desc--color">Download
+                                        Image</label>
+                                    <input type="file" name="avatar" id="imageInput" class="file-input">
+                                </form>
+                            </div>
+                        </footer>
+                    </div>
                 </li>
                 <li class="career__item career__item--referal">
-
+                    <div class="career__referal">
+                        <header class="career__referal--header">
+                            <h2 class="desc desc--extralarge desc--bold desc--color">Referral link</h2>
+                            <button class="ig-index__a-products--btn btn btn--primary" id="shareBtn">
+                                <img loading="lazy" src="img/share.svg" width="24" height="24" alt="share icon"
+                                    class="img img--icon"> <span
+                                    class="desc desc--small desc--semibold desc--light">Share</span>
+                            </button>
+                        </header>
+                        <footer class="career__referal--footer">
+                            <form class="career__referal--form form">
+                                <div class="form__dKey">
+                                    <input type="text" name="dKey" id="dKey" class="form__input form__input--dKey"
+                                        value="mrt/reg=1">
+                                    <button class="btn btn--text desc desc--normal desc--bold desc--color"
+                                        id="copyKey">Copy</button>
+                                </div>
+                            </form>
+                            <div class="career__referal--wrap">
+                                <img loading="lazy" src="img/qr.svg" width="177" height="177" alt="QR" class="img--qr">
+                                <div class="career__referal--wrap-column">
+                                    <div class="career__referal--info">
+                                        <p class="desc desc--extrasmall desc--middle">Total partners in team</p>
+                                        <p class="desc desc--semibold desc--normal desc--dark">746</p>
+                                    </div>
+                                    <div class="career__referal--info">
+                                        <p class="desc desc--extrasmall desc--middle">Active partners in team</p>
+                                        <p class="desc desc--semibold desc--normal desc--dark">48</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn--primary btn--fill desc desc--small desc--bold desc--light"
+                                id="partnersBtnPopup">Partners</button>
+                        </footer>
+                    </div>
                 </li>
                 <li class="career__item career__item--info">
-
+                    <div class="career__info">
+                        <header class="career__info--header">
+                            <div class="career__info--lvl">
+                                <button class="btn btn--icon btn--prev"><img src="img/arrow-fill-color.svg" width="24"
+                                        height="24" alt="" class="img img--icon img--icon-big"></button>
+                                <div class="career__info--btn">
+                                    <p class="desc desc--normal desc--semibold desc--color">My LVL</p>
+                                </div>
+                                <button class="btn btn--icon btn--next"><img src="img/arrow-fill-color.svg" width="24"
+                                        height="24" alt="" class="img img--icon img--icon-big"></button>
+                            </div>
+                            <div class="career__info--form hide">
+                                <div class="career__info--btn">
+                                    <p class="desc desc--normal desc--semibold desc--color">Line 13</p>
+                                </div>
+                                <div class="career__info--btn">
+                                    <p class="desc desc--normal desc--semibold desc--color">40,000 MRT</p>
+                                </div>
+                                <button class="btn btn--primary">Open</button>
+                            </div>
+                            <div class="career__info--wrap-column career__info--right">
+                                <p class="desc desc--extrasmall desc--middle">To buy new line reach</p>
+                                <p class="desc desc--extrasmall desc--middle"><img loading="lazy" src="img/usdt.svg" width="16" height="16" alt="usdt" class="img--icon img--icon-mini"> <b>15,000,000</b> turnover</p>
+                            </div>
+                        </header>
+                        <footer class="career__info--footer">
+                            <div class="career__info--summary">
+                                <p class="desc desc--normal desc--semibold desc--color">Opened Lines <span>12</span> <span class="desc--middle">/ 20</span></p>
+                            </div>
+                            <picture class="img">
+                                <source media="(max-width: 767.98px)" srcset="img/diagrama_scnd--mobile.svg" width="300" height="140"
+                                    alt="Overall Balance">
+                                <source media="(min-width: 768px) and (max-width:991.98px)" srcset="img/diagrama_scnd--tablet.svg"
+                                    width="656" height="140" alt="Overall Balance">
+                                <source media="(min-width:992px)" srcset="img/diagrama_scnd--desktop.svg" width="745" height="140"
+                                    alt="Overall Balance">
+                                <img src="img/diagrama_scnd--desktop.svg" width="745" height="140" alt="Overall Balance" />
+                            </picture>
+                        </footer>
+                    </div>
                 </li>
             </ul>
         </div>

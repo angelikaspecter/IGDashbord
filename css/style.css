@@ -1800,6 +1800,7 @@ input[type=checkbox]:checked + label::after {
   background-color: white;
   display: flex;
   align-items: center;
+  border: none;
   gap: 10px;
 }
 .nav__link:hover {
@@ -2019,6 +2020,7 @@ input[type=checkbox]:checked + label::after {
   gap: 16px;
 }
 .card__header--overall {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2048,7 +2050,8 @@ input[type=checkbox]:checked + label::after {
   padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  align-items: flex-start;
+  gap: 24px;
   background-color: white;
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
@@ -2059,6 +2062,17 @@ input[type=checkbox]:checked + label::after {
 @media screen and (max-width: 767.98px) {
   .card__wrap--overall {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card__wrap--overall picture.img {
+    width: auto;
+    height: 100%;
+    max-height: 175px;
+  }
+  .card__wrap--overall picture.img img {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 .card__wrap--row {
@@ -3089,6 +3103,8 @@ input[type=checkbox]:checked + label::after {
 .notification--toast {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
   max-width: 424px;
   top: 100px;
   right: 20px;
@@ -3127,8 +3143,16 @@ input[type=checkbox]:checked + label::after {
   padding: 16px;
   background-color: white;
 }
+.notification__header button.btn {
+  padding: 3px;
+}
 .notification__footer {
   padding: 0 16px 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .notification__content {
   width: 100%;
@@ -4358,26 +4382,26 @@ input[type=checkbox]:checked + label::after {
 }
 
 .career__list {
-  width: 100%;
   display: grid;
   gap: 16px;
-  grid-template-columns: auto 400px 280px;
-  grid-template-rows: 70px 120px auto;
+  grid-template-columns: 500px 1fr 320px;
+  grid-template-rows: 80px 120px 1fr;
   grid-template-areas: "balance income-type turnover-goal" "balance income-type turover-goal" "referal info info";
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .career__list {
-    grid-template-columns: 1fr 280px;
-    grid-template-rows: 200px 200px auto auto;
-    grid-template-areas: "balance balance" "income-type turnover-goal" "referal" "info";
+    grid-template-columns: 1fr 1fr 320px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "balance balance balance" "income-type income-type turnover-goal" "referal referal referal" "info info info";
     overflow-y: scroll;
   }
 }
 @media screen and (max-width: 767.98px) {
   .career__list {
-    grid-template-columns: 1fr;
-    grid-template-rows: 165px auto auto auto auto;
-    grid-template-areas: "balance" "income-type" "turnover-goal" "referal" "info";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "balance balance balance" "income-type income-type income-type" "turnover-goal turnover-goal turnover-goal" "referal referal referal" "info info info";
     overflow-y: scroll;
   }
 }
@@ -4475,6 +4499,7 @@ input[type=checkbox]:checked + label::after {
   background-color: white;
 }
 .career__income-type--footer {
+  height: 100%;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -4496,6 +4521,229 @@ input[type=checkbox]:checked + label::after {
 }
 .career__income-type--line span.decolor {
   background-color: var(--accident-primary-opacity);
+}
+.career__turngoal {
+  display: flex;
+  flex-direction: column;
+}
+.career__turngoal--header {
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background-color: white;
+}
+.career__turngoal--header button.btn {
+  opacity: 0.5;
+  position: relative;
+}
+.career__turngoal--header button.btn.active {
+  opacity: 1;
+}
+.career__turngoal--header button.btn.active::before {
+  content: "•";
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.career__turngoal--footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: white;
+}
+.career__turngoal--round-process {
+  width: 100px;
+  height: 100px;
+}
+.career__turngoal--line-process {
+  width: 100%;
+  height: 20px;
+}
+.career__turngoal-info--turnover {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.career__turngoal-info--turnover p.desc {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.career__turngoal-info--goal {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.career__turngoal-info--goal p.desc {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.career__turngoal-wrap--turnover {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.career__turngoal-wrap--goal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.career__turngoal-wrap.hide {
+  display: none;
+}
+.career__turngoal-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.career__turngoal-form .btn {
+  text-decoration: underline;
+}
+.career__referal {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.career__referal--header {
+  padding: 24px 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.career__referal--form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.career__referal--wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .career__referal--wrap {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .career__referal--wrap {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 463.98px) {
+  .career__referal--wrap {
+    flex-direction: column;
+  }
+}
+.career__referal--wrap-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.career__referal--footer {
+  padding: 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.career__referal--info {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background-color: var(--light-primary);
+}
+.career__info {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.career__info--header {
+  padding: 24px 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.career__info--footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 24px;
+  gap: 24px;
+}
+.career__info--lvl {
+  display: flex;
+  align-items: center;
+}
+.career__info--btn {
+  padding: 12px 24px;
+  background-color: var(--light-primary);
+  white-space: nowrap;
+}
+.career__info--wrap-column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.career__info--wrap-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.career__info--right {
+  justify-content: flex-end;
+  text-align: right;
+}
+.career__info--form {
+  display: flex;
+  align-items: center;
+}
+.career__info--form .btn {
+  padding: 12px 24px;
+}
+.career__info--form.hide {
+  display: none;
+}
+.career__info--summary {
+  max-width: 200px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-primary);
+  white-space: nowrap;
+}
+@media screen and (min-width: 1440px) {
+  .career__info picture.img {
+    width: auto;
+    height: 100%;
+    max-height: 375px;
+  }
+  .career__info picture.img img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 *::-webkit-scrollbar {

@@ -30,6 +30,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var signUpBtn = document.querySelector('.SingUpBtn');
+    var createAccountPopup = document.getElementById('CreateAccount');
+
+    signUpBtn.addEventListener('click', function() {
+        createAccountPopup.classList.remove('hide');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var btnAddActiveProduct = document.querySelector('.btnAddActiveProduct');
+    var createAccountPopup = document.getElementById('ActivateProductPopup');
+
+    btnAddActiveProduct.addEventListener('click', function() {
+        createAccountPopup.classList.remove('hide');
+    });
+});
+
 document.getElementById('shareBtn').addEventListener('click', function() {
     var popup = document.querySelector('.popup.popup--post');
     if (popup.classList.contains('hide')) {
@@ -49,8 +67,3 @@ document.querySelectorAll('.AddLiquidityBtn').forEach(button => {
         document.getElementById('AddLiquidityPopup').classList.remove('hide');
     });
 });
-
-document.getElementById('btnAddActiveProduct').addEventListener('click', function () {
-    document.querySelector('.popup').classList.remove('hide');
-});
-
