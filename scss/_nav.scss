@@ -92,6 +92,9 @@
                 display: flex;
             }
         }
+        &--exit {
+            border-top: 1px solid var(--accident-primary-opacity);
+        }
     }
     &__link {
         width: 100%;
@@ -107,6 +110,15 @@
             background-color: var(--accident-primary-opacity);
             & .desc {
                 color: var(--accident-primary);
+            }
+        }
+        &--exit {
+            padding: 16px 24px;
+            cursor: pointer;
+            &:hover {
+                & .desc {
+                    color: var(--error-color);
+                }
             }
         }
         &.active {

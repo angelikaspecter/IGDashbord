@@ -1,0 +1,45 @@
+.progress-wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.progress-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(var(--accident-primary) 0% 37%, var(--accident-primary-opacity) 37% 100%);
+    clip-path: circle(50% at 50% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1440 - 320)));
+    color: var(--accident-primary-opacity);
+}
+
+.progress-circle::before {
+    content: '37%';
+}
+
+.progress-hole {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background: white;
+    top: 20%;
+    left: 20%;
+    z-index: 1;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: calc(14px + (14 - 14) * ((100vw - 320px) / (1440 - 320)));
+    color: var(--middle-primary);
+    z-index: 2;
+    pointer-events: none;
+}

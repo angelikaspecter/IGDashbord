@@ -13,6 +13,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const lvlWraps = document.querySelectorAll('.tooltip__lvl-wrap');
+
+    lvlWraps.forEach(lvlWrap => {
+        const tooltip = lvlWrap.nextElementSibling;
+
+        lvlWrap.addEventListener('mouseover', function() {
+            tooltip.style.visibility = 'visible';
+            tooltip.style.opacity = '1';
+        });
+
+        lvlWrap.addEventListener('mouseout', function() {
+            tooltip.style.visibility = 'hidden';
+            tooltip.style.opacity = '0';
+        });
+    });
+});
+
 // tooltip success
 document.addEventListener('DOMContentLoaded', function () {
     const changePasswordButton = document.getElementById('changePass');
@@ -31,5 +49,20 @@ document.addEventListener('DOMContentLoaded', function () {
         successTooltip.classList.remove('hide');
 
         hideSuccessTooltip();
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const lvlWraps = document.querySelectorAll('.tooltip__lvl-wrap');
+    lvlWraps.forEach((lvlWrap, index) => {
+        lvlWrap.addEventListener('click', () => {
+            lvlWraps.forEach((wrap, i) => {
+                if (i <= index) {
+                    wrap.classList.add('active');
+                } else {
+                    wrap.classList.remove('active');
+                }
+            });
+        });
     });
 });
