@@ -38,6 +38,11 @@
                 display: flex;
             }
         }
+        &--btn {
+            @media screen and (max-width: 767.98px) {
+                display: none;
+            }
+        }
     }
     &__icon {
         &.hide {

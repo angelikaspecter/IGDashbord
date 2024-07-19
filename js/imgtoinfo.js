@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const posts = document.querySelectorAll('.post');
 
     posts.forEach(post => {
-        const postImg = post.querySelector('.post__img .img');
+        const postImg = post.querySelector('.post__img-info');
         const popupPostFooter = post.querySelector('.post--mobile');
 
         postImg.addEventListener('click', () => {

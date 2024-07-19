@@ -312,6 +312,9 @@
             align-items: center;
             justify-content: space-between;
             gap: 16px;
+            @media screen and (max-width: 419.98px) {
+                flex-direction: column;
+            }
         }
         &--footer {
             display: flex;

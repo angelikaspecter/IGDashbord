@@ -1,4 +1,7 @@
 .desc {
+    &--post-title {
+        font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1440 - 320)));
+    }
     &--extralarge {
         font-size: calc(24px + (28 - 24) * ((100vw - 320px) / (1440 - 320)));
     }

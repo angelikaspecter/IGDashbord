@@ -21,7 +21,7 @@
         height: 24px;
         object-fit: contain;
         transform: rotate(-180deg);
-        opacity: .5;
+        opacity: 0.5;
         &.active {
             opacity: 1;
         }
@@ -31,7 +31,7 @@
         height: 24px;
         object-fit: contain;
         transform: rotate(0deg);
-        opacity: .5;
+        opacity: 0.5;
         &.active {
             opacity: 1;
         }
@@ -55,5 +55,19 @@
         width: 42px;
         height: 42px;
         object-fit: contain;
+    }
+    &--logo {
+        width: auto;
+        height: 20px;
+        object-fit: contain;
+    }
+    &--qr-post {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        @media (orientation: portrait) and (max-width: 374.98px) {
+            width: 35px;
+            height: 35px;
+        }
     }
 }

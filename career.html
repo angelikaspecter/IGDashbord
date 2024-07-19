@@ -94,14 +94,14 @@
                         </ul>
                     </div>
                 </li>
+                <li class="admin__item admin__item--btn">
+                    <a href="login.html" class="btn btn--primary">Log In</a>
+                </li>
                 <li class="admin__item admin__item--menu">
                     <button class="btn btn--menu" id="openMenu"><img src="img/menu.svg" width="24" height="24"
                             alt="menu mobile" class="admin__icon"></button>
                     <button class="btn btn--menu hide" id="closeMenu"><img src="img/close-color.svg" width="24"
                             height="24" alt="menu mobile" class="admin__icon"></button>
-                </li>
-                <li class="admin__item admin__item--btn">
-                    <a href="login.html" class="btn btn--primary">Log In</a>
                 </li>
                 <li class="admin__item admin__item--user hide">
                     <img loading="lazy" src="img/avatar.svg" width="36" height="36" alt="user avatar"
@@ -167,6 +167,9 @@
                                 </li>
                             </ul>
                         </div>
+                    </li>
+                    <li class="nav__item nav__item--login">
+                        <a href="login.html" class="btn btn--primary">Log In</a>
                     </li>
                     <li class="nav__item">
                         <a href="index.html" class="nav__link">
@@ -389,7 +392,8 @@
                                             class="img img--icon"> 7d 12h 15m</p>
                                 </div>
                                 <form class="career__turngoal-form form">
-                                    <button class="btn btn--text desc desc--semibold desc--center desc--color">Download Image</button>
+                                    <button class="btn btn--text desc desc--semibold desc--center desc--color">Download
+                                        Image</button>
                                 </form>
                             </div>
                         </footer>
@@ -927,22 +931,58 @@
             <div class="popup__carousel--wrap">
                 <div class="post">
                     <hr>
-                    <header class="post__header post__header--center">
-                        <h2 class="desc desc--normal desc--bold desc--dark desc--center">IG Capital</h2>
+                    <header class="post__header post__header--career">
+                        <h2 class="desc desc--normal desc--bold desc--dark">IG Career</h2>
                     </header>
                     <div class="post__img">
                         <button class="btn btn--close btn--post">
                             <img src="img/close_small.svg" width="16" height="16" alt="close">
                         </button>
-                        <picture class="img">
-                            <source media="(max-width: 767.98px)" srcset="img/post--mobile.webp" width="322"
-                                height="322" alt="instagram post">
-                            <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/post--tablet.webp"
-                                width="450" height="450" alt="instagram post">
-                            <source media="(min-width:1440px)" srcset="img/post--desktop.webp" width="500" height="500"
-                                alt="instagram post">
-                            <img src="img/post--desktop.webp" width="500" height="500" alt="instagram post" />
-                        </picture>
+                        <div class="post__img-info">
+                            <div class="post__info">
+                                <header class="post__info--header">
+                                    <img src="img/logo-post.svg" width="110" height="20" alt="" class="img img--logo">
+                                    <p class="desc desc--extralarge desc--semibold desc--right desc--light">Career <br>
+                                        Earnings</p>
+                                        <img src="img/qr-post.svg" width="75" height="75" alt="qr" class="img img--qr-post">
+                                </header>
+                                <div class="post__info--wrap">
+                                    <dl class="post__info--info">
+                                        <dt class="desc desc--mini desc--regular desc--light">Team Investment Turnover</dt>
+                                        <dd class="desc desc--mini desc--semibold desc--right desc--light">$68,942</dd>
+                                    </dl>
+                                    <dl class="post__info--info">
+                                        <dt class="desc desc--mini desc--regular desc--light">Personal Investment</dt>
+                                        <dd class="desc desc--mini desc--semibold desc--right desc--light">$7,125</dd>
+                                    </dl>
+                                    <dl class="post__info--info">
+                                        <dt class="desc desc--mini desc--regular desc--light">My Career Income</dt>
+                                        <dd class="desc desc--mini desc--semibold desc--right desc--light">$3,647</dd>
+                                    </dl>
+                                    <dl class="post__info--info">
+                                        <dt class="desc desc--mini desc--regular desc--light">Members in team</dt>
+                                        <dd class="desc desc--mini desc--semibold desc--right desc--light">24</dd>
+                                    </dl>
+                                    <dl class="post__info--info">
+                                        <dt class="desc desc--mini desc--regular desc--light">Leader Bonus</dt>
+                                        <dd class="desc desc--mini desc--semibold desc--right desc--light">$1,547</dd>
+                                    </dl>
+                                </div>
+                                <footer class="post__info--footer">
+                                    <p class="desc desc--large desc--semibold desc--center desc--light">Advance your
+                                        career with IG</p>
+                                </footer>
+                            </div>
+                            <picture class="img">
+                                <source media="(max-width: 767.98px)" srcset="img/career_post.webp" width="322"
+                                    height="322" alt="instagram post">
+                                <source media="(min-width: 768px) and (max-width:1439.98px)"
+                                    srcset="img/career_post.webp" width="450" height="450" alt="instagram post">
+                                <source media="(min-width:1440px)" srcset="img/career_post.webp" width="500" height="500"
+                                    alt="instagram post">
+                                <img src="img/career_post.webp" width="500" height="500" alt="instagram post" />
+                            </picture>
+                        </div>
                         <footer class="post__footer post--mobile hide">
                             <form class="form">
                                 <button class="btn btn--primary">Download</button>
@@ -1025,23 +1065,58 @@
                 </div>
                 <div class="post">
                     <hr>
-                    <header class="post__header">
-                        <h2 class="desc desc--normal desc--bold desc--dark">IG Capital</h2>
-                        <p class="desc desc--normal desc--light-middle">#32342</p>
+                    <header class="post__header post__header--career">
+                        <h2 class="desc desc--normal desc--bold desc--dark">IG Career</h2>
                     </header>
                     <div class="post__img">
                         <button class="btn btn--close btn--post">
                             <img src="img/close_small.svg" width="16" height="16" alt="close">
                         </button>
-                        <picture class="img">
-                            <source media="(max-width: 767.98px)" srcset="img/post--mobile.webp" width="322"
-                                height="322" alt="instagram post">
-                            <source media="(min-width: 768px) and (max-width:1439.98px)" srcset="img/post--tablet.webp"
-                                width="450" height="450" alt="instagram post">
-                            <source media="(min-width:1440px)" srcset="img/post--desktop.webp" width="500" height="500"
-                                alt="instagram post">
-                            <img src="img/post--desktop.webp" width="500" height="500" alt="instagram post" />
-                        </picture>
+                        <div class="post__img-info">
+                            <div class="post__info">
+                                <header class="post__info--header">
+                                    <img src="img/logo-post.svg" width="110" height="20" alt="" class="img img--logo">
+                                    <p class="desc desc--extralarge desc--semibold desc--right desc--light">Career <br>
+                                        Earnings</p>
+                                        <img src="img/qr-post.svg" width="75" height="75" alt="qr" class="img img--qr-post">
+                                </header>
+                                <div class="post__info--wrap">
+                                    <dl class="post__info--info">
+                                        <dt class="desc desc--mini desc--regular desc--light">Team Investment Turnover</dt>
+                                        <dd class="desc desc--mini desc--semibold desc--right desc--light">$68,942</dd>
+                                    </dl>
+                                    <dl class="post__info--info">
+                                        <dt class="desc desc--mini desc--regular desc--light">Personal Investment</dt>
+                                        <dd class="desc desc--mini desc--semibold desc--right desc--light">$7,125</dd>
+                                    </dl>
+                                    <dl class="post__info--info">
+                                        <dt class="desc desc--mini desc--regular desc--light">My Career Income</dt>
+                                        <dd class="desc desc--mini desc--semibold desc--right desc--light">$3,647</dd>
+                                    </dl>
+                                    <dl class="post__info--info">
+                                        <dt class="desc desc--mini desc--regular desc--light">Members in team</dt>
+                                        <dd class="desc desc--mini desc--semibold desc--right desc--light">24</dd>
+                                    </dl>
+                                    <dl class="post__info--info">
+                                        <dt class="desc desc--mini desc--regular desc--light">Leader Bonus</dt>
+                                        <dd class="desc desc--mini desc--semibold desc--right desc--light">$1,547</dd>
+                                    </dl>
+                                </div>
+                                <footer class="post__info--footer">
+                                    <p class="desc desc--large desc--semibold desc--center desc--light">Advance your
+                                        career with IG</p>
+                                </footer>
+                            </div>
+                            <picture class="img">
+                                <source media="(max-width: 767.98px)" srcset="img/career_post.webp" width="322"
+                                    height="322" alt="instagram post">
+                                <source media="(min-width: 768px) and (max-width:1439.98px)"
+                                    srcset="img/career_post.webp" width="450" height="450" alt="instagram post">
+                                <source media="(min-width:1440px)" srcset="img/career_post.webp" width="500" height="500"
+                                    alt="instagram post">
+                                <img src="img/career_post.webp" width="500" height="500" alt="instagram post" />
+                            </picture>
+                        </div>
                         <footer class="post__footer post--mobile hide">
                             <form class="form">
                                 <button class="btn btn--primary">Download</button>
@@ -1142,9 +1217,9 @@
     <script src="js/select.js"></script>
     <script src="js/form-btn-disabled.js"></script>
     <script src="js/imgtoinfo.js"></script>
-    <script src="js/post-carousel.js"></script>
     <script src="js/filter.js"></script>
     <script src="js/turngoal.js"></script>
+    <script src="js/post-carousel.js"></script>
 </body>
 
 </html>
