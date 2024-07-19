@@ -26,12 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         btnNext.addEventListener('click', function () {
-            console.log('Next button clicked');
             showNextPost();
         });
 
         btnPrev.addEventListener('click', function () {
-            console.log('Previous button clicked');
             showPrevPost();
         });
 

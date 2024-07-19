@@ -1022,6 +1022,12 @@ input[type=checkbox]:checked + label::after {
 .form__dKey--small {
   gap: 0;
 }
+.form__dKey button#emailCode.hide {
+  display: none;
+}
+.form__dKey button#resendCode.hide {
+  display: none;
+}
 
 .file-input {
   display: none;

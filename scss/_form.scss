@@ -378,6 +378,16 @@
         &--small {
             gap: 0;
         }
+        & button#emailCode {
+            &.hide {
+                display: none;
+            }
+        }
+        & button#resendCode {
+            &.hide {
+                display: none;
+            }
+        }
     }
 }
 
