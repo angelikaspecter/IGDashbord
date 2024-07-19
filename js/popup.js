@@ -70,6 +70,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    var changePasswordBtn = document.querySelector('.changePasswordBtn');
+    var changePasswordPopup = document.getElementById('changePasswordPopup');
+
+    changePasswordBtn.addEventListener('click', function () {
+        changePasswordPopup.classList.remove('hide');
+    });
+});
+
 document.getElementById('shareBtn').addEventListener('click', function () {
     var popup = document.querySelector('.popup.popup--post');
     if (popup.classList.contains('hide')) {
@@ -89,3 +98,4 @@ document.querySelectorAll('.AddLiquidityBtn').forEach(button => {
         document.getElementById('AddLiquidityPopup').classList.remove('hide');
     });
 });
+

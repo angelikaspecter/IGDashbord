@@ -226,18 +226,16 @@ input[type=checkbox]:checked + label::after {
   transform: scale(1.02);
 }
 .btn:disabled {
-  color: rgb(129, 153, 151);
-  background-color: rgb(213, 221, 220);
+  background-color: var(--accident-primary-opacity);
+  color: var(--light-secondary);
   cursor: none;
 }
 .btn:disabled:hover {
-  background-color: rgb(213, 221, 220);
-  color: rgb(129, 153, 151);
+  background-color: var(--accident-primary-opacity);
   transform: none;
 }
 .btn:disabled:active {
-  background-color: rgb(213, 221, 220);
-  color: rgb(129, 153, 151);
+  background-color: var(--accident-primary-opacity);
 }
 .btn--primary {
   background-color: var(--accident-primary);
@@ -266,6 +264,9 @@ input[type=checkbox]:checked + label::after {
 .btn--secondary:active {
   transition: all 0.5s ease-in-out;
   background-color: rgb(31, 59, 56);
+}
+.btn--secondary:disabled {
+  color: var(--middle-primary);
 }
 .btn--google {
   display: flex;
@@ -382,8 +383,15 @@ input[type=checkbox]:checked + label::after {
 .btn--text:hover {
   transition: none;
 }
+.btn--text:hover:disabled {
+  background-color: transparent;
+  cursor: none;
+}
 .btn--text:active {
   transition: none;
+}
+.btn--text:disabled {
+  background-color: transparent;
 }
 .btn--post {
   position: absolute;
@@ -396,6 +404,10 @@ input[type=checkbox]:checked + label::after {
     top: 6px;
     right: 6px;
   }
+}
+.btn--thanks {
+  max-width: 150px;
+  margin-top: 50px;
 }
 .btn__wrap--row {
   display: flex;
@@ -541,10 +553,6 @@ input[type=checkbox]:checked + label::after {
   -o-object-fit: contain;
      object-fit: contain;
   transform: rotate(-180deg);
-  opacity: 0.5;
-}
-.img--prev.active {
-  opacity: 1;
 }
 .img--next {
   width: 24px;
@@ -552,10 +560,6 @@ input[type=checkbox]:checked + label::after {
   -o-object-fit: contain;
      object-fit: contain;
   transform: rotate(0deg);
-  opacity: 0.5;
-}
-.img--next.active {
-  opacity: 1;
 }
 .img--icon {
   width: 24px;
@@ -598,6 +602,12 @@ input[type=checkbox]:checked + label::after {
     width: 35px;
     height: 35px;
   }
+}
+.img--check {
+  width: 180px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .form {
@@ -660,6 +670,9 @@ input[type=checkbox]:checked + label::after {
   .form__wrap--btns-row {
     flex-direction: column;
   }
+}
+.form__wrap--btns-short {
+  max-width: 300px;
 }
 @media (orientation: landscape) and (max-height: 574.98px) {
   .form__wrap--qr {
@@ -1221,6 +1234,9 @@ input[type=checkbox]:checked + label::after {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+}
+.login__content--center {
+  align-items: center;
 }
 .login__delimiter {
   width: 100%;
@@ -2160,10 +2176,12 @@ input[type=checkbox]:checked + label::after {
   display: flex;
   align-items: center;
   gap: 16px;
+  transition: transform 0.3s ease-in-out;
 }
 .card__carousel--item {
   min-width: 300px;
   max-width: 400px;
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -4082,6 +4100,11 @@ input[type=checkbox]:checked + label::after {
     display: none;
   }
 }
+@media (orientation: landscape) and (max-height: 574.98px) {
+  .ig-index__a-products--wrap {
+    overflow-x: scroll;
+  }
+}
 .ig-index__a-products-table {
   width: 100%;
   padding: 3px;
@@ -4416,6 +4439,11 @@ input[type=checkbox]:checked + label::after {
 @media screen and (max-width: 767.98px) {
   .ig-future__a-products--wrap {
     display: none;
+  }
+}
+@media (orientation: landscape) and (max-height: 574.98px) {
+  .ig-future__a-products--wrap {
+    overflow-x: scroll;
   }
 }
 .ig-future__a-products-table {

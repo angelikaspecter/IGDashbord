@@ -21,20 +21,12 @@
         height: 24px;
         object-fit: contain;
         transform: rotate(-180deg);
-        opacity: 0.5;
-        &.active {
-            opacity: 1;
-        }
     }
     &--next {
         width: 24px;
         height: 24px;
         object-fit: contain;
         transform: rotate(0deg);
-        opacity: 0.5;
-        &.active {
-            opacity: 1;
-        }
     }
     &--icon {
         width: 24px;
@@ -69,5 +61,10 @@
             width: 35px;
             height: 35px;
         }
+    }
+    &--check {
+        width: 180px;
+        height: auto;
+        object-fit: contain;
     }
 }

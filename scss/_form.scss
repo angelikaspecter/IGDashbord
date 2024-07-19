@@ -51,6 +51,9 @@
                 flex-direction: column;
             }
         }
+        &--btns-short {
+            max-width: 300px;
+        }
         &--qr {
             @media (orientation: landscape) and (max-height: 574.98px) {
                 flex-direction: row;
