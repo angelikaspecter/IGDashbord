@@ -503,9 +503,10 @@
                     <div class="search">
                         <img src="img/search.svg" width="32" height="32" alt="search"
                             class="search__icon img img--icon">
-                        <input class="search__input" type="search" name="search" id="search" value="User 1">
-                        <button type="reset" class="search__btn search__btn--reset" id="reset-btn">
-                            <img src="img/close.svg" width="24" height="24" alt="reset" class="img img--icon"></button>
+                        <input class="search__input" type="search" name="search" id="search" placeholder="Search">
+                        <button type="reset" class="search__btn search__btn--reset hide" id="reset-btn">
+                            <img src="img/close.svg" width="24" height="24" alt="reset" class="img img--icon">
+                        </button>
                     </div>
                     <div class="calendar calendar--partners" id="calendar-container">
                         <input class="calendar__input calendar__input--partners desc desc--normal desc--bold desc--dark"
@@ -513,7 +514,7 @@
                         <button class="calendar__btn" id="calendar-btn">
                             <img src="img/calendar.svg" width="24" height="24" alt="calendar" class="img img--icon">
                         </button>
-                        <div class="calendar__popup" id="calendar-popup" style="display: none;">
+                        <div class="calendar__popup" id="calendar-popup">
                             <div class="calendar__header">
                                 <div class="calendar__month">
                                     <button class="calendar__btn calendar__btn--prev" id="prev-month">
@@ -944,11 +945,12 @@
                                     <img src="img/logo-post.svg" width="110" height="20" alt="" class="img img--logo">
                                     <p class="desc desc--extralarge desc--semibold desc--right desc--light">Career <br>
                                         Earnings</p>
-                                        <img src="img/qr-post.svg" width="75" height="75" alt="qr" class="img img--qr-post">
+                                    <img src="img/qr-post.svg" width="75" height="75" alt="qr" class="img img--qr-post">
                                 </header>
                                 <div class="post__info--wrap">
                                     <dl class="post__info--info">
-                                        <dt class="desc desc--mini desc--regular desc--light">Team Investment Turnover</dt>
+                                        <dt class="desc desc--mini desc--regular desc--light">Team Investment Turnover
+                                        </dt>
                                         <dd class="desc desc--mini desc--semibold desc--right desc--light">$68,942</dd>
                                     </dl>
                                     <dl class="post__info--info">
@@ -978,8 +980,8 @@
                                     height="322" alt="instagram post">
                                 <source media="(min-width: 768px) and (max-width:1439.98px)"
                                     srcset="img/career_post.webp" width="450" height="450" alt="instagram post">
-                                <source media="(min-width:1440px)" srcset="img/career_post.webp" width="500" height="500"
-                                    alt="instagram post">
+                                <source media="(min-width:1440px)" srcset="img/career_post.webp" width="500"
+                                    height="500" alt="instagram post">
                                 <img src="img/career_post.webp" width="500" height="500" alt="instagram post" />
                             </picture>
                         </div>
@@ -1078,11 +1080,12 @@
                                     <img src="img/logo-post.svg" width="110" height="20" alt="" class="img img--logo">
                                     <p class="desc desc--extralarge desc--semibold desc--right desc--light">Career <br>
                                         Earnings</p>
-                                        <img src="img/qr-post.svg" width="75" height="75" alt="qr" class="img img--qr-post">
+                                    <img src="img/qr-post.svg" width="75" height="75" alt="qr" class="img img--qr-post">
                                 </header>
                                 <div class="post__info--wrap">
                                     <dl class="post__info--info">
-                                        <dt class="desc desc--mini desc--regular desc--light">Team Investment Turnover</dt>
+                                        <dt class="desc desc--mini desc--regular desc--light">Team Investment Turnover
+                                        </dt>
                                         <dd class="desc desc--mini desc--semibold desc--right desc--light">$68,942</dd>
                                     </dl>
                                     <dl class="post__info--info">
@@ -1112,8 +1115,8 @@
                                     height="322" alt="instagram post">
                                 <source media="(min-width: 768px) and (max-width:1439.98px)"
                                     srcset="img/career_post.webp" width="450" height="450" alt="instagram post">
-                                <source media="(min-width:1440px)" srcset="img/career_post.webp" width="500" height="500"
-                                    alt="instagram post">
+                                <source media="(min-width:1440px)" srcset="img/career_post.webp" width="500"
+                                    height="500" alt="instagram post">
                                 <img src="img/career_post.webp" width="500" height="500" alt="instagram post" />
                             </picture>
                         </div>
@@ -1220,6 +1223,7 @@
     <script src="js/filter.js"></script>
     <script src="js/turngoal.js"></script>
     <script src="js/post-carousel.js"></script>
+    <script src="js/search.js"></script>
 </body>
 
 </html>

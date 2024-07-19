@@ -2809,7 +2809,7 @@ input[type=checkbox]:checked + label::after {
 .custom-select.open .custom-options {
   display: flex;
   min-width: 180px;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .calendar {
@@ -2857,6 +2857,7 @@ input[type=checkbox]:checked + label::after {
   cursor: pointer;
 }
 .calendar__popup {
+  display: none;
   width: 350px;
   position: absolute;
   top: 40px;
@@ -4514,7 +4515,7 @@ input[type=checkbox]:checked + label::after {
   color: var(--light-secondary);
 }
 .search__btn {
-  background-color: transparent;
+  background-color: white;
   border: none;
   cursor: pointer;
 }
@@ -4524,6 +4525,9 @@ input[type=checkbox]:checked + label::after {
   transform: translateY(-50%);
   right: 16px;
   z-index: 55;
+}
+.search__btn.hide {
+  display: none;
 }
 .search__icon {
   position: absolute;

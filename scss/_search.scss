@@ -22,7 +22,7 @@
         }
     }
     &__btn {
-        background-color: transparent;
+        background-color: white;
         border: none;
         cursor: pointer;
         &--reset {
@@ -31,6 +31,9 @@
             transform: translateY(-50%);
             right: 16px;
             z-index: 55;
+        }
+        &.hide {
+            display: none;
         }
     }
     &__icon {

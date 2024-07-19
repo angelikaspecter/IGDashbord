@@ -34,6 +34,7 @@
         cursor: pointer;
     }
     &__popup {
+        display: none;
         width: 350px;
         position: absolute;
         top: 40px;

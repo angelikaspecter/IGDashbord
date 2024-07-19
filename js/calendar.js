@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const calendarBtn = document.getElementById("calendar-btn");
     const calendarPopup = document.getElementById("calendar-popup");
     const calendarInput = document.getElementById("calendar");
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const year = displayedDate.getFullYear();
         const month = displayedDate.getMonth();
         currentMonth.textContent = displayedDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
-        
+
         datepicker.innerHTML = '';
         const firstDayOfMonth = new Date(year, month, 1).getDay();
         const daysInMonth = new Date(year, month + 1, 0).getDate();
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return `${startDay}.${startMonth}-${endDay}.${endMonth}`;
     }
 
-    calendarBtn.addEventListener("click", function(event) {
+    calendarBtn.addEventListener("click", function (event) {
         event.preventDefault();
         calendarPopup.style.display = calendarPopup.style.display === "none" ? "block" : "none";
         if (calendarPopup.style.display === "block") {
@@ -68,24 +68,24 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    prevMonthBtn.addEventListener("click", function() {
+    prevMonthBtn.addEventListener("click", function () {
         displayedDate.setMonth(displayedDate.getMonth() - 1);
         updateCalendar();
     });
 
-    nextMonthBtn.addEventListener("click", function() {
+    nextMonthBtn.addEventListener("click", function () {
         displayedDate.setMonth(displayedDate.getMonth() + 1);
         updateCalendar();
     });
 
-    resetBtn.addEventListener("click", function() {
+    resetBtn.addEventListener("click", function () {
         startDate = null;
         endDate = null;
         calendarInput.value = '';
         updateCalendar();
     });
 
-    datepicker.addEventListener("click", function(event) {
+    datepicker.addEventListener("click", function (event) {
         if (event.target.classList.contains("day") && event.target.textContent) {
             const day = parseInt(event.target.dataset.day);
             const month = parseInt(event.target.dataset.month) - 1;
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    document.addEventListener("click", function(event) {
+    document.addEventListener("click", function (event) {
         if (!calendarPopup.contains(event.target) && !calendarBtn.contains(event.target)) {
             calendarPopup.style.display = "none";
         }
