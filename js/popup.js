@@ -19,14 +19,31 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Функция для закрытия попапа
+    function closePopup(popup) {
+        if (popup) {
+            popup.classList.add('hide');
+        }
+    }
+
+    // Закрытие попапа по нажатию на кнопки
     const closeButtons = document.querySelectorAll('.btn--close, #closePopup');
     closeButtons.forEach(button => {
         button.addEventListener('click', function () {
             const popup = button.closest('.popup');
-            if (popup) {
-                popup.classList.add('hide');
-            }
+            closePopup(popup);
         });
+    });
+
+    // Закрытие попапа по клику вне блока .popup__wrap
+    document.addEventListener('click', function (event) {
+        const popupWrap = event.target.closest('.popup__wrap');
+        const popup = event.target.closest('.popup');
+
+        // Проверяем, что клик был вне .popup__wrap, но внутри .popup
+        if (!popupWrap && popup) {
+            closePopup(popup);
+        }
     });
 });
 
