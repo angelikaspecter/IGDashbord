@@ -1683,7 +1683,7 @@ input[type=checkbox]:checked + label::after {
   display: grid;
   gap: 16px;
   grid-template-columns: 1fr 350px;
-  grid-template-rows: 280px 270px 1fr;
+  grid-template-rows: 280px 1fr 1fr;
   grid-template-areas: "products products" "overall overall-mini" "history history";
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
@@ -2127,7 +2127,7 @@ input[type=checkbox]:checked + label::after {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 0;
   background-color: white;
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
@@ -5278,6 +5278,12 @@ input[type=checkbox]:checked + label::after {
     -o-object-fit: contain;
        object-fit: contain;
   }
+}
+
+#chartdiv {
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
 }
 
 *::-webkit-scrollbar {
