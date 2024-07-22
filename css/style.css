@@ -1591,7 +1591,7 @@ input[type=checkbox]:checked + label::after {
   left: 20px;
   right: 20px;
   transform: translateY(-50%);
-  z-index: 999;
+  z-index: 999999;
 }
 @media screen and (max-width: 767.98px) {
   .popup__nav {

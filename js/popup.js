@@ -38,10 +38,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // Закрытие попапа по клику вне блока .popup__wrap
     document.addEventListener('click', function (event) {
         const popupWrap = event.target.closest('.popup__wrap');
+        const popupNav = event.target.closest('.popup__nav');
         const popup = event.target.closest('.popup');
 
-        // Проверяем, что клик был вне .popup__wrap, но внутри .popup
-        if (!popupWrap && popup) {
+        // Проверяем, что клик был вне .popup__wrap и вне .popup__nav, но внутри .popup
+        if (!popupWrap && !popupNav && popup) {
             closePopup(popup);
         }
     });
@@ -115,25 +116,25 @@ document.querySelectorAll('.AddLiquidityBtn').forEach(button => {
     });
 });
 
-       // Функция для удаления класса "hide" у попапа
-       function showPopup() {
-        document.getElementById('ActivateProductPopup').classList.remove('hide');
-    }
+// Функция для удаления класса "hide" у попапа
+function showPopup() {
+    document.getElementById('ActivateProductPopup').classList.remove('hide');
+}
 
-    document.addEventListener('DOMContentLoaded', function() {
-        // Добавление обработчиков событий для карточек первой группы
-        var passiveCard = document.getElementById('IGPassive');
-        var activeCard = document.getElementById('IGActive');
-        var capitalCard = document.getElementById('IGCapital');
+document.addEventListener('DOMContentLoaded', function () {
+    // Добавление обработчиков событий для карточек первой группы
+    var passiveCard = document.getElementById('IGPassive');
+    var activeCard = document.getElementById('IGActive');
+    var capitalCard = document.getElementById('IGCapital');
 
-        if (passiveCard) passiveCard.addEventListener('click', showPopup);
-        if (activeCard) activeCard.addEventListener('click', showPopup);
-        if (capitalCard) capitalCard.addEventListener('click', showPopup);
+    if (passiveCard) passiveCard.addEventListener('click', showPopup);
+    if (activeCard) activeCard.addEventListener('click', showPopup);
+    if (capitalCard) capitalCard.addEventListener('click', showPopup);
 
-        // Добавление обработчиков событий для карточек второй группы
-        var lifeCard = document.getElementById('IGFLife');
-        var energyCard = document.getElementById('IGFEnergy');
+    // Добавление обработчиков событий для карточек второй группы
+    var lifeCard = document.getElementById('IGFLife');
+    var energyCard = document.getElementById('IGFEnergy');
 
-        if (lifeCard) lifeCard.addEventListener('click', showPopup);
-        if (energyCard) energyCard.addEventListener('click', showPopup);
-    });
+    if (lifeCard) lifeCard.addEventListener('click', showPopup);
+    if (energyCard) energyCard.addEventListener('click', showPopup);
+});
