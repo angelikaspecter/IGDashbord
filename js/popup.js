@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
 document.addEventListener('DOMContentLoaded', function () {
     var signUpBtn = document.querySelector('.SingUpBtn');
     var createAccountPopup = document.getElementById('CreateAccount');
@@ -64,8 +65,6 @@ document.addEventListener('DOMContentLoaded', function () {
         createAccountPopup.classList.remove('hide');
     });
 });
-
-
 
 document.addEventListener('DOMContentLoaded', function () {
     const filterBtn = document.querySelector('.filter__btn');
@@ -116,3 +115,25 @@ document.querySelectorAll('.AddLiquidityBtn').forEach(button => {
     });
 });
 
+       // Функция для удаления класса "hide" у попапа
+       function showPopup() {
+        document.getElementById('ActivateProductPopup').classList.remove('hide');
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Добавление обработчиков событий для карточек первой группы
+        var passiveCard = document.getElementById('IGPassive');
+        var activeCard = document.getElementById('IGActive');
+        var capitalCard = document.getElementById('IGCapital');
+
+        if (passiveCard) passiveCard.addEventListener('click', showPopup);
+        if (activeCard) activeCard.addEventListener('click', showPopup);
+        if (capitalCard) capitalCard.addEventListener('click', showPopup);
+
+        // Добавление обработчиков событий для карточек второй группы
+        var lifeCard = document.getElementById('IGFLife');
+        var energyCard = document.getElementById('IGFEnergy');
+
+        if (lifeCard) lifeCard.addEventListener('click', showPopup);
+        if (energyCard) energyCard.addEventListener('click', showPopup);
+    });

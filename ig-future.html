@@ -294,7 +294,7 @@
                         id="DepositOpenPopup">Deposit in</button>
                 </li>
                 <li class="ig-future__item ig-future__item--cards">
-                    <div class="ig-future__card">
+                    <div class="ig-future__card" id="IGFLife">
                         <header class="ig-future__card-status ig-future__card-status--msg">
                             <span class="desc desc--mini desc--bold">4 days 23 hours left!</span>
                         </header>
@@ -334,7 +334,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ig-future__card">
+                    <div class="ig-future__card" id="IGFEnergy">
                         <header class="ig-future__card-status ig-future__card-status--msg">
                             <span class="desc desc--mini desc--bold">Please wait for the next round!</span>
                         </header>
@@ -1221,7 +1221,7 @@
                 <img src="img/close.svg" width="24" height="24" alt="close">
             </button>
             <header class="popup__wrap--header">
-                <h2 class="title title--wrap title--bold title--color">Activate IG Index</h2>
+                <h2 class="title title--wrap title--bold title--color">Activate IG Future</h2>
             </header>
             <form class="form">
                 <div class="custom-select-wrapper custom-select-wrapper--row">
@@ -1238,7 +1238,7 @@
                 </div>
                 <div class="custom-select-wrapper custom-select-wrapper--row">
                     <input type="number" class="form__input form__input--clean" placeholder="0.00">
-                    <p class="form__desc desc desc--normal desc--semibold desc--color">Max</p>
+                    <p class="form__desc desc desc--normal desc--semibold desc--color desc--cursor">Max</p>
                     <div class="delimiter"></div>
                     <div class="custom-select">
                         <div class="custom-select-trigger custom-select-trigger--clean custom-select-trigger--crypto">
@@ -1271,12 +1271,10 @@
                         <span>60</span>
                         <span>80</span>
                         <span>100</span>
-                        <span>120</span>
-                        <span>140</span>
                     </label>
                     <div class="form__range-container">
                         <div class="form__range-fill" id="range-fill"></div>
-                        <input class="form__range" type="range" name="reinvest" id="reinvest" min="0" max="140"
+                        <input class="form__range" type="range" name="reinvest" id="reinvest" min="0" max="100"
                             step="20">
                         <div class="form__range-ticks">
                             <div class="form__range-wrap">
@@ -1296,12 +1294,6 @@
                             </div>
                             <div class="form__range-wrap">
                                 <div class="form__range-tick" data-value="100"></div>
-                            </div>
-                            <div class="form__range-wrap">
-                                <div class="form__range-tick" data-value="120"></div>
-                            </div>
-                            <div class="form__range-wrap">
-                                <div class="form__range-tick" data-value="140"></div>
                             </div>
                         </div>
                     </div>

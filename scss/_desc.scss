@@ -59,6 +59,9 @@
     &--error {
         color: var(--error-color);
     }
+    &--cursor {
+        cursor: pointer;
+    }
     &.hide {
         display: none;
     }
