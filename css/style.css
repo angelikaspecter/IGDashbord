@@ -2258,6 +2258,36 @@ input[type=checkbox]:checked + label::after {
     max-height: 100%;
   }
 }
+.card__mini--wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media screen and (min-width: 1440px) {
+  .card__mini--wrap a.btn {
+    padding: 0;
+    font-size: calc(12px + 2 * (100vw - 320px) / 1120);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .card__mini--wrap .img--qr {
+    width: auto;
+    height: 100%;
+    max-height: 70px;
+  }
+}
+@media screen and (max-width: 374.98px) {
+  .card__mini--wrap {
+    width: 100%;
+    align-items: center;
+  }
+  .card__mini--wrap .img--qr {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    max-height: 100%;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .card__mini {
     flex: 1 0 calc(33.3333333333% - 16px);
@@ -4400,6 +4430,7 @@ input[type=checkbox]:checked + label::after {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 16px;
   padding: 24px 16px;
   background-color: white;
@@ -5059,6 +5090,9 @@ input[type=checkbox]:checked + label::after {
   padding: 10px;
   border: none;
 }
+.career__trigger--clean {
+  cursor: auto;
+}
 .career__tooltip--profit {
   display: flex;
   align-items: center;
@@ -5325,8 +5359,7 @@ input[type=checkbox]:checked + label::after {
 #chartdiv {
   width: 100%;
   max-width: 100%;
-  height: 300px;
-  border: 1px solid #ccc;
+  height: 320px;
 }
 
 *::-webkit-scrollbar {

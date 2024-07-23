@@ -115,6 +115,9 @@
     &__trigger {
         padding: 10px;
         border: none;
+        &--clean {
+            cursor: auto;
+        }
     }
     &__tooltip {
         &--profit {
