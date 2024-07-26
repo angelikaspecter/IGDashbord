@@ -1785,15 +1785,13 @@ input[type=checkbox]:checked + label::after {
   .nav__menu {
     width: 100%;
     max-width: 270px;
-    height: calc(100% - 110px);
+    height: calc(100vh - 80px);
     background-color: white;
-    margin: 16px;
     border: 1px solid rgb(242, 242, 242);
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 16px auto;
-    box-shadow: none;
+    right: 0;
+    overflow: hidden;
+    overflow-y: scroll;
   }
 }
 @media (orientation: landscape) and (max-width: 991.98px) {
