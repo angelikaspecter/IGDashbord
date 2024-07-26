@@ -3612,6 +3612,11 @@ input[type=checkbox]:checked + label::after {
   width: 100%;
   flex: 1 1 calc(25% - 12px);
 }
+@media screen and (min-width: 768px) {
+  .social__item:first-child {
+    display: none;
+  }
+}
 .social__link {
   width: 32px;
   height: 32px;
