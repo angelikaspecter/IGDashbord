@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    &_item {
+    &__item {
         width: 100%;
         flex: 1 1 calc(100% / 4 - 12px);
     }
@@ -10,5 +10,6 @@
         width: 32px;
         height: 32px;
         border-radius: 50%;
+
     }
 }
