@@ -3666,7 +3666,7 @@ input[type=checkbox]:checked + label::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
+  background-color: var(--light-primary);
   gap: 16px;
 }
 @media (orientation: landscape) and (max-height: 574.98px) {
@@ -3866,7 +3866,7 @@ input[type=checkbox]:checked + label::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--middle-primary);
+  background-color: var(--dark-primary);
   gap: 16px;
 }
 @media (orientation: landscape) and (max-height: 574.98px) {
