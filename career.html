@@ -216,6 +216,15 @@
                             <span class="desc desc--extrasmall desc--semibold desc--middle">Career</span>
                         </a>
                     </li>
+                    <li class="nav__item">
+                        <button class="nav__link" id="shareBtn">
+                            <img src="img/qrcode.svg" width="24" height="24" alt="share"
+                                class="nav__icon nav__icon--classic hide">
+                            <img src="img/qrcode-active.svg" width="24" height="24" alt="share"
+                                class="nav__icon nav__icon--active">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Share</span>
+                        </button>
+                    </li>
                 </ul>
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -979,35 +988,47 @@
                             <form class="form">
                                 <button class="btn btn--primary">Download</button>
                                 <div class="form__wrap--post">
-                                    <div class="form__dKey form__dKey--small">
-                                        <input type="text" name="dKey" id="dKey" class="form__input form__input--dKey"
-                                            value="mrt.com/referal1/ua.com">
-                                        <button class="btn btn--text desc desc--normal desc--bold desc--color"
-                                            id="copyKey">Copy</button>
-                                    </div>
                                     <ul class="social">
                                         <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/instagram.svg" width="32" height="32" alt="instagram"
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/instagram-mobile-classic.svg" width="32" height="32" alt="instagram"
                                                     class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/Telegram.svg" width="32" height="32" alt="telegram"
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/whatsapp-mobile-classic.svg" width="32" height="32" alt="whatsapp"
                                                     class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/Whatsapp.svg" width="32" height="32" alt="whatsapp"
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/facebook-mobile-classic.svg" width="32" height="32" alt="facebook"
                                                     class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/more-social.svg" width="32" height="32" alt="more"
-                                                    class="img img--icon-big">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/telegram-mobile-classic.svg" width="32" height="32" alt="telegram"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/link-mobile-classic.svg" width="32" height="32" alt="copy"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/download-mobile-classic.svg" width="32" height="32" alt="download"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/more-mobile-classic.svg" width="32" height="32" alt="more"
+                                                    class="img img--icon-middle">
                                             </a>
                                         </li>
                                     </ul>
@@ -1025,7 +1046,7 @@
                                     <button class="btn btn--text desc desc--normal desc--bold desc--color"
                                         id="copyKey">Copy</button>
                                 </div>
-                                <ul class="social">
+                                <ul class="social social--desktop">
                                     <li class="social__item">
                                         <a href="" class="social__link">
                                             <img src="img/copy.svg" width="32" height="32" alt="copy"
@@ -1052,148 +1073,51 @@
                                     </li>
                                     <li class="social__item">
                                         <a href="" class="social__link">
-                                            <img src="img/more-social.svg" width="32" height="32" alt="more"
+                                            <img src="img/Facebook.svg" width="32" height="32" alt="Facebook"
                                                 class="img img--icon-middle">
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
-                        </form>
-                    </footer>
-                </div>
-                <div class="post">
-                    <hr>
-                    <header class="post__header post__header--career">
-                        <h2 class="desc desc--normal desc--bold desc--dark">IG Career</h2>
-                    </header>
-                    <div class="post__img">
-                        <button class="btn btn--close btn--post">
-                            <img src="img/close_small.svg" width="16" height="16" alt="close">
-                        </button>
-                        <div class="post__img-info">
-                            <div class="post__info">
-                                <header class="post__info--header">
-                                    <img src="img/logo-post.svg" width="110" height="20" alt="" class="img img--logo">
-                                    <p class="desc desc--extralarge desc--semibold desc--right desc--light">Career <br>
-                                        Earnings</p>
-                                    <img src="img/qr-post.svg" width="75" height="75" alt="qr" class="img img--qr-post">
-                                </header>
-                                <div class="post__info--wrap">
-                                    <dl class="post__info--info">
-                                        <dt class="desc desc--mini desc--regular desc--light">Team Investment Turnover
-                                        </dt>
-                                        <dd class="desc desc--mini desc--semibold desc--right desc--light">$68,942</dd>
-                                    </dl>
-                                    <dl class="post__info--info">
-                                        <dt class="desc desc--mini desc--regular desc--light">Personal Investment</dt>
-                                        <dd class="desc desc--mini desc--semibold desc--right desc--light">$7,125</dd>
-                                    </dl>
-                                    <dl class="post__info--info">
-                                        <dt class="desc desc--mini desc--regular desc--light">My Career Income</dt>
-                                        <dd class="desc desc--mini desc--semibold desc--right desc--light">$3,647</dd>
-                                    </dl>
-                                    <dl class="post__info--info">
-                                        <dt class="desc desc--mini desc--regular desc--light">Members in team</dt>
-                                        <dd class="desc desc--mini desc--semibold desc--right desc--light">24</dd>
-                                    </dl>
-                                    <dl class="post__info--info">
-                                        <dt class="desc desc--mini desc--regular desc--light">Leader Bonus</dt>
-                                        <dd class="desc desc--mini desc--semibold desc--right desc--light">$1,547</dd>
-                                    </dl>
-                                </div>
-                                <footer class="post__info--footer">
-                                    <p class="desc desc--large desc--semibold desc--center desc--light">Advance your
-                                        career with IG</p>
-                                </footer>
-                            </div>
-                            <picture class="img">
-                                <source media="(max-width: 767.98px)" srcset="img/career_post.webp" width="322"
-                                    height="322" alt="instagram post">
-                                <source media="(min-width: 768px) and (max-width:1439.98px)"
-                                    srcset="img/career_post.webp" width="450" height="450" alt="instagram post">
-                                <source media="(min-width:1440px)" srcset="img/career_post.webp" width="500"
-                                    height="500" alt="instagram post">
-                                <img src="img/career_post.webp" width="500" height="500" alt="instagram post" />
-                            </picture>
-                        </div>
-                        <footer class="post__footer post--mobile hide">
-                            <form class="form">
-                                <button class="btn btn--primary">Download</button>
-                                <div class="form__wrap--post">
-                                    <div class="form__dKey form__dKey--small">
-                                        <input type="text" name="dKey" id="dKey" class="form__input form__input--dKey"
-                                            value="mrt.com/referal1/ua.com">
-                                        <button class="btn btn--text desc desc--normal desc--bold desc--color"
-                                            id="copyKey">Copy</button>
-                                    </div>
-                                    <ul class="social">
-                                        <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/instagram.svg" width="32" height="32" alt="instagram"
-                                                    class="img img--icon-middle">
-                                            </a>
-                                        </li>
-                                        <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/Telegram.svg" width="32" height="32" alt="telegram"
-                                                    class="img img--icon-middle">
-                                            </a>
-                                        </li>
-                                        <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/Whatsapp.svg" width="32" height="32" alt="whatsapp"
-                                                    class="img img--icon-middle">
-                                            </a>
-                                        </li>
-                                        <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/more-social.svg" width="32" height="32" alt="more"
-                                                    class="img img--icon-big">
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </form>
-                        </footer>
-                    </div>
-                    <footer class="post__footer post--desktop hide">
-                        <form class="form">
-                            <button class="btn btn--primary">Download</button>
-                            <div class="form__wrap--post">
-                                <div class="form__dKey form__dKey--small form__dKey--mobile">
-                                    <input type="text" name="dKey" id="dKey" class="form__input form__input--dKey"
-                                        value="mrt.com/referal1/ua.com">
-                                    <button class="btn btn--text desc desc--normal desc--bold desc--color"
-                                        id="copyKey">Copy</button>
-                                </div>
-                                <ul class="social">
+                                <ul class="social social--mobile">
                                     <li class="social__item">
-                                        <a href="" class="social__link">
-                                            <img src="img/copy.svg" width="32" height="32" alt="copy"
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/instagram-mobile-classic.svg" width="32" height="32" alt="instagram"
                                                 class="img img--icon-middle">
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a href="" class="social__link">
-                                            <img src="img/instagram.svg" width="32" height="32" alt="instagram"
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/whatsapp-mobile-classic.svg" width="32" height="32" alt="whatsapp"
                                                 class="img img--icon-middle">
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a href="" class="social__link">
-                                            <img src="img/Telegram.svg" width="32" height="32" alt="telegram"
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/facebook-mobile-classic.svg" width="32" height="32" alt="facebook"
                                                 class="img img--icon-middle">
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a href="" class="social__link">
-                                            <img src="img/Whatsapp.svg" width="32" height="32" alt="whatsapp"
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/telegram-mobile-classic.svg" width="32" height="32" alt="telegram"
                                                 class="img img--icon-middle">
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a href="" class="social__link">
-                                            <img src="img/more-social.svg" width="32" height="32" alt="more"
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/link-mobile-classic.svg" width="32" height="32" alt="copy"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/download-mobile-classic.svg" width="32" height="32" alt="download"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/more-mobile-classic.svg" width="32" height="32" alt="more"
                                                 class="img img--icon-middle">
                                         </a>
                                     </li>

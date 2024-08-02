@@ -2252,22 +2252,6 @@ input[type=checkbox]:checked + label::after {
   position: relative;
   width: 100%;
 }
-.card__mini .img--qr {
-  width: auto;
-  height: 100%;
-  max-height: 70px;
-}
-@media screen and (max-width: 374.98px) {
-  .card__mini--qr {
-    flex-direction: column;
-  }
-  .card__mini--qr .img--qr {
-    width: 100%;
-    min-width: 100%;
-    height: 100%;
-    max-height: 100%;
-  }
-}
 .card__mini--wrap {
   display: flex;
   flex-direction: column;
@@ -2279,33 +2263,15 @@ input[type=checkbox]:checked + label::after {
     font-size: calc(12px + 2 * (100vw - 320px) / 1120);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1439.98px) {
-  .card__mini--wrap .img--qr {
-    width: auto;
-    height: 100%;
-    max-height: 70px;
-  }
-}
 @media screen and (max-width: 374.98px) {
   .card__mini--wrap {
     width: 100%;
     align-items: center;
   }
-  .card__mini--wrap .img--qr {
-    width: 100%;
-    min-width: 100%;
-    height: 100%;
-    max-height: 100%;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .card__mini {
     flex: 1 0 calc(33.3333333333% - 16px);
-  }
-  .card__mini .img--qr {
-    width: auto;
-    height: 100%;
-    max-height: 70px;
   }
 }
 .card__icon {
@@ -2749,6 +2715,24 @@ input[type=checkbox]:checked + label::after {
   align-items: center;
   border: 1px solid var(--accident-primary-opacity);
 }
+.custom-select-wrapper--row-mobile {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--accident-primary-opacity);
+}
+.custom-select-wrapper--row-mobile .custom-select-wrapper--row {
+  width: 100%;
+  border: none;
+}
+@media screen and (max-width: 464.98px) {
+  .custom-select-wrapper--row-mobile {
+    flex-direction: column;
+  }
+  .custom-select-wrapper--row-mobile .custom-select {
+    width: 100%;
+    border-top: 1px solid var(--accident-primary-opacity);
+  }
+}
 .custom-select-wrapper--bottom {
   align-items: flex-start;
 }
@@ -2820,10 +2804,18 @@ input[type=checkbox]:checked + label::after {
   }
 }
 .custom-select-trigger--crypto {
-  width: 150px;
+  width: auto;
+  min-width: 200px;
   justify-content: flex-start;
 }
 .custom-select-trigger--crypto .desc {
+  margin-right: auto;
+}
+.custom-select-trigger--crypto-fill {
+  width: 100%;
+  justify-content: flex-start;
+}
+.custom-select-trigger--crypto-fill .desc {
   margin-right: auto;
 }
 .custom-select-trigger--depositkey {
@@ -3608,6 +3600,26 @@ input[type=checkbox]:checked + label::after {
   align-items: center;
   gap: 12px;
 }
+@media screen and (min-width: 768px) {
+  .social--desktop {
+    display: flex;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .social--desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .social--mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .social--mobile {
+    display: flex;
+  }
+}
 .social__item {
   width: 100%;
   flex: 1 1 calc(25% - 12px);
@@ -3621,6 +3633,21 @@ input[type=checkbox]:checked + label::after {
   width: 32px;
   height: 32px;
   border-radius: 50%;
+}
+.social__link--mobile {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: var(--accident-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social__link--mobile img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .post {
@@ -5003,13 +5030,13 @@ input[type=checkbox]:checked + label::after {
   grid-template-rows: 80px 120px 1fr;
   grid-template-areas: "balance income-type turnover-goal" "balance income-type turover-goal" "referal info info";
   overflow: hidden;
+  overflow-y: scroll;
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .career__list {
     grid-template-columns: 1fr 1fr 320px;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "balance balance balance" "income-type income-type turnover-goal" "referal referal referal" "info info info";
-    overflow-y: scroll;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -5017,7 +5044,6 @@ input[type=checkbox]:checked + label::after {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "balance balance balance" "income-type income-type income-type" "turnover-goal turnover-goal turnover-goal" "referal referal referal" "info info info";
-    overflow-y: scroll;
   }
 }
 .career__item--balance {
@@ -5374,7 +5400,7 @@ input[type=checkbox]:checked + label::after {
 #chartdiv {
   width: 100%;
   max-width: 100%;
-  height: 320px;
+  height: 270px;
 }
 
 *::-webkit-scrollbar {

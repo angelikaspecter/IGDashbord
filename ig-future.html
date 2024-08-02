@@ -213,6 +213,15 @@
                             <span class="desc desc--extrasmall desc--semibold desc--middle">Career</span>
                         </a>
                     </li>
+                    <li class="nav__item">
+                        <button class="nav__link" id="shareBtn">
+                            <img src="img/qrcode.svg" width="24" height="24" alt="share"
+                                class="nav__icon nav__icon--classic hide">
+                            <img src="img/qrcode-active.svg" width="24" height="24" alt="share"
+                                class="nav__icon nav__icon--active">
+                            <span class="desc desc--extrasmall desc--semibold desc--middle">Share</span>
+                        </button>
+                    </li>
                 </ul>
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -384,7 +393,7 @@
                 <li class="ig-future__item ig-future__item--active-products">
                     <header class="ig-future__a-products ig-future__a-products--header">
                         <h2 class="desc desc--extralarge desc--bold desc--color">Active Products</h2>
-                        <button class="ig-future__a-products--btn btn btn--primary" id="shareBtn">
+                        <button class="ig-future__a-products--btn btn btn--primary" id="shareBtn2">
                             <img loading="lazy" src="img/share.svg" width="24" height="24" alt="share icon"
                                 class="img img--icon"> <span
                                 class="desc desc--small desc--semibold desc--light">Share</span>
@@ -1236,20 +1245,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="custom-select-wrapper custom-select-wrapper--row">
-                    <input type="number" class="form__input form__input--clean" placeholder="0.00">
-                    <p class="form__desc desc desc--normal desc--semibold desc--color desc--cursor">Max</p>
-                    <div class="delimiter"></div>
+                <div class="custom-select-wrapper custom-select-wrapper--row-mobile">
+                    <div class="custom-select-wrapper--row">
+                        <input type="number" class="form__input form__input--clean">
+                        <p class="form__desc desc desc--normal desc--semibold desc--color desc--cursor">Max</p>
+                        <div class="delimiter"></div>
+                    </div>
                     <div class="custom-select">
                         <div class="custom-select-trigger custom-select-trigger--clean custom-select-trigger--crypto">
                             <img loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
                                 class="img img--icon">
-                            <span class="desc desc--normal desc--bold desc--dark">ETH</span>
+                            <span class="desc desc--normal desc--bold desc--dark">USDT TRC-20</span>
                         </div>
                         <div class="custom-options">
                             <span class="custom-option desc desc--normal desc--bold desc--dark selected"
                                 data-value="1"><img loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
-                                    class="img img--icon"> ETH</span>
+                                    class="img img--icon">USDT TRC-20</span>
                             <span class="custom-option desc desc--normal desc--bold desc--dark" data-value="2"><img
                                     loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
                                     class="img img--icon"> ETH</span>
@@ -1377,26 +1388,44 @@
                                     </div>
                                     <ul class="social">
                                         <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/instagram.svg" width="32" height="32" alt="instagram"
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/instagram-mobile-classic.svg" width="32" height="32" alt="instagram"
                                                     class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/Telegram.svg" width="32" height="32" alt="telegram"
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/whatsapp-mobile-classic.svg" width="32" height="32" alt="whatsapp"
                                                     class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/Whatsapp.svg" width="32" height="32" alt="whatsapp"
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/facebook-mobile-classic.svg" width="32" height="32" alt="facebook"
                                                     class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/more-social.svg" width="32" height="32" alt="more"
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/telegram-mobile-classic.svg" width="32" height="32" alt="telegram"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/link-mobile-classic.svg" width="32" height="32" alt="copy"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/download-mobile-classic.svg" width="32" height="32" alt="download"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/more-mobile-classic.svg" width="32" height="32" alt="more"
                                                     class="img img--icon-middle">
                                             </a>
                                         </li>
@@ -1415,7 +1444,7 @@
                                     <button class="btn btn--text desc desc--normal desc--bold desc--color"
                                         id="copyKey">Copy</button>
                                 </div>
-                                <ul class="social">
+                                <ul class="social social--desktop">
                                     <li class="social__item">
                                         <a href="" class="social__link">
                                             <img src="img/copy.svg" width="32" height="32" alt="copy"
@@ -1442,7 +1471,51 @@
                                     </li>
                                     <li class="social__item">
                                         <a href="" class="social__link">
-                                            <img src="img/more-social.svg" width="32" height="32" alt="more"
+                                            <img src="img/Facebook.svg" width="32" height="32" alt="Facebook"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="social social--mobile">
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/instagram-mobile-classic.svg" width="32" height="32" alt="instagram"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/whatsapp-mobile-classic.svg" width="32" height="32" alt="whatsapp"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/facebook-mobile-classic.svg" width="32" height="32" alt="facebook"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/telegram-mobile-classic.svg" width="32" height="32" alt="telegram"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/link-mobile-classic.svg" width="32" height="32" alt="copy"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/download-mobile-classic.svg" width="32" height="32" alt="download"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/more-mobile-classic.svg" width="32" height="32" alt="more"
                                                 class="img img--icon-middle">
                                         </a>
                                     </li>
@@ -1499,26 +1572,44 @@
                                     </div>
                                     <ul class="social">
                                         <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/instagram.svg" width="32" height="32" alt="instagram"
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/instagram-mobile-classic.svg" width="32" height="32" alt="instagram"
                                                     class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/Telegram.svg" width="32" height="32" alt="telegram"
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/whatsapp-mobile-classic.svg" width="32" height="32" alt="whatsapp"
                                                     class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/Whatsapp.svg" width="32" height="32" alt="whatsapp"
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/facebook-mobile-classic.svg" width="32" height="32" alt="facebook"
                                                     class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
-                                            <a href="" class="social__link">
-                                                <img src="img/more-social.svg" width="32" height="32" alt="more"
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/telegram-mobile-classic.svg" width="32" height="32" alt="telegram"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/link-mobile-classic.svg" width="32" height="32" alt="copy"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/download-mobile-classic.svg" width="32" height="32" alt="download"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/more-mobile-classic.svg" width="32" height="32" alt="more"
                                                     class="img img--icon-middle">
                                             </a>
                                         </li>
@@ -1537,7 +1628,7 @@
                                     <button class="btn btn--text desc desc--normal desc--bold desc--color"
                                         id="copyKey">Copy</button>
                                 </div>
-                                <ul class="social">
+                                <ul class="social social--desktop">
                                     <li class="social__item">
                                         <a href="" class="social__link">
                                             <img src="img/copy.svg" width="32" height="32" alt="copy"
@@ -1564,7 +1655,51 @@
                                     </li>
                                     <li class="social__item">
                                         <a href="" class="social__link">
-                                            <img src="img/more-social.svg" width="32" height="32" alt="more"
+                                            <img src="img/Facebook.svg" width="32" height="32" alt="Facebook"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="social social--mobile">
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/instagram-mobile-classic.svg" width="32" height="32" alt="instagram"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/whatsapp-mobile-classic.svg" width="32" height="32" alt="whatsapp"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/facebook-mobile-classic.svg" width="32" height="32" alt="facebook"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/telegram-mobile-classic.svg" width="32" height="32" alt="telegram"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/link-mobile-classic.svg" width="32" height="32" alt="copy"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/download-mobile-classic.svg" width="32" height="32" alt="download"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/more-mobile-classic.svg" width="32" height="32" alt="more"
                                                 class="img img--icon-middle">
                                         </a>
                                     </li>
@@ -1588,9 +1723,10 @@
             <form class="form">
                 <div class="custom-select-wrapper custom-select-wrapper--row">
                     <input type="number" class="form__input form__input--clean" placeholder="0.00">
-                    <div class="delimiter"></div>
+                </div>
+                <div class="custom-select-wrapper">
                     <div class="custom-select">
-                        <div class="custom-select-trigger custom-select-trigger--clean custom-select-trigger--crypto">
+                        <div class="custom-select-trigger custom-select-trigger--crypto-fill">
                             <img loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
                                 class="img img--icon">
                             <span class="desc desc--normal desc--bold desc--dark">ETH</span>
@@ -1608,18 +1744,6 @@
                             <span class="custom-option desc desc--normal desc--bold desc--dark" data-value="4"><img
                                     loading="lazy" src="img/eth.svg" width="24" height="24" alt="Eth"
                                     class="img img--icon"> ETH</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="custom-select-wrapper">
-                    <div class="custom-select">
-                        <div class="custom-select-trigger desc desc--normal desc--dark"><span
-                                class="desc--light-middle">Select a chain</span></div>
-                        <div class="custom-options">
-                            <span class="custom-option desc desc--normal desc--dark selected"
-                                data-value="1">TRC-20</span>
-                            <span class="custom-option desc desc--normal desc--dark" data-value="2">ERC-20</span>
-                            <span class="custom-option desc desc--normal desc--dark" data-value="3">BSC</span>
                         </div>
                     </div>
                 </div>

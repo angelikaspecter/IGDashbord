@@ -103,6 +103,13 @@ document.getElementById('shareBtn').addEventListener('click', function () {
     }
 });
 
+document.getElementById('shareBtn2').addEventListener('click', function () {
+    var popup = document.querySelector('.popup.popup--post');
+    if (popup.classList.contains('hide')) {
+        popup.classList.remove('hide');
+    }
+});
+
 document.addEventListener('click', function (event) {
     if (event.target.matches('.btn.btn--close.btn--post')) {
         var popup = event.target.closest('.popup--post');

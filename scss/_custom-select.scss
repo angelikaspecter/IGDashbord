@@ -7,6 +7,22 @@
         align-items: center;
         border: 1px solid var(--accident-primary-opacity);
     }
+    &--row-mobile {
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--accident-primary-opacity);
+        & .custom-select-wrapper--row {
+            width: 100%;
+            border: none;
+        }
+        @media screen and (max-width: 464.98px) {
+            flex-direction: column;
+            & .custom-select {
+                width: 100%;
+                border-top: 1px solid var(--accident-primary-opacity);
+            }
+        }
+    }
     &--bottom {
         align-items: flex-start;
     }
@@ -68,7 +84,15 @@
         }
     }
     &--crypto {
-        width: 150px;
+        width: auto;
+        min-width: 200px;
+        justify-content: flex-start;
+        & .desc {
+            margin-right: auto;
+        }
+    }
+    &--crypto-fill {
+        width: 100%;
         justify-content: flex-start;
         & .desc {
             margin-right: auto;
