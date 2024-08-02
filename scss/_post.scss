@@ -101,8 +101,6 @@
         backdrop-filter: blur(10px);
         border-radius: 25px;
         z-index: 55;
-        @media (orientation: portrait) and (max-width: 374.98px) {
-        }
         &--header {
             width: 100%;
             display: flex;
@@ -137,6 +135,11 @@
             align-items: flex-start;
             justify-content: space-between;
             gap: 16px;
+        }
+        &--header-share {
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
         &--header-ig-index-wrap {
             width: 100%;
@@ -184,6 +187,32 @@
                 }
             }
         }
+        &--share {
+            width: 75%;
+            height: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 32px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background: url(../img/share-bg.webp) no-repeat 50% 50% / contain;
+            transform: translateX(-50%) translateY(-50%);
+            border-radius: 25px;
+            z-index: 55;
+        }
+        &--share-qr {
+            margin: 0 auto;
+            width: 70%;
+            height: 70%;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
         &--info {
             width: 100%;
             display: flex;
@@ -193,7 +222,8 @@
             & dt {
                 width: 100%;
             }
-            & dt, & dd {
+            & dt,
+            & dd {
                 text-transform: uppercase;
                 @media (orientation: portrait) and (max-width: 374.98px) {
                     font-size: calc(10px + (10 - 10) * ((100vw - 320px) / (1440 - 320)));
@@ -236,6 +266,9 @@
             right: 0;
             bottom: 0;
             z-index: 56;
+        }
+        &--share {
+            background-color: var(--light-primary);
         }
     }
     &--mobile {

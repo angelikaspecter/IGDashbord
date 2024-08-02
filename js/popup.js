@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.getElementById('shareBtn').addEventListener('click', function () {
-    var popup = document.querySelector('.popup.popup--post');
+    var popup = document.querySelector('.popup.popup--share');
     if (popup.classList.contains('hide')) {
         popup.classList.remove('hide');
     }

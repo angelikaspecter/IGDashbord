@@ -584,7 +584,12 @@
                                     </div>
                                 </div>
                             </header>
-                            <div id="chartdiv"></div>
+                            <div class="chart">
+                                <div id="chart-container">
+                                    <canvas id="line-chart"></canvas>
+                                </div>
+                                <div id="tooltip" class="tooltip"></div>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -636,8 +641,6 @@
                             <div class="card card__wrap card__wrap--column">
                                 <p class="desc desc--mini desc--middle">Career balance</p>
                                 <div class="card card__wrap card__wrap--row">
-                                    <img loading="lazy" src="img/usdt.svg" width="24" height="24" alt="usdt"
-                                        class="img img--icon">
                                     <p class="desc desc--normal desc--semibold desc--dark">MRT 912</p>
                                 </div>
                             </div>
@@ -661,6 +664,7 @@
                             <div class="card card__wrap card__wrap--row card__wrap--profit">
                                 <img loading="lazy" src="img/arrow-down-right.svg" width="18" height="18"
                                     alt="arrow-down-right" class="img img--icon-mini">
+                                    <p class="desc desc--mini desc--bold desc--plus">21%</p>
                             </div>
                         </div>
                     </div>
@@ -1005,7 +1009,7 @@
             </form>
         </div>
     </section>
-    <section class="popup popup--post hide" id="PostPopup">
+    <section class="popup popup--share hide" id="PostPopup">
         <div class="popup__nav">
             <button class="btn btn--icon btn--prev">
                 <img src="img/arrow-carousel.svg" width="24" height="24" alt="prev arrow"
@@ -1029,58 +1033,54 @@
                             <img src="img/close_small.svg" width="16" height="16" alt="close">
                         </button>
                         <div class="post__img-info">
-                            <div class="post__info">
-                                <header class="post__info--header-ig-future">
+                            <div class="post__info--share">
+                                <header class="post__info--header-share">
                                     <img src="img/logo-post.svg" width="110" height="20" alt="" class="img img--logo">
-                                    <p class="desc desc--mini desc--regular desc--left desc--light">IG Index active</p>
-                                    <img src="img/qr-post.svg" width="75" height="75" alt="qr" class="img img--qr-post">
                                 </header>
-                                <div class="post__info--wrap">
-                                    <p class="desc desc--post-title desc--semibold desc--light">+1,459.0</p>
-                                    <p class="desc desc--post-title desc--semibold desc--light">USDT <span class="desc desc--regular desc--light">20 days <br> earnings After</span></p>
+                                <div class="post__info--share-qr">
+                                    <img src="img/share-qr.webp" width="196" height="187" alt="share qr">
                                 </div>
                                 <footer class="post__info--footer">
-                                    <p class="desc desc--large desc--semibold desc--center desc--light">Join Imrat.com
-                                        now!</p>
+                                    <p class="desc desc--extralarge desc--semibold desc--center desc--light">Join my team!</p>
                                 </footer>
                             </div>
                             <picture class="img">
-                                <source media="(max-width: 767.98px)" srcset="img/ig-future-post.webp" width="322"
+                                <source media="(max-width: 767.98px)" srcset="img/share_post.webp" width="322"
                                     height="322" alt="instagram post">
                                 <source media="(min-width: 768px) and (max-width:1439.98px)"
-                                    srcset="img/ig-future-post.webp" width="450" height="450" alt="instagram post">
-                                <source media="(min-width:1440px)" srcset="img/ig-future-post.webp" width="500"
+                                    srcset="img/share_post.webp" width="450" height="450" alt="instagram post">
+                                <source media="(min-width:1440px)" srcset="img/share_post.webp" width="500"
                                     height="500" alt="instagram post">
-                                <img src="img/ig-future-post.webp" width="500" height="500" alt="instagram post" />
+                                <img src="img/share_post.webp" width="500" height="500" alt="instagram post" />
                             </picture>
                         </div>
-                        <footer class="post__footer post--mobile hide">
+                        <footer class="post__footer post__footer--share post--mobile hide">
                             <form class="form">
                                 <button class="btn btn--primary">Download</button>
                                 <div class="form__wrap--post">
                                     <ul class="social">
                                         <li class="social__item">
                                             <a href="" class="social__link--mobile">
-                                                <img src="img/instagram-mobile-classic.svg" width="32" height="32" alt="instagram"
-                                                    class="img img--icon-middle">
+                                                <img src="img/instagram-mobile-classic.svg" width="32" height="32"
+                                                    alt="instagram" class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="" class="social__link--mobile">
-                                                <img src="img/whatsapp-mobile-classic.svg" width="32" height="32" alt="whatsapp"
-                                                    class="img img--icon-middle">
+                                                <img src="img/whatsapp-mobile-classic.svg" width="32" height="32"
+                                                    alt="whatsapp" class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="" class="social__link--mobile">
-                                                <img src="img/facebook-mobile-classic.svg" width="32" height="32" alt="facebook"
-                                                    class="img img--icon-middle">
+                                                <img src="img/facebook-mobile-classic.svg" width="32" height="32"
+                                                    alt="facebook" class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="" class="social__link--mobile">
-                                                <img src="img/telegram-mobile-classic.svg" width="32" height="32" alt="telegram"
-                                                    class="img img--icon-middle">
+                                                <img src="img/telegram-mobile-classic.svg" width="32" height="32"
+                                                    alt="telegram" class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
@@ -1091,8 +1091,8 @@
                                         </li>
                                         <li class="social__item">
                                             <a href="" class="social__link--mobile">
-                                                <img src="img/download-mobile-classic.svg" width="32" height="32" alt="download"
-                                                    class="img img--icon-middle">
+                                                <img src="img/download-mobile-classic.svg" width="32" height="32"
+                                                    alt="download" class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
@@ -1106,7 +1106,7 @@
                             </form>
                         </footer>
                     </div>
-                    <footer class="post__footer post--desktop hide">
+                    <footer class="post__footer post__footer--share post--desktop hide">
                         <form class="form">
                             <button class="btn btn--primary">Download</button>
                             <div class="form__wrap--post">
@@ -1151,204 +1151,26 @@
                                 <ul class="social social--mobile">
                                     <li class="social__item">
                                         <a href="" class="social__link--mobile">
-                                            <img src="img/instagram-mobile-classic.svg" width="32" height="32" alt="instagram"
-                                                class="img img--icon-middle">
+                                            <img src="img/instagram-mobile-classic.svg" width="32" height="32"
+                                                alt="instagram" class="img img--icon-middle">
                                         </a>
                                     </li>
                                     <li class="social__item">
                                         <a href="" class="social__link--mobile">
-                                            <img src="img/whatsapp-mobile-classic.svg" width="32" height="32" alt="whatsapp"
-                                                class="img img--icon-middle">
+                                            <img src="img/whatsapp-mobile-classic.svg" width="32" height="32"
+                                                alt="whatsapp" class="img img--icon-middle">
                                         </a>
                                     </li>
                                     <li class="social__item">
                                         <a href="" class="social__link--mobile">
-                                            <img src="img/facebook-mobile-classic.svg" width="32" height="32" alt="facebook"
-                                                class="img img--icon-middle">
+                                            <img src="img/facebook-mobile-classic.svg" width="32" height="32"
+                                                alt="facebook" class="img img--icon-middle">
                                         </a>
                                     </li>
                                     <li class="social__item">
                                         <a href="" class="social__link--mobile">
-                                            <img src="img/telegram-mobile-classic.svg" width="32" height="32" alt="telegram"
-                                                class="img img--icon-middle">
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="" class="social__link--mobile">
-                                            <img src="img/link-mobile-classic.svg" width="32" height="32" alt="copy"
-                                                class="img img--icon-middle">
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="" class="social__link--mobile">
-                                            <img src="img/download-mobile-classic.svg" width="32" height="32" alt="download"
-                                                class="img img--icon-middle">
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="" class="social__link--mobile">
-                                            <img src="img/more-mobile-classic.svg" width="32" height="32" alt="more"
-                                                class="img img--icon-middle">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </form>
-                    </footer>
-                </div>
-                <div class="post">
-                    <hr>
-                    <header class="post__header">
-                        <h2 class="desc desc--normal desc--bold desc--dark">IG Career</h2>
-                        <p class="desc desc--normal desc--light-middle">#32342</p>
-                    </header>
-                    <div class="post__img">
-                        <button class="btn btn--close btn--post">
-                            <img src="img/close_small.svg" width="16" height="16" alt="close">
-                        </button>
-                        <div class="post__img-info">
-                            <div class="post__info">
-                                <header class="post__info--header-ig-future">
-                                    <img src="img/logo-post.svg" width="110" height="20" alt="" class="img img--logo">
-                                    <p class="desc desc--mini desc--regular desc--left desc--light">IG Index active</p>
-                                    <img src="img/qr-post.svg" width="75" height="75" alt="qr" class="img img--qr-post">
-                                </header>
-                                <div class="post__info--wrap">
-                                    <p class="desc desc--post-title desc--semibold desc--light">+1,459.0</p>
-                                    <p class="desc desc--post-title desc--semibold desc--light">USDT <span class="desc desc--regular desc--light">20 days <br> earnings After</span></p>
-                                </div>
-                                <footer class="post__info--footer">
-                                    <p class="desc desc--large desc--semibold desc--center desc--light">Join Imrat.com
-                                        now!</p>
-                                </footer>
-                            </div>
-                            <picture class="img">
-                                <source media="(max-width: 767.98px)" srcset="img/ig-future-post.webp" width="322"
-                                    height="322" alt="instagram post">
-                                <source media="(min-width: 768px) and (max-width:1439.98px)"
-                                    srcset="img/ig-future-post.webp" width="450" height="450" alt="instagram post">
-                                <source media="(min-width:1440px)" srcset="img/ig-future-post.webp" width="500"
-                                    height="500" alt="instagram post">
-                                <img src="img/ig-future-post.webp" width="500" height="500" alt="instagram post" />
-                            </picture>
-                        </div>
-                        <footer class="post__footer post--mobile hide">
-                            <form class="form">
-                                <button class="btn btn--primary">Download</button>
-                                <div class="form__wrap--post">
-                                    <ul class="social">
-                                        <li class="social__item">
-                                            <a href="" class="social__link--mobile">
-                                                <img src="img/instagram-mobile-classic.svg" width="32" height="32" alt="instagram"
-                                                    class="img img--icon-middle">
-                                            </a>
-                                        </li>
-                                        <li class="social__item">
-                                            <a href="" class="social__link--mobile">
-                                                <img src="img/whatsapp-mobile-classic.svg" width="32" height="32" alt="whatsapp"
-                                                    class="img img--icon-middle">
-                                            </a>
-                                        </li>
-                                        <li class="social__item">
-                                            <a href="" class="social__link--mobile">
-                                                <img src="img/facebook-mobile-classic.svg" width="32" height="32" alt="facebook"
-                                                    class="img img--icon-middle">
-                                            </a>
-                                        </li>
-                                        <li class="social__item">
-                                            <a href="" class="social__link--mobile">
-                                                <img src="img/telegram-mobile-classic.svg" width="32" height="32" alt="telegram"
-                                                    class="img img--icon-middle">
-                                            </a>
-                                        </li>
-                                        <li class="social__item">
-                                            <a href="" class="social__link--mobile">
-                                                <img src="img/link-mobile-classic.svg" width="32" height="32" alt="copy"
-                                                    class="img img--icon-middle">
-                                            </a>
-                                        </li>
-                                        <li class="social__item">
-                                            <a href="" class="social__link--mobile">
-                                                <img src="img/download-mobile-classic.svg" width="32" height="32" alt="download"
-                                                    class="img img--icon-middle">
-                                            </a>
-                                        </li>
-                                        <li class="social__item">
-                                            <a href="" class="social__link--mobile">
-                                                <img src="img/more-mobile-classic.svg" width="32" height="32" alt="more"
-                                                    class="img img--icon-middle">
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </form>
-                        </footer>
-                    </div>
-                    <footer class="post__footer post--desktop hide">
-                        <form class="form">
-                            <button class="btn btn--primary">Download</button>
-                            <div class="form__wrap--post">
-                                <div class="form__dKey form__dKey--small form__dKey--mobile">
-                                    <input type="text" name="dKey" id="dKey" class="form__input form__input--dKey"
-                                        value="mrt.com/referal1/ua.com">
-                                    <button class="btn btn--text desc desc--normal desc--bold desc--color"
-                                        id="copyKey">Copy</button>
-                                </div>
-                                <ul class="social social--desktop">
-                                    <li class="social__item">
-                                        <a href="" class="social__link">
-                                            <img src="img/copy.svg" width="32" height="32" alt="copy"
-                                                class="img img--icon-middle">
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="" class="social__link">
-                                            <img src="img/instagram.svg" width="32" height="32" alt="instagram"
-                                                class="img img--icon-middle">
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="" class="social__link">
-                                            <img src="img/Telegram.svg" width="32" height="32" alt="telegram"
-                                                class="img img--icon-middle">
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="" class="social__link">
-                                            <img src="img/Whatsapp.svg" width="32" height="32" alt="whatsapp"
-                                                class="img img--icon-middle">
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="" class="social__link">
-                                            <img src="img/Facebook.svg" width="32" height="32" alt="Facebook"
-                                                class="img img--icon-middle">
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul class="social social--mobile">
-                                    <li class="social__item">
-                                        <a href="" class="social__link--mobile">
-                                            <img src="img/instagram-mobile-classic.svg" width="32" height="32" alt="instagram"
-                                                class="img img--icon-middle">
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="" class="social__link--mobile">
-                                            <img src="img/whatsapp-mobile-classic.svg" width="32" height="32" alt="whatsapp"
-                                                class="img img--icon-middle">
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="" class="social__link--mobile">
-                                            <img src="img/facebook-mobile-classic.svg" width="32" height="32" alt="facebook"
-                                                class="img img--icon-middle">
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="" class="social__link--mobile">
-                                            <img src="img/telegram-mobile-classic.svg" width="32" height="32" alt="telegram"
-                                                class="img img--icon-middle">
+                                            <img src="img/telegram-mobile-classic.svg" width="32" height="32"
+                                                alt="telegram" class="img img--icon-middle">
                                         </a>
                                     </li>
                                     <li class="social__item">
@@ -1359,8 +1181,8 @@
                                     </li>
                                     <li class="social__item">
                                         <a href="" class="social__link--mobile">
-                                            <img src="img/download-mobile-classic.svg" width="32" height="32" alt="download"
-                                                class="img img--icon-middle">
+                                            <img src="img/download-mobile-classic.svg" width="32" height="32"
+                                                alt="download" class="img img--icon-middle">
                                         </a>
                                     </li>
                                     <li class="social__item">
@@ -1403,144 +1225,164 @@
     <script src="js/turngoal.js"></script>
     <script src="js/upload-remove-img.js"></script>
     <script src="js/countBtn.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/themes/Responsive.js"></script>
     <!-- Chart code -->
     <script>
-        am5.ready(function () {
+        const data = [
+            { time: 3, value: 50 },
+            { time: 6, value: 90 },
+            { time: 9, value: 120 },
+            { time: 12, value: 380 },
+            { time: 15, value: 430 },
+            { time: 18, value: 580 },
+            { time: 21, value: 550 },
+            { time: 24, value: 580 },
+        ];
 
-            // Create root element
-            // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-            var root = am5.Root.new("chartdiv");
+        const tooltipInfo = [
+            '<b>USDT 680K</b> <br> 150 BTC',
+            '<b>USDT 680K</b> <br> 150 BTC',
+            '<b>USDT 680K</b> <br> 150 BTC',
+            '<b>USDT 680K</b> <br> 150 BTC',
+            '<b>USDT 680K</b> <br> 150 BTC',
+            '<b>USDT 680K</b> <br> 150 BTC',
+            '<b>USDT 680K</b> <br> 150 BTC',
+            '<b>USDT 680K</b> <br> 150 BTC'
+        ];
 
-            const myTheme = am5.Theme.new(root);
+        const canvas = document.getElementById('line-chart');
+        const ctx = canvas.getContext('2d');
+        const tooltip = document.getElementById('tooltip');
 
-            // Move minor label a bit down
-            myTheme.rule("AxisLabel", ["minor"]).setAll({
-                dy: 1
-            });
+        canvas.width = canvas.clientWidth;
+        canvas.height = canvas.clientHeight;
+        const chartWidth = canvas.width;
+        const chartHeight = canvas.height;
 
-            // Tweak minor grid opacity
-            myTheme.rule("Grid", ["minor"]).setAll({
-                strokeOpacity: 0.08
-            });
+        function drawChart() {
+            ctx.clearRect(0, 0, chartWidth, chartHeight);
 
-            // Set themes
-            // https://www.amcharts.com/docs/v5/concepts/themes/
-            root.setThemes([
-                am5themes_Animated.new(root),
-                myTheme
-            ]);
+            const padding = 40;
+            const topPadding = 20;
+            const rightPadding = 20;
+            const axisColor = '#2d5551';
+            const textColor = 'rgba(108, 129, 128, .5)';
+            const gridColor = 'rgba(0, 0, 0, 0.1)';
+            const yAxisValues = [0, 100, 400, 600];
+            const xAxisValues = ['03', '06', '09', '12', '15', '18', '21', '00'];
 
+            // Draw Y axis
+            ctx.strokeStyle = axisColor;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(padding, topPadding);
+            ctx.lineTo(padding, chartHeight - padding);
+            ctx.stroke();
 
-            // Create chart
-            // https://www.amcharts.com/docs/v5/charts/xy-chart/
-            var chart = root.container.children.push(am5xy.XYChart.new(root, {
-                panX: false,
-                panY: false,
-                wheelX: "panX",
-                wheelY: "zoomX",
-                paddingLeft: 0
-            }));
+            // Draw Y axis labels and grid lines
+            ctx.fillStyle = textColor;
+            ctx.textAlign = 'right';
+            ctx.textBaseline = 'middle';
+            const yInterval = (chartHeight - padding - topPadding) / (yAxisValues.length - 1);
+            for (let i = 0; i < yAxisValues.length; i++) {
+                const y = chartHeight - padding - i * yInterval;
+                ctx.fillText(`$${yAxisValues[i]}K`, padding - 10, y);
 
-
-            // Add cursor
-            // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
-            var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
-                behavior: "zoomX"
-            }));
-            cursor.lineY.set("visible", false);
-
-            var date = new Date();
-            date.setHours(0, 0, 0, 0);
-            var value = 100;
-
-            function generateData() {
-                value = Math.round((Math.random() * 10 - 5) + value);
-                am5.time.add(date, "day", 1);
-                return {
-                    date: date.getTime(),
-                    value: value
-                };
+                // Draw horizontal grid lines
+                ctx.strokeStyle = gridColor;
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(padding, y);
+                ctx.lineTo(chartWidth - rightPadding, y);
+                ctx.stroke();
             }
 
-            function generateDatas(count) {
-                var data = [];
-                for (var i = 0; i < count; ++i) {
-                    data.push(generateData());
+            // Draw X axis
+            ctx.strokeStyle = axisColor;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(padding, chartHeight - padding);
+            ctx.lineTo(chartWidth - rightPadding, chartHeight - padding);
+            ctx.stroke();
+
+            // Draw X axis labels
+            ctx.fillStyle = textColor;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'top';
+            const xInterval = (chartWidth - padding - rightPadding) / (xAxisValues.length - 1);
+            for (let i = 0; i < xAxisValues.length; i++) {
+                const x = padding + i * xInterval;
+                ctx.fillText(xAxisValues[i], x, chartHeight - padding + 10);
+            }
+
+            // Draw graph line
+            ctx.strokeStyle = '#2d5551';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            for (let i = 0; i < data.length; i++) {
+                const x = padding + ((data[i].time - 3) / 21) * (chartWidth - padding - rightPadding);
+                const y = chartHeight - padding - (data[i].value / 600) * (chartHeight - padding - topPadding);
+                if (i === 0) {
+                    ctx.moveTo(x, y);
+                } else {
+                    ctx.lineTo(x, y);
                 }
-                return data;
             }
+            ctx.stroke();
 
+            // Draw data points
+            for (let i = 0; i < data.length; i++) {
+                const x = padding + ((data[i].time - 3) / 21) * (chartWidth - padding - rightPadding);
+                const y = chartHeight - padding - (data[i].value / 600) * (chartHeight - padding - topPadding);
+                ctx.fillStyle = '#d9d9d9';
+                ctx.strokeStyle = '#ffffff';
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.arc(x, y, 5.5, 0, Math.PI * 2, true);
+                ctx.fill();
+                ctx.stroke();
+            }
+        }
 
-            // Create axes
-            // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
-            var xAxis = chart.xAxes.push(am5xy.DateAxis.new(root, {
-                maxDeviation: 0,
-                baseInterval: {
-                    timeUnit: "day",
-                    count: 1
-                },
-                renderer: am5xy.AxisRendererX.new(root, {
-                    minorGridEnabled: true,
-                    minGridDistance: 200,
-                    minorLabelsEnabled: true
-                }),
-                tooltip: am5.Tooltip.new(root, {})
-            }));
+        function getMousePos(evt) {
+            const rect = canvas.getBoundingClientRect();
+            return {
+                x: evt.clientX - rect.left,
+                y: evt.clientY - rect.top,
+            };
+        }
 
-            xAxis.set("minorDateFormats", {
-                day: "dd",
-                month: "MM"
-            });
+        function displayTooltip(evt) {
+            const pos = getMousePos(evt);
+            const x = pos.x;
+            const y = pos.y;
 
-            var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
-                renderer: am5xy.AxisRendererY.new(root, {})
-            }));
+            for (let i = 0; i < data.length; i++) {
+                const padding = 40;
+                const topPadding = 20;
+                const rightPadding = 20;
+                const pointX = padding + ((data[i].time - 3) / 21) * (chartWidth - padding - rightPadding);
+                const pointY = chartHeight - padding - (data[i].value / 600) * (chartHeight - padding - topPadding);
+                if (Math.abs(x - pointX) < 5 && Math.abs(y - pointY) < 5) {
+                    tooltip.style.left = `${evt.clientX + 15}px`;
+                    tooltip.style.top = `${evt.clientY - 25}px`;
+                    tooltip.innerHTML = tooltipInfo[i];
+                    tooltip.style.display = 'block';
+                    return;
+                }
+            }
+            tooltip.style.display = 'none';
+        }
 
+        canvas.addEventListener('mousemove', displayTooltip);
 
-            // Add series
-            // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
-            var series = chart.series.push(am5xy.LineSeries.new(root, {
-                name: "Series",
-                xAxis: xAxis,
-                yAxis: yAxis,
-                valueYField: "value",
-                valueXField: "date",
-                tooltip: am5.Tooltip.new(root, {
-                    labelText: "{valueY}"
-                })
-            }));
+        drawChart();
 
-            // Actual bullet
-            series.bullets.push(function () {
-                var bulletCircle = am5.Circle.new(root, {
-                    radius: 5,
-                    fill: series.get("fill")
-                });
-                return am5.Bullet.new(root, {
-                    sprite: bulletCircle
-                })
-            })
+        window.addEventListener('resize', () => {
+            canvas.width = canvas.clientWidth;
+            canvas.height = canvas.clientHeight;
+            drawChart();
+        });
 
-            // Add scrollbar
-            // https://www.amcharts.com/docs/v5/charts/xy-chart/scrollbars/
-            chart.set("scrollbarX", am5.Scrollbar.new(root, {
-                orientation: "horizontal"
-            }));
-
-            var data = generateDatas(30);
-            series.data.setAll(data);
-
-
-            // Make stuff animate on load
-            // https://www.amcharts.com/docs/v5/concepts/animations/
-            series.appear(1000);
-            chart.appear(1000, 100);
-
-        }); // end am5.ready()
     </script>
 </body>
 

@@ -1751,6 +1751,196 @@
             </form>
         </div>
     </section>
+    <section class="popup popup--share hide" id="PostPopup">
+        <div class="popup__nav">
+            <button class="btn btn--icon btn--prev">
+                <img src="img/arrow-carousel.svg" width="24" height="24" alt="prev arrow"
+                    class="img img--icon img--icon-middle">
+            </button>
+            <button class="btn btn--icon btn--next">
+                <img src="img/arrow-carousel.svg" width="24" height="24" alt="next arrow"
+                    class="img img--icon img--icon-middle">
+            </button>
+        </div>
+        <div class="popup__carousel">
+            <div class="popup__carousel--wrap">
+                <div class="post">
+                    <hr>
+                    <header class="post__header">
+                        <h2 class="desc desc--normal desc--bold desc--dark">IG Career</h2>
+                        <p class="desc desc--normal desc--light-middle">#32342</p>
+                    </header>
+                    <div class="post__img">
+                        <button class="btn btn--close btn--post">
+                            <img src="img/close_small.svg" width="16" height="16" alt="close">
+                        </button>
+                        <div class="post__img-info">
+                            <div class="post__info--share">
+                                <header class="post__info--header-share">
+                                    <img src="img/logo-post.svg" width="110" height="20" alt="" class="img img--logo">
+                                </header>
+                                <div class="post__info--share-qr">
+                                    <img src="img/share-qr.webp" width="196" height="187" alt="share qr">
+                                </div>
+                                <footer class="post__info--footer">
+                                    <p class="desc desc--extralarge desc--semibold desc--center desc--light">Join my team!</p>
+                                </footer>
+                            </div>
+                            <picture class="img">
+                                <source media="(max-width: 767.98px)" srcset="img/share_post.webp" width="322"
+                                    height="322" alt="instagram post">
+                                <source media="(min-width: 768px) and (max-width:1439.98px)"
+                                    srcset="img/share_post.webp" width="450" height="450" alt="instagram post">
+                                <source media="(min-width:1440px)" srcset="img/share_post.webp" width="500"
+                                    height="500" alt="instagram post">
+                                <img src="img/share_post.webp" width="500" height="500" alt="instagram post" />
+                            </picture>
+                        </div>
+                        <footer class="post__footer post__footer--share post--mobile hide">
+                            <form class="form">
+                                <button class="btn btn--primary">Download</button>
+                                <div class="form__wrap--post">
+                                    <ul class="social">
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/instagram-mobile-classic.svg" width="32" height="32"
+                                                    alt="instagram" class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/whatsapp-mobile-classic.svg" width="32" height="32"
+                                                    alt="whatsapp" class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/facebook-mobile-classic.svg" width="32" height="32"
+                                                    alt="facebook" class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/telegram-mobile-classic.svg" width="32" height="32"
+                                                    alt="telegram" class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/link-mobile-classic.svg" width="32" height="32" alt="copy"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/download-mobile-classic.svg" width="32" height="32"
+                                                    alt="download" class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link--mobile">
+                                                <img src="img/more-mobile-classic.svg" width="32" height="32" alt="more"
+                                                    class="img img--icon-middle">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </footer>
+                    </div>
+                    <footer class="post__footer post__footer--share post--desktop hide">
+                        <form class="form">
+                            <button class="btn btn--primary">Download</button>
+                            <div class="form__wrap--post">
+                                <div class="form__dKey form__dKey--small form__dKey--mobile">
+                                    <input type="text" name="dKey" id="dKey" class="form__input form__input--dKey"
+                                        value="mrt.com/referal1/ua.com">
+                                    <button class="btn btn--text desc desc--normal desc--bold desc--color"
+                                        id="copyKey">Copy</button>
+                                </div>
+                                <ul class="social social--desktop">
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/copy.svg" width="32" height="32" alt="copy"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/instagram.svg" width="32" height="32" alt="instagram"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/Telegram.svg" width="32" height="32" alt="telegram"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/Whatsapp.svg" width="32" height="32" alt="whatsapp"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link">
+                                            <img src="img/Facebook.svg" width="32" height="32" alt="Facebook"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="social social--mobile">
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/instagram-mobile-classic.svg" width="32" height="32"
+                                                alt="instagram" class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/whatsapp-mobile-classic.svg" width="32" height="32"
+                                                alt="whatsapp" class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/facebook-mobile-classic.svg" width="32" height="32"
+                                                alt="facebook" class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/telegram-mobile-classic.svg" width="32" height="32"
+                                                alt="telegram" class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/link-mobile-classic.svg" width="32" height="32" alt="copy"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/download-mobile-classic.svg" width="32" height="32"
+                                                alt="download" class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="" class="social__link--mobile">
+                                            <img src="img/more-mobile-classic.svg" width="32" height="32" alt="more"
+                                                class="img img--icon-middle">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="js/2fa.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/carousel.js"></script>
