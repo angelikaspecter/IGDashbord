@@ -68,9 +68,9 @@
         z-index: 1;
         cursor: pointer;
         &.decolor {
-            background-color: var(--accident-primary-opacity);
+            background: repeating-linear-gradient(50deg, rgba(156, 177, 175, 0), rgba(156, 177, 175, 0) 2px, #9cb1af 2px, #9cb1af 4px);
             &.active {
-                background-color: var(--accident-primary);
+                background: repeating-linear-gradient(50deg, rgba(45, 85, 81, 1), rgba(45, 85, 81, 1) 2px, rgba(45, 85, 81, 1) 2px, rgba(45, 85, 81, 1) 4px);
             }
         }
     }
@@ -114,6 +114,10 @@
         }
         @media screen and (max-width: 514.98px) {
             transform: translateY(-25%) translateX(-25%);
+        }
+        &.visible {
+            visibility: visible;
+            opacity: 1;
         }
     }
     &__diagram {

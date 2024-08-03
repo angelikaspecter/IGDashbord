@@ -299,34 +299,34 @@
                         <p class="desc desc--large desc--semibold desc--dark">Dividends</p>
                     </header>
                     <footer class="career__income-type--footer">
-                        <p class="desc desc--large desc--semibold desc--dark">Your LVL (7)</p>
+                        <p class="desc desc--large desc--semibold desc--dark">Your LVL (<span id="lvl">1</span>)</p>
                         <div class="career__income-type--line">
                             <div class="tooltip">
                                 <div class="tooltip__lvl-wrap decolor active"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 1</div>
                             </div>
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor active"></div>
+                                <div class="tooltip__lvl-wrap decolor"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 2</div>
                             </div>
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor active"></div>
+                                <div class="tooltip__lvl-wrap decolor"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 3</div>
                             </div>
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor active"></div>
+                                <div class="tooltip__lvl-wrap decolor"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 4</div>
                             </div>
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor active"></div>
+                                <div class="tooltip__lvl-wrap decolor"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 5</div>
                             </div>
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor active"></div>
+                                <div class="tooltip__lvl-wrap decolor"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 6</div>
                             </div>
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor active"></div>
+                                <div class="tooltip__lvl-wrap decolor"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 7</div>
                             </div>
                             <div class="tooltip">
@@ -439,13 +439,17 @@
                     <div class="career__info">
                         <header class="career__info--header">
                             <div class="career__info--lvl">
-                                <button class="btn btn--icon btn--prev"><img src="img/arrow-fill-color.svg" width="24"
-                                        height="24" alt="" class="img img--icon img--icon-big"></button>
-                                <div class="career__info--btn">
+                                <button class="btn btn--icon btn--prev" disabled>
+                                    <img src="img/arrow-fill-color.svg" width="24" height="24" alt=""
+                                        class="img img--icon img--icon-big">
+                                </button>
+                                <div class="career__info--btn myLvlBtn">
                                     <p class="desc desc--normal desc--semibold desc--color">My LVL</p>
                                 </div>
-                                <button class="btn btn--icon btn--next"><img src="img/arrow-fill-color.svg" width="24"
-                                        height="24" alt="" class="img img--icon img--icon-big"></button>
+                                <button class="btn btn--icon btn--next">
+                                    <img src="img/arrow-fill-color.svg" width="24" height="24" alt=""
+                                        class="img img--icon img--icon-big">
+                                </button>
                             </div>
                             <div class="career__info--form hide">
                                 <div class="career__info--btn">
@@ -467,21 +471,20 @@
                         </header>
                         <footer class="career__info--footer">
                             <div class="career__info--summary">
-                                <p class="desc desc--normal desc--semibold desc--color">Opened Lines <span>12</span>
+                                <p class="desc desc--normal desc--semibold desc--color">Opened Lines <span
+                                        id="openLines">12</span>
                                     <span class="desc--middle">/ 20</span>
                                 </p>
                             </div>
-                            <picture class="img">
-                                <source media="(max-width: 767.98px)" srcset="img/diagrama_scnd--mobile.svg" width="300"
-                                    height="140" alt="Overall Balance">
-                                <source media="(min-width: 768px) and (max-width:991.98px)"
-                                    srcset="img/diagrama_scnd--tablet.svg" width="656" height="140"
-                                    alt="Overall Balance">
-                                <source media="(min-width:992px)" srcset="img/diagrama_scnd--desktop.svg" width="745"
-                                    height="140" alt="Overall Balance">
-                                <img src="img/diagrama_scnd--desktop.svg" width="745" height="140"
-                                    alt="Overall Balance" />
-                            </picture>
+                            <div class="career__graphic">
+                                <div class="bar-chart-container">
+                                    <div class="bar-chart">
+                                        <div class="y-axis"></div>
+                                        <div class="bars-container"></div>
+                                    </div>
+                                    <div class="x-axis"></div>
+                                </div>
+                            </div>
                         </footer>
                     </div>
                 </li>
@@ -991,26 +994,26 @@
                                     <ul class="social">
                                         <li class="social__item">
                                             <a href="" class="social__link--mobile">
-                                                <img src="img/instagram-mobile-classic.svg" width="32" height="32" alt="instagram"
-                                                    class="img img--icon-middle">
+                                                <img src="img/instagram-mobile-classic.svg" width="32" height="32"
+                                                    alt="instagram" class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="" class="social__link--mobile">
-                                                <img src="img/whatsapp-mobile-classic.svg" width="32" height="32" alt="whatsapp"
-                                                    class="img img--icon-middle">
+                                                <img src="img/whatsapp-mobile-classic.svg" width="32" height="32"
+                                                    alt="whatsapp" class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="" class="social__link--mobile">
-                                                <img src="img/facebook-mobile-classic.svg" width="32" height="32" alt="facebook"
-                                                    class="img img--icon-middle">
+                                                <img src="img/facebook-mobile-classic.svg" width="32" height="32"
+                                                    alt="facebook" class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
                                             <a href="" class="social__link--mobile">
-                                                <img src="img/telegram-mobile-classic.svg" width="32" height="32" alt="telegram"
-                                                    class="img img--icon-middle">
+                                                <img src="img/telegram-mobile-classic.svg" width="32" height="32"
+                                                    alt="telegram" class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
@@ -1021,8 +1024,8 @@
                                         </li>
                                         <li class="social__item">
                                             <a href="" class="social__link--mobile">
-                                                <img src="img/download-mobile-classic.svg" width="32" height="32" alt="download"
-                                                    class="img img--icon-middle">
+                                                <img src="img/download-mobile-classic.svg" width="32" height="32"
+                                                    alt="download" class="img img--icon-middle">
                                             </a>
                                         </li>
                                         <li class="social__item">
@@ -1081,26 +1084,26 @@
                                 <ul class="social social--mobile">
                                     <li class="social__item">
                                         <a href="" class="social__link--mobile">
-                                            <img src="img/instagram-mobile-classic.svg" width="32" height="32" alt="instagram"
-                                                class="img img--icon-middle">
+                                            <img src="img/instagram-mobile-classic.svg" width="32" height="32"
+                                                alt="instagram" class="img img--icon-middle">
                                         </a>
                                     </li>
                                     <li class="social__item">
                                         <a href="" class="social__link--mobile">
-                                            <img src="img/whatsapp-mobile-classic.svg" width="32" height="32" alt="whatsapp"
-                                                class="img img--icon-middle">
+                                            <img src="img/whatsapp-mobile-classic.svg" width="32" height="32"
+                                                alt="whatsapp" class="img img--icon-middle">
                                         </a>
                                     </li>
                                     <li class="social__item">
                                         <a href="" class="social__link--mobile">
-                                            <img src="img/facebook-mobile-classic.svg" width="32" height="32" alt="facebook"
-                                                class="img img--icon-middle">
+                                            <img src="img/facebook-mobile-classic.svg" width="32" height="32"
+                                                alt="facebook" class="img img--icon-middle">
                                         </a>
                                     </li>
                                     <li class="social__item">
                                         <a href="" class="social__link--mobile">
-                                            <img src="img/telegram-mobile-classic.svg" width="32" height="32" alt="telegram"
-                                                class="img img--icon-middle">
+                                            <img src="img/telegram-mobile-classic.svg" width="32" height="32"
+                                                alt="telegram" class="img img--icon-middle">
                                         </a>
                                     </li>
                                     <li class="social__item">
@@ -1111,8 +1114,8 @@
                                     </li>
                                     <li class="social__item">
                                         <a href="" class="social__link--mobile">
-                                            <img src="img/download-mobile-classic.svg" width="32" height="32" alt="download"
-                                                class="img img--icon-middle">
+                                            <img src="img/download-mobile-classic.svg" width="32" height="32"
+                                                alt="download" class="img img--icon-middle">
                                         </a>
                                     </li>
                                     <li class="social__item">
@@ -1161,7 +1164,8 @@
                                     <img src="img/share-qr.webp" width="196" height="187" alt="share qr">
                                 </div>
                                 <footer class="post__info--footer">
-                                    <p class="desc desc--extralarge desc--semibold desc--center desc--light">Join my team!</p>
+                                    <p class="desc desc--extralarge desc--semibold desc--center desc--light">Join my
+                                        team!</p>
                                 </footer>
                             </div>
                             <picture class="img">
@@ -1169,8 +1173,8 @@
                                     height="322" alt="instagram post">
                                 <source media="(min-width: 768px) and (max-width:1439.98px)"
                                     srcset="img/share_post.webp" width="450" height="450" alt="instagram post">
-                                <source media="(min-width:1440px)" srcset="img/share_post.webp" width="500"
-                                    height="500" alt="instagram post">
+                                <source media="(min-width:1440px)" srcset="img/share_post.webp" width="500" height="500"
+                                    alt="instagram post">
                                 <img src="img/share_post.webp" width="500" height="500" alt="instagram post" />
                             </picture>
                         </div>
@@ -1322,7 +1326,7 @@
     <script src="js/2fa.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/carousel.js"></script>
-    <script src="js/choose-programm.js"></script>
+    <!-- <script src="js/choose-programm.js"></script> -->
     <script src="js/copy.js"></script>
     <script src="js/filter.js"></script>
     <script src="js/form-btn-disabled.js"></script>
@@ -1345,6 +1349,82 @@
     <script src="js/turngoal.js"></script>
     <script src="js/upload-remove-img.js"></script>
     <script src="js/countBtn.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const data = [
+                [7, 0, 0],  // Первый столбик
+                [2, 0, 0],  // Второй столбик
+                [1, 0, 0],  // Третий столбик
+                [1, 0, 0],  // Четвертый столбик
+                [0, 0, 0],  // Пятый столбик (и все последующие)
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+            ];
+
+            const yAxis = document.querySelector('.y-axis');
+            const barsContainer = document.querySelector('.bars-container');
+            const xAxis = document.querySelector('.x-axis');
+
+            // Очищаем предыдущие метки и график
+            yAxis.innerHTML = '';
+            barsContainer.innerHTML = '';
+            xAxis.innerHTML = '';
+
+            // Создаем метки для оси Y
+            for (let i = 0; i <= 10; i++) {
+                const yLabel = document.createElement('div');
+                yLabel.classList.add('y-label');
+                if (i === 0) {
+                    yLabel.classList.add('zero');
+                } else if (i === 10) {
+                    yLabel.classList.add('ten');
+                }
+                yLabel.style.bottom = `${i * 10}%`;
+                yLabel.textContent = `${i}%`;
+                yAxis.appendChild(yLabel);
+            }
+
+            // Создаем столбики
+            data.forEach((values, index) => {
+                const bar = document.createElement('div');
+                bar.classList.add('bar');
+
+                // Устанавливаем класс 'hide' для столбиков после 4-го
+                if (index >= 4) {
+                    bar.classList.add('hide');
+                }
+
+                // Создаем и добавляем сегменты в зависимости от значений
+                values.forEach((value, i) => {
+                    const segmentClass = i === 0 ? 'segment1' : i === 1 ? 'segment2' : 'segment3';
+                    const segment = document.createElement('div');
+                    segment.classList.add('segment', segmentClass);
+                    segment.style.height = `${value * 10}%`;
+                    bar.appendChild(segment);
+                });
+
+                barsContainer.appendChild(bar);
+
+                // Создаем метки для оси X
+                const xLabel = document.createElement('div');
+                xLabel.textContent = index + 1;
+                xAxis.appendChild(xLabel);
+            });
+        });
+    </script>
 </body>
 
 </html>

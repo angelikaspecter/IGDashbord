@@ -13,56 +13,60 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const lvlWraps = document.querySelectorAll('.tooltip__lvl-wrap');
+document.addEventListener('DOMContentLoaded', () => {
+    // Функция для обновления уровня в элементе с id="lvl"
+    function updateLevel() {
+        // Найти все элементы с классом tooltip__lvl-wrap и активный элемент
+        const levels = document.querySelectorAll('.tooltip__lvl-wrap');
+        let currentLevel = 1; // Уровень по умолчанию, если нет активного элемента
 
-    lvlWraps.forEach(lvlWrap => {
-        const tooltip = lvlWrap.nextElementSibling;
-
-        lvlWrap.addEventListener('mouseover', function() {
-            tooltip.style.visibility = 'visible';
-            tooltip.style.opacity = '1';
+        // Определить текущий уровень
+        levels.forEach((level, index) => {
+            if (level.classList.contains('active')) {
+                currentLevel = index + 1; // Поскольку индексы начинаются с 0, добавляем 1
+            }
         });
 
-        lvlWrap.addEventListener('mouseout', function() {
-            tooltip.style.visibility = 'hidden';
-            tooltip.style.opacity = '0';
-        });
-    });
-});
-
-// tooltip success
-document.addEventListener('DOMContentLoaded', function () {
-    const changePasswordButton = document.getElementById('changePass');
-    const popup = document.getElementById('changePasswordPopup');
-    const successTooltip = document.getElementById('passwordSuccessChanged');;
-
-    function hideSuccessTooltip() {
-        setTimeout(() => {
-            successTooltip.classList.add('hide');
-        }, 1000);
+        // Обновить значение в элементе с id="lvl"
+        document.getElementById('lvl').textContent = currentLevel;
     }
 
-    changePasswordButton.addEventListener('click', function (event) {
-        event.preventDefault();
-        popup.classList.add('hide');
-        successTooltip.classList.remove('hide');
+    // Изначально обновить уровень
+    updateLevel();
 
-        hideSuccessTooltip();
-    });
-});
+    // Обработчик событий для изменения активного уровня
+    document.querySelector('.career__income-type--line').addEventListener('click', (event) => {
+        const clickedLevel = event.target.closest('.tooltip__lvl-wrap');
 
-document.addEventListener('DOMContentLoaded', () => {
-    const lvlWraps = document.querySelectorAll('.tooltip__lvl-wrap');
-    lvlWraps.forEach((lvlWrap, index) => {
-        lvlWrap.addEventListener('click', () => {
-            lvlWraps.forEach((wrap, i) => {
-                if (i <= index) {
-                    wrap.classList.add('active');
+        if (clickedLevel) {
+            // Определить индекс нажатого уровня
+            const levels = Array.from(document.querySelectorAll('.tooltip__lvl-wrap'));
+            const clickedIndex = levels.indexOf(clickedLevel);
+
+            // Установить или удалить класс active у всех уровней в зависимости от состояния нажатого уровня
+            levels.forEach((level, index) => {
+                if (index <= clickedIndex) {
+                    level.classList.add('active');
                 } else {
-                    wrap.classList.remove('active');
+                    level.classList.remove('active');
                 }
             });
+
+            // Обновить уровень после изменения
+            updateLevel();
+        }
+    });
+
+    // Обработчики для отображения подсказок при наведении на весь элемент .tooltip
+    document.querySelectorAll('.tooltip').forEach(tooltip => {
+        const lvl = tooltip.querySelector('.tooltip__lvl');
+
+        tooltip.addEventListener('mouseenter', () => {
+            lvl.classList.add('visible');
+        });
+
+        tooltip.addEventListener('mouseleave', () => {
+            lvl.classList.remove('visible');
         });
     });
 });
