@@ -9,7 +9,7 @@
 .progress-horizontal-bar {
     position: absolute;
     height: 100%;
-    width: 37%;
+    width: 1%;
     background: var(--accident-primary);
     z-index: 1;
 }
@@ -20,7 +20,7 @@
     height: 17px;
     background: var(--accident-primary-opacity);
     top: 50%;
-    left: calc(37% - 60px);
+    left: calc(1% - 60px);
     transform: translateY(-50%);
     z-index: 2;
 }

@@ -302,43 +302,43 @@
                         <p class="desc desc--large desc--semibold desc--dark">Your LVL (<span id="lvl">1</span>)</p>
                         <div class="career__income-type--line">
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor active"></div>
+                                <div class="tooltip__lvl-wrap decolor active" data-lvl="1"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 1</div>
                             </div>
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor"></div>
+                                <div class="tooltip__lvl-wrap decolor" data-lvl="2"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 2</div>
                             </div>
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor"></div>
+                                <div class="tooltip__lvl-wrap decolor" data-lvl="3"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 3</div>
                             </div>
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor"></div>
+                                <div class="tooltip__lvl-wrap decolor" data-lvl="4"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 4</div>
                             </div>
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor"></div>
+                                <div class="tooltip__lvl-wrap decolor" data-lvl="5"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 5</div>
                             </div>
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor"></div>
+                                <div class="tooltip__lvl-wrap decolor" data-lvl="6"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 6</div>
                             </div>
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor"></div>
+                                <div class="tooltip__lvl-wrap decolor" data-lvl="7"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 7</div>
                             </div>
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor"></div>
+                                <div class="tooltip__lvl-wrap decolor" data-lvl="8"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 8</div>
                             </div>
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor"></div>
+                                <div class="tooltip__lvl-wrap decolor" data-lvl="9"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 9</div>
                             </div>
                             <div class="tooltip">
-                                <div class="tooltip__lvl-wrap decolor"></div>
+                                <div class="tooltip__lvl-wrap decolor" data-lvl="10"></div>
                                 <div class="tooltip__lvl desc desc--extrasmall desc--light">LVL 10</div>
                             </div>
                         </div>
@@ -356,16 +356,15 @@
                             <div class="career__turngoal-wrap career__turngoal-wrap--turnover" id="turnoverInfo">
                                 <div class="career__turngoal--round-process">
                                     <div class="progress-wrapper">
-                                        <div class="progress-circle"></div>
+                                        <div class="progress-circle" data-progress="0%"></div>
                                         <div class="progress-hole"></div>
-                                        <div class="progress-text">37%</div>
+                                        <div class="progress-text">0%</div>
                                     </div>
                                 </div>
                                 <div class="career__turngoal-info career__turngoal-info--turnover">
                                     <p class="desc desc--extralarge desc--bold desc--color"><img loading="lazy"
-                                            src="img/usdt.svg" width="24" height="24" alt="usdt" class="img img--icon">
-                                        53,743</p>
-                                    <p class="desc desc--normal desc--middle">/ 150,000</p>
+                                            src="img/usdt.svg" width="24" height="24" alt="usdt" class="img img--icon"><span id="turnoverCount"></span></p>
+                                    <p class="desc desc--normal desc--middle turnoverNext">/ <span id="turnoverNext"></span></p>
                                 </div>
                             </div>
                             <div class="career__turngoal-wrap career__turngoal-wrap--goal hide" id="goalInfo">
@@ -443,9 +442,9 @@
                                     <img src="img/arrow-fill-color.svg" width="24" height="24" alt=""
                                         class="img img--icon img--icon-big">
                                 </button>
-                                <div class="career__info--btn myLvlBtn">
+                                <button class="career__info--btn myLvlBtn">
                                     <p class="desc desc--normal desc--semibold desc--color">My LVL</p>
-                                </div>
+                                </button>
                                 <button class="btn btn--icon btn--next">
                                     <img src="img/arrow-fill-color.svg" width="24" height="24" alt=""
                                         class="img img--icon img--icon-big">
@@ -453,26 +452,26 @@
                             </div>
                             <div class="career__info--form hide">
                                 <div class="career__info--btn">
-                                    <p class="desc desc--normal desc--semibold desc--color">Line 13</p>
+                                    <p class="desc desc--normal desc--semibold desc--color">Line <span id="buyNewLine"></span></p>
                                 </div>
                                 <div class="career__info--btn">
-                                    <p class="desc desc--normal desc--semibold desc--color">40,000 MRT</p>
+                                    <p class="desc desc--normal desc--semibold desc--color"><span id="costNewLine"></span> MRT</p>
                                 </div>
-                                <button class="btn btn--primary">Open</button>
+                                <button class="btn btn--primary" id="buyBtn">Open</button>
                             </div>
                             <div class="career__info--wrap-column career__info--right">
                                 <p class="desc desc--extrasmall desc--middle">To buy new line reach</p>
                                 <p class="career__desc desc desc--extrasmall desc--middle"><img loading="lazy"
                                         src="img/usdt.svg" width="16" height="16" alt="usdt"
                                         class="img--icon img--icon-mini">
-                                    <b>15,000,000</b> turnover
+                                    <b id="reachNewLine">50,000</b> turnover
                                 </p>
                             </div>
                         </header>
                         <footer class="career__info--footer">
                             <div class="career__info--summary">
                                 <p class="desc desc--normal desc--semibold desc--color">Opened Lines <span
-                                        id="openLines">12</span>
+                                        id="openLines">4</span>
                                     <span class="desc--middle">/ 20</span>
                                 </p>
                             </div>
@@ -1349,82 +1348,7 @@
     <script src="js/turngoal.js"></script>
     <script src="js/upload-remove-img.js"></script>
     <script src="js/countBtn.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const data = [
-                [7, 0, 0],  // Первый столбик
-                [2, 0, 0],  // Второй столбик
-                [1, 0, 0],  // Третий столбик
-                [1, 0, 0],  // Четвертый столбик
-                [0, 0, 0],  // Пятый столбик (и все последующие)
-                [0, 0, 0],
-                [0, 0, 0],
-                [0, 0, 0],
-                [0, 0, 0],
-                [0, 0, 0],
-                [0, 0, 0],
-                [0, 0, 0],
-                [0, 0, 0],
-                [0, 0, 0],
-                [0, 0, 0],
-                [0, 0, 0],
-                [0, 0, 0],
-                [0, 0, 0],
-                [0, 0, 0],
-                [0, 0, 0]
-            ];
-
-            const yAxis = document.querySelector('.y-axis');
-            const barsContainer = document.querySelector('.bars-container');
-            const xAxis = document.querySelector('.x-axis');
-
-            // Очищаем предыдущие метки и график
-            yAxis.innerHTML = '';
-            barsContainer.innerHTML = '';
-            xAxis.innerHTML = '';
-
-            // Создаем метки для оси Y
-            for (let i = 0; i <= 10; i++) {
-                const yLabel = document.createElement('div');
-                yLabel.classList.add('y-label');
-                if (i === 0) {
-                    yLabel.classList.add('zero');
-                } else if (i === 10) {
-                    yLabel.classList.add('ten');
-                }
-                yLabel.style.bottom = `${i * 10}%`;
-                yLabel.textContent = `${i}%`;
-                yAxis.appendChild(yLabel);
-            }
-
-            // Создаем столбики
-            data.forEach((values, index) => {
-                const bar = document.createElement('div');
-                bar.classList.add('bar');
-
-                // Устанавливаем класс 'hide' для столбиков после 4-го
-                if (index >= 4) {
-                    bar.classList.add('hide');
-                }
-
-                // Создаем и добавляем сегменты в зависимости от значений
-                values.forEach((value, i) => {
-                    const segmentClass = i === 0 ? 'segment1' : i === 1 ? 'segment2' : 'segment3';
-                    const segment = document.createElement('div');
-                    segment.classList.add('segment', segmentClass);
-                    segment.style.height = `${value * 10}%`;
-                    bar.appendChild(segment);
-                });
-
-                barsContainer.appendChild(bar);
-
-                // Создаем метки для оси X
-                const xLabel = document.createElement('div');
-                xLabel.textContent = index + 1;
-                xAxis.appendChild(xLabel);
-            });
-        });
-    </script>
+    <script src="js/graphic.js"></script>
 </body>
 
 </html>

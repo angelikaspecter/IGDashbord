@@ -2,6 +2,10 @@
     position: relative;
     width: 100px;
     height: 100px;
+    @media screen and (max-width: 463.98px) {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .progress-circle {
@@ -19,7 +23,7 @@
 }
 
 .progress-circle::before {
-    content: '37%';
+    content: '0%';
 }
 
 .progress-hole {

@@ -121,6 +121,7 @@
     margin-right: 10px;
     width: 100%;
     flex: 0 0 calc(100% / 20 - 10px);
+    background-color: rgba(0, 0, 0, 0);
     height: 100%;
     &.hide {
         display: none;
