@@ -26,6 +26,9 @@
     &--color {
         color: var(--accident-primary);
     }
+    &--center {
+        text-align: center;
+    }
     &.hide {
         display: none;
     }
