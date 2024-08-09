@@ -1439,18 +1439,21 @@ input[type=checkbox]:checked + label::after {
   }
 }
 .popup__wrap--greatings {
-  max-width: 450px;
+  max-width: 750px;
   padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 28px;
 }
-@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+.popup__wrap--greatings .popup__wrap--header .img {
+  height: 200px;
+}
+@media screen and (min-width: 465) and (max-width: 1439.98px) {
   .popup__wrap--greatings {
-    max-width: 450px;
+    max-width: 650px;
   }
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 464.98px) {
   .popup__wrap--greatings {
     padding: 32px 16px;
     height: 100%;
